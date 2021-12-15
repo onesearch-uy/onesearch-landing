@@ -1,4 +1,31 @@
+#productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #productos h1 {
-  color: blue;
+  color: #062f86;
+  font-family: 'Alata', sans-serif;
+  font-size: 64px;
+}
+
+#productos p {
+  width: 1004px;
+}
+
+#productos h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
 }
 /*# sourceMappingURL=style.css.map */
