@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AACI,UADM,CACN,EAAE,CAAA;EACE,KAAK,EAAC,IAAI;CACb",
+    "sources": [
+        "../SCSS/style.scss",
+        "../SCSS/layouts/_productos.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
