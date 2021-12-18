@@ -1,7 +1,6 @@
 {
   "name": "onesearch-proyecto",
   "version": "1.0.0",
-  "description": "",
   "main": "navbar.js",
   "devDependencies": {
     "node-sass": "^7.0.0",
@@ -14,12 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gastondaruda/proyecto-os.git"
+    "url": ""
   },
-  "author": "",
+  "author": "Fernando Gastón Da Ruda",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gastondaruda/proyecto-os/issues"
   },
-  "homepage": "https://github.com/gastondaruda/proyecto-os#readme"
+  "homepage": "https://github.com/gastondaruda/proyecto-os#readme",
+  "description": ""
 }

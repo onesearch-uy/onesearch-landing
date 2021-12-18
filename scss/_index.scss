@@ -1,0 +1,48 @@
+.container__land{
+    height: 100vh;
+    width: 100%;
+    background: $background-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    &__landing{
+        width: 50%;
+        margin: 3rem;
+        &__section{
+            .container__landing__p{
+                color: $text-main;
+                margin: 2rem auto;
+                line-height: 3rem;
+                font-size: $font-size-p;
+            }
+        }
+        &__btn{
+            width: 6rem;
+            height: 3rem;
+            border-radius: 10px;
+            transition: .4s;
+                }
+        &__btn:hover{
+            cursor: pointer;
+        }
+    }
+    &__landing__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__png{
+            width: 30rem;
+            transition: .4s;
+        }
+        }
+}
+
+
+
+@media (max-width: 768px) {
+    .container__land{
+        display: flex;
+        flex-direction: column;
+    }
+}
