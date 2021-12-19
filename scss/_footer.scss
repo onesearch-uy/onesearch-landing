@@ -15,21 +15,23 @@
             width: 18rem;
         }
         }
-        &-div{
-            &-item{
+        .footer-div{
+            .footer-div-item{
                 display: flex;
                 justify-content: center;
                 margin: 2rem auto;
-                &-items{
+                .footer-items{
                     font-size: .8rem;
                     margin: 1rem;
                 }
             }
+            /*
             &-rights{
                 display: flex;
                 justify-content: center;
                 margin: 0 auto;
                 font-size: .8rem;
             }
+            */
         }
 }

@@ -118,15 +118,19 @@
       display: flex;
       justify-content: center;
       width: 18rem; }
-  .footer-div-item {
-    display: flex;
-    justify-content: center;
-    margin: 2rem auto; }
-    .footer-div-item-items {
-      font-size: .8rem;
-      margin: 1rem; }
-  .footer-div-rights {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    font-size: .8rem; }
+  .footer .footer-div {
+    /*
+            &-rights{
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                font-size: .8rem;
+            }
+            */ }
+    .footer .footer-div .footer-div-item {
+      display: flex;
+      justify-content: center;
+      margin: 2rem auto; }
+      .footer .footer-div .footer-div-item .footer-items {
+        font-size: .8rem;
+        margin: 1rem; }
