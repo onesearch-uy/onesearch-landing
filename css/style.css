@@ -29,26 +29,26 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem; }
-  .container__land__landing {
+  .container__land .container__landing {
     width: 50%;
     margin: 3rem; }
-    .container__land__landing__section .container__landing__p {
+    .container__land .container__landing__section__p {
       color: #eee;
       margin: 2rem auto;
       line-height: 3rem;
       font-size: 1.2rem; }
-    .container__land__landing__btn {
+    .container__land .container__landing__section__btn {
       width: 6rem;
       height: 3rem;
       border-radius: 10px;
       transition: .4s; }
-    .container__land__landing__btn:hover {
+    .container__land .container__landing__section__btn:hover {
       cursor: pointer; }
-  .container__land__landing__img {
+  .container__land .container__landing__img {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .container__land__landing__img__png {
+    .container__land .container__landing__img__png {
       width: 30rem;
       transition: .4s; }
 
@@ -67,8 +67,7 @@
     color: #eee;
     margin-top: 2rem; }
   .hero__team {
-    display: flex;
-    justify-content: space-around; }
+    display: flex; }
     .hero__team__flex {
       flex-direction: column; }
       .hero__team__flex__div {
@@ -78,21 +77,21 @@
         align-items: center;
         text-align: center;
         padding: 1rem 2.5rem; }
-        .hero__team__flex__div__img {
+        .hero__team__flex__div .hero__img {
           width: 10rem; }
-          .hero__team__flex__div__img .hero__team__title {
-            color: #eee;
-            font-size: 1.8rem; }
-          .hero__team__flex__div__img .hero__team__subtitle {
-            color: #cecece;
-            font-size: 1.2rem; }
-    .hero__team .hero__png {
-      display: flex;
-      margin: 8rem auto;
-      justify-content: center; }
-      .hero__team .hero__png__img {
-        width: 26rem;
-        margin: 0 auto; }
+        .hero__team__flex__div .hero__team__sec .hero__team__title {
+          color: #eee;
+          font-size: 1.8rem; }
+        .hero__team__flex__div .hero__team__sec .hero__team__subtitle {
+          color: #cecece;
+          font-size: 1.2rem; }
+  .hero .hero__png {
+    display: flex;
+    margin: 8rem auto;
+    justify-content: center; }
+    .hero .hero__png__img {
+      width: 26rem;
+      margin: 0 auto; }
 
 @media (max-width: 768px) {
   .hero__team {

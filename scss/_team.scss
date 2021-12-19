@@ -10,7 +10,6 @@
         }
     &__team{
         display: flex;
-        justify-content: space-around;
         &__flex{
             flex-direction: column;
             &__div{
@@ -20,34 +19,36 @@
                 align-items: center;
                 text-align: center;
                 padding: 1rem 2.5rem;
-                &__img{
+                .hero__img{
                     width: 10rem;
-                    .hero__team{
-                        &__title{
-                            color: $text-main;
-                            font-size: $font-size-title;
-                        }
-                        &__subtitle{
-                            color: $text-secondary;
-                            font-size: $font-size-subtitle;
-                            
-                        }
-                    }
                 }
-            }
-
-        }
-        .hero__png{
-            display: flex;
-            margin: 8rem auto;
-            justify-content: center;
-            &__img{
-                width: 26rem;
-                margin: 0 auto;
-            }
+                .hero__team__sec{
+                    .hero__team__title{
+                        color: $text-main;
+                        font-size: $font-size-title;
+                    }
+                    .hero__team__subtitle{
+                        color: $text-secondary;
+                        font-size: $font-size-subtitle;
+                        }
+                }
+                }
         }
     }
-}
+    .hero__png{
+        display: flex;
+        margin: 8rem auto;
+        justify-content: center;
+        &__img{
+            width: 26rem;
+            margin: 0 auto;
+        }
+    }
+
+    }
+
+
+
 
 @media (max-width: 768px)  {
     .hero__team{
