@@ -71,15 +71,25 @@
         left: 223px;
         top: 386px;
 
-        background: url(.png);
+        background: url(../../imagenes/image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 42px 42px 82px 82px;
+
+        
         
         ul {
             margin: 0;
             padding: 0;
             list-style: none;
-            display: flex;
             animation: mymove 1s linear infinite;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+
             
             li {
                 flex-shrink: 0;
@@ -90,16 +100,19 @@
                 height: 80px;
                 border-radius: 50%;
                 box-sizing: border-box;
+
+                img {
+                    width: 100%;
+                }
             }
         }
       
-        img {
-            width: 100%;
-        }
       
         @keyframes mymove {
         0%    { transform: 0; }
         100%  { transform: translateX(-120px); }
         }
+
+        
     }
 }

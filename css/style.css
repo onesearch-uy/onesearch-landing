@@ -91,7 +91,9 @@
   height: 223px;
   left: 223px;
   top: 386px;
-  background: url(.png);
+  background: url(../../imagenes/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 42px 42px 82px 82px;
 }
 
@@ -99,11 +101,22 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  -webkit-animation: mymove 1s linear infinite;
+          animation: mymove 1s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: mymove 1s linear infinite;
-          animation: mymove 1s linear infinite;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
 }
 
 #productos .logo_slider ul li {
@@ -119,7 +132,7 @@
           box-sizing: border-box;
 }
 
-#productos .logo_slider img {
+#productos .logo_slider ul li img {
   width: 100%;
 }
 
