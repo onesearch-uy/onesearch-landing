@@ -1,5 +1,4 @@
 #productos {
-  width: 100%;
   height: 794px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,9 +17,7 @@
 
 #productos h1 {
   position: absolute;
-  width: 508px;
   height: 20px;
-  left: 473px;
   top: 113px;
   font-family: 'Alata', sans-serif;
   font-style: normal;
@@ -54,18 +51,15 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 8px;
+  margin: 0 10px;
   position: absolute;
-  width: 1004px;
   height: 116px;
-  left: 218px;
   top: 181px;
 }
 
 #productos h2 {
   position: absolute;
-  width: 453px;
   height: 20px;
-  left: 500px;
   top: 339px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -92,9 +86,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  width: 994px;
+  width: 73.959%;
   height: 223px;
-  left: 223px;
   top: 386px;
   background: url(../../imagenes/image.png);
   background-repeat: no-repeat;
@@ -252,7 +245,7 @@
 }
 
 .footer .footer-div hr {
-  width: 1110px;
+  width: 100%;
   height: 1px;
   background: #FFFFFF;
   opacity: 0.2;
