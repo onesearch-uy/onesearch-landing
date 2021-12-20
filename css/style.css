@@ -1,4 +1,5 @@
 #productos {
+  height: 794px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,18 +16,133 @@
 }
 
 #productos h1 {
-  color: #062f86;
+  position: absolute;
+  width: 508px;
+  height: 20px;
+  left: 473px;
+  top: 113px;
   font-family: 'Alata', sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 64px;
+  line-height: 20px;
+  /* identical to box height, or 31% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-font-feature-settings: 'salt' on, 'liga' off;
+          font-feature-settings: 'salt' on, 'liga' off;
+  color: #062F86;
 }
 
 #productos p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  position: absolute;
   width: 1004px;
+  height: 116px;
+  left: 218px;
+  top: 181px;
 }
 
 #productos h2 {
+  position: absolute;
+  width: 453px;
+  height: 20px;
+  left: 500px;
+  top: 339px;
   font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 32px;
+  line-height: 20px;
+  /* identical to box height, or 62% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-font-feature-settings: 'salt' on, 'liga' off;
+          font-feature-settings: 'salt' on, 'liga' off;
+  color: #000000;
+}
+
+#productos .logo_slider {
+  overflow: hidden;
+  margin: auto;
+  position: absolute;
+  width: 994px;
+  height: 223px;
+  left: 223px;
+  top: 386px;
+  background: url(.png);
+  border-radius: 42px 42px 82px 82px;
+}
+
+#productos .logo_slider ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: mymove 1s linear infinite;
+          animation: mymove 1s linear infinite;
+}
+
+#productos .logo_slider ul li {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: block;
+  border: 1px solid #ccc;
+  margin: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#productos .logo_slider img {
+  width: 100%;
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    -webkit-transform: 0;
+            transform: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-120px);
+            transform: translateX(-120px);
+  }
+}
+
+@keyframes mymove {
+  0% {
+    -webkit-transform: 0;
+            transform: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-120px);
+            transform: translateX(-120px);
+  }
 }
 
 .navbar {
