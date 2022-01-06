@@ -4,11 +4,18 @@
 .container__land{
     height: 100vh;
     width: 100%;
-    background: $background-color;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    .bg-image{
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        margin: 0;
+        left: 0;
+    }
     .container__landing{
         width: 50%;
         margin: 3rem;
@@ -45,8 +52,41 @@
 
 
 @media (max-width: 768px) {
+
+
     .container__land{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 0 1rem;
+        .bg-image{
+            
+        }
+        .container__landing{
+            width: 100%;
+            margin: 0 auto;
+            &__section{
+                &__p{
+                    color: #eee;
+                    margin: 1rem auto;
+                    /* line-height: 3rem; */
+                    font-size: 0.9rem;
+                }
+            }
+            &__section__btn{
+            
+                    }
+            &__section__btn:hover{
+                
+                
+            }
+        }
+        .container__landing__img{
+            width: 16rem;
+            &__png{
+                
+            }
+            }
     }
 }

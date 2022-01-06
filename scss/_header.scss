@@ -1,16 +1,40 @@
 
 .navbar{
     width: 100%;
+    padding: 0 2rem;
+    background-color: #fff;
     &-menu{
         margin: 0 0 0 1rem;
-        &-start{
-            &-item{
+        .navbar-start{
+            .navbar-item{
                 transition: .8s;
+                color: #0C1444;
+                
+                font-size: 1rem;
+                font-weight: bold;
+                
             }
             &-item:hover{
-                color: rgb(11, 11, 90);
             }
         }
+        .navbar-end{
+            .navbar-item{
+                .buttons{
+                    .button{
+                        background-color: #eee;
+                    }
+                        .is-blue{
+                            color: #fff;
+                            background-color: #062F86;
+                            box-shadow: $btn-boxShadow;
+                        }
+                    &:hover{
+                        
+                    }
+                }
+            }
+        }
+
         .nav-bx{
             display: flex;
             justify-content: center;
@@ -24,18 +48,6 @@
                 
             }
         }
-        &-end{
-            .navbar-item{
-                .buttons{
-                    .is-blue{
-                        color: $text-main;
-                        box-shadow: $btn-boxShadow;
-                    }
-                    &:hover{
-                        box-shadow: $btn-boxShadow-hover;
-                    }
-                }
-            }
-        }
+      
     }
 }

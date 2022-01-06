@@ -35,3 +35,26 @@
             */
         }
 }
+
+
+@media (max-width: 768px) {
+    .footer{
+        
+        &-logo{
+            width: 65%;
+            &-img{
+            
+            }
+            .footer-div{
+                .footer-div-item{
+                    
+                    .footer-items{
+                        font-size: 0.8rem;
+                        margin: 0.5rem;
+                    }
+                }
+                
+            }
+    }
+}
+}
