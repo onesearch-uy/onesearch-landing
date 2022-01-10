@@ -20,15 +20,6 @@
       color: #fff;
       background-color: #062F86;
       box-shadow: #2a529c; }
-    .navbar-menu .nav-bx {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .navbar-menu .nav-bx .bxl-whatsapp {
-        color: #1ebe10;
-        font-size: 2rem; }
-      .navbar-menu .nav-bx .bxl-whatsapp:hover {
-        cursor: pointer; }
 
 .container__land {
   height: 100vh;
@@ -161,6 +152,16 @@
       .footer .footer-div .footer-div-item .footer-items {
         font-size: .8rem;
         margin: 1rem; }
+  .footer .nav-bx .bxl-whatsapp {
+    font-size: 6rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+    color: #0de40d;
+    transition: .4s; }
+  .footer .nav-bx .bxl-whatsapp:hover {
+    font-size: 7rem; }
 
 @media (max-width: 768px) {
   .footer-logo {

@@ -34,6 +34,21 @@
             }
             */
         }
+        .nav-bx{
+            .bxl-whatsapp {
+                
+                font-size: 6rem;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                margin-right: 2rem;
+                color: rgb(13, 228, 13);
+                transition: .4s;
+            }
+            .bxl-whatsapp:hover{
+                font-size: 7rem;
+            }
+        }
 }
 
 
