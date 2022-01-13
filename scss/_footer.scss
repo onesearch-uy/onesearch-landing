@@ -25,14 +25,14 @@
                     margin: 1rem;
                 }
             }
-            /*
+            
             &-rights{
                 display: flex;
                 justify-content: center;
                 margin: 0 auto;
                 font-size: .8rem;
             }
-            */
+            
         }
         .nav-bx{
             .bxl-whatsapp {
@@ -47,6 +47,7 @@
             }
             .bxl-whatsapp:hover{
                 font-size: 7rem;
+                cursor: pointer;
             }
         }
 }
@@ -58,8 +59,7 @@
         &-logo{
             width: 65%;
             &-img{
-            
-            }
+                }
             .footer-div{
                 .footer-div-item{
                     

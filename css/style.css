@@ -12,10 +12,16 @@
     .navbar-menu .navbar-start .navbar-item {
       transition: .8s;
       color: #0C1444;
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: bold; }
     .navbar-menu .navbar-end .navbar-item .buttons .button {
-      background-color: #eee; }
+      background-color: #eee;
+      font-size: 0.8rem;
+      transition: .4s; }
+    .navbar-menu .navbar-end .navbar-item .buttons .button:hover {
+      background-color: #062F86;
+      box-shadow: #2a529c;
+      color: #eee; }
     .navbar-menu .navbar-end .navbar-item .buttons .is-blue {
       color: #fff;
       background-color: #062F86;
@@ -43,12 +49,20 @@
       line-height: 3rem;
       font-size: 1.2rem; }
     .container__land .container__landing__section__btn {
-      width: 6rem;
+      width: 7rem;
       height: 3rem;
+      line-height: 1rem;
       border-radius: 10px;
-      transition: .4s; }
+      transition: .4s;
+      font-size: 0.8rem;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+      color: #0C1444; }
     .container__land .container__landing__section__btn:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      background-color: #062F86;
+      box-shadow: #2a529c;
+      color: #eee; }
   .container__land .container__landing__img {
     display: flex;
     justify-content: center;
@@ -72,6 +86,12 @@
         margin: 1rem auto;
         /* line-height: 3rem; */
         font-size: 0.9rem; }
+      .container__land .container__landing__section__btn {
+        background-color: #eee;
+        font-size: 0.8rem; }
+      .container__land .container__landing__section__btn:hover {
+        background-color: #062F86;
+        box-shadow: #2a529c; }
     .container__land .container__landing__img {
       width: 16rem; } }
 
@@ -96,7 +116,8 @@
         text-align: center;
         padding: 1rem 2.5rem; }
         .hero__team__flex__div .hero__img {
-          width: 10rem; }
+          width: 10rem;
+          margin: 0 3rem; }
         .hero__team__flex__div .hero__team__sec .hero__team__title {
           color: #eee;
           font-size: 1.8rem; }
@@ -136,22 +157,18 @@
       display: flex;
       justify-content: center;
       width: 18rem; }
-  .footer .footer-div {
-    /*
-            &-rights{
-                display: flex;
-                justify-content: center;
-                margin: 0 auto;
-                font-size: .8rem;
-            }
-            */ }
-    .footer .footer-div .footer-div-item {
-      display: flex;
-      justify-content: center;
-      margin: 2rem auto; }
-      .footer .footer-div .footer-div-item .footer-items {
-        font-size: .8rem;
-        margin: 1rem; }
+  .footer .footer-div .footer-div-item {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto; }
+    .footer .footer-div .footer-div-item .footer-items {
+      font-size: .8rem;
+      margin: 1rem; }
+  .footer .footer-div-rights {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: .8rem; }
   .footer .nav-bx .bxl-whatsapp {
     font-size: 6rem;
     position: fixed;
@@ -161,7 +178,8 @@
     color: #0de40d;
     transition: .4s; }
   .footer .nav-bx .bxl-whatsapp:hover {
-    font-size: 7rem; }
+    font-size: 7rem;
+    cursor: pointer; }
 
 @media (max-width: 768px) {
   .footer-logo {

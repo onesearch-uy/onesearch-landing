@@ -9,8 +9,7 @@
             .navbar-item{
                 transition: .8s;
                 color: #0C1444;
-                
-                font-size: 1rem;
+                font-size: $font-size-li;
                 font-weight: bold;
                 
             }
@@ -22,6 +21,13 @@
                 .buttons{
                     .button{
                         background-color: #eee;
+                        font-size: $font-size-li;
+                        transition: .4s;
+                    }
+                    .button:hover{
+                        background-color: #062F86;
+                        box-shadow: $btn-boxShadow;
+                        color: $text-main;
                     }
                         .is-blue{
                             color: #fff;

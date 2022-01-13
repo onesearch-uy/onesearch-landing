@@ -28,14 +28,22 @@
             }
         }
         &__section__btn{
-            width: 6rem;
+            width: 7rem;
             height: 3rem;
+            line-height: 1rem;
             border-radius: 10px;
             transition: .4s;
+            font-size: $font-size-li;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+            color: #0C1444;
                 }
         &__section__btn:hover{
-            cursor: pointer;
-            
+                cursor: pointer;
+                background-color: #062F86;
+                box-shadow: $btn-boxShadow;
+                color: $text-main;
+                
         }
     }
     .container__landing__img{
@@ -74,10 +82,13 @@
                 }
             }
             &__section__btn{
-            
+                        background-color: #eee;
+                        font-size: $font-size-li;
+                        
                     }
             &__section__btn:hover{
-                
+                background-color: #062F86;
+                box-shadow: $btn-boxShadow;
                 
             }
         }
