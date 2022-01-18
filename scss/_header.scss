@@ -20,12 +20,12 @@
             .navbar-item{
                 .buttons{
                     .button{
-                        background-color: #eee;
+                        background-color: #e3edff;
                         font-size: $font-size-li;
                         transition: .4s;
                     }
                     .button:hover{
-                        background-color: #062F86;
+                        
                         box-shadow: $btn-boxShadow;
                         color: $text-main;
                     }

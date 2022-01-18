@@ -15,11 +15,10 @@
       font-size: 0.8rem;
       font-weight: bold; }
     .navbar-menu .navbar-end .navbar-item .buttons .button {
-      background-color: #eee;
+      background-color: #e3edff;
       font-size: 0.8rem;
       transition: .4s; }
     .navbar-menu .navbar-end .navbar-item .buttons .button:hover {
-      background-color: #062F86;
       box-shadow: #2a529c;
       color: #eee; }
     .navbar-menu .navbar-end .navbar-item .buttons .is-blue {
@@ -169,17 +168,35 @@
     justify-content: center;
     margin: 0 auto;
     font-size: .8rem; }
-  .footer .nav-bx .bxl-whatsapp {
-    font-size: 6rem;
+  .footer .nav-bx {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    margin-right: 2rem;
-    color: #0de40d;
-    transition: .4s; }
-  .footer .nav-bx .bxl-whatsapp:hover {
-    font-size: 7rem;
-    cursor: pointer; }
+    border: 2px solid red;
+    margin-right: 0;
+    right: 2rem;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+    .footer .nav-bx .nav-bx-text {
+      display: flex;
+      background-color: #2a529c;
+      border-radius: 10px;
+      width: 16rem;
+      height: 2.4rem;
+      color: #eee;
+      text-align: center;
+      justify-content: center;
+      align-items: center; }
+    .footer .nav-bx .icon-whatsapp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      margin-left: 3rem; }
+    .footer .nav-bx .icon-whatsapp:hover {
+      font-size: 2.3rem;
+      cursor: pointer; }
 
 @media (max-width: 768px) {
   .footer-logo {

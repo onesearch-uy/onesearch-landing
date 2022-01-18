@@ -35,18 +35,37 @@
             
         }
         .nav-bx{
-            .bxl-whatsapp {
+            position: fixed;
+            border: 2px solid red;
+            margin-right: 0;
+            right: 2rem;
+            bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            .nav-bx-text{
+                display: flex;
+                background-color: $color-btn;
+                border-radius: 10px;
+                width: 16rem;
+                height: 2.4rem;
+                color: #eee;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
                 
-                font-size: 6rem;
-                position: fixed;
-                bottom: 0;
-                right: 0;
-                margin-right: 2rem;
-                color: rgb(13, 228, 13);
-                transition: .4s;
             }
-            .bxl-whatsapp:hover{
-                font-size: 7rem;
+            .icon-whatsapp {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 3rem;
+                margin-left: 3rem;
+                
+            }
+            .icon-whatsapp:hover{
+                font-size: 2.3rem;
                 cursor: pointer;
             }
         }
