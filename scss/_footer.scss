@@ -21,7 +21,7 @@
                 justify-content: center;
                 margin: 2rem auto;
                 .footer-items{
-                    font-size: .8rem;
+                    font-size: 1.2rem;
                     margin: 1rem;
                 }
             }
@@ -30,7 +30,7 @@
                 display: flex;
                 justify-content: center;
                 margin: 0 auto;
-                font-size: .8rem;
+                font-size: 1.2rem;
             }
             
         }
@@ -63,6 +63,7 @@
                 width: 3rem;
                 margin-left: 3rem;
                 
+                
             }
             .icon-whatsapp:hover{
                 font-size: 2.3rem;
@@ -73,22 +74,44 @@
 
 
 @media (max-width: 768px) {
-    .footer{
-        
-        &-logo{
-            width: 65%;
-            &-img{
+
+
+.footer{
+    
+    &-logo{
+        width: 82%;
+        &-img{
+            
+        }
+        }
+        .footer-div{
+            .footer-div-item{
+                flex-direction: column;
+                align-items: center;
+                margin: 1rem auto;
+                .footer-items{
+                    font-size: .9rem;
+                        margin: 1rem;
                 }
-            .footer-div{
-                .footer-div-item{
-                    
-                    .footer-items{
-                        font-size: 0.8rem;
-                        margin: 0.5rem;
-                    }
-                }
+            }
+            
+            &-rights{
+                font-size: 0.8rem;
+            }
+            
+        }
+        .nav-bx{
+            right: 0.6rem;
+            .nav-bx-text{
+                width: 9rem;
+                font-size: .8rem;
+            }
+            .icon-whatsapp {
+                margin-left: 0;
+            }
+            .icon-whatsapp:hover{
                 
             }
-    }
+        }
 }
 }

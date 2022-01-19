@@ -14,6 +14,8 @@
                 
             }
             &-item:hover{
+                text-decoration: underline;
+                
             }
         }
         .navbar-end{
@@ -25,7 +27,7 @@
                         transition: .4s;
                     }
                     .button:hover{
-                        
+                        background-color: #062F86;
                         box-shadow: $btn-boxShadow;
                         color: $text-main;
                     }
@@ -42,6 +44,49 @@
         }
 
         
-      
+    
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar{
+        
+        padding: 0 0rem;
+        
+        &-menu{
+            margin: 0;
+            .navbar-start{
+                .navbar-item{
+                    
+                }
+                &-item:hover{
+                
+                }
+            }
+            .navbar-end{
+                display: flex;
+                justify-content: center;
+                .navbar-item{
+                    .buttons{
+                        .button{
+                            
+                        }
+                        .button:hover{
+                            
+                        
+                        }
+                            .is-blue{
+                                
+                            }
+                        &:hover{
+                            
+                        }
+                    }
+                }
+            }
+        }
     }
 }

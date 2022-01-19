@@ -52,16 +52,41 @@
 
 
 @media (max-width: 768px)  {
-    .hero__team{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        .hero__flex{
-            .hero__div{
-                display: flex;
-                flex-direction: column;
+    .hero{
+        
+        &__title{
+            font-size: 2rem;
+            }
+        &__team{
+            flex-direction: column;
+            &__flex{
+                
+                &__div{
+                    padding: 0;
+                    margin-left: 0;
+                    flex-direction: column;
+                    margin-top: 2rem;
+                    .hero__img{
+                        margin: 0 auto;
+                    }
+                    .hero__team__sec{
+                        .hero__team__title{
+                            
+                        }
+                        .hero__team__subtitle{
+                        
+                            }
+                    }
+                    }
             }
         }
-    }
+        .hero__png{
+            margin: 2rem auto;
+            &__img{
+                
+            }
+        }
+    
+        }
+    
 }
