@@ -21,40 +21,99 @@
                 justify-content: center;
                 margin: 2rem auto;
                 .footer-items{
-                    font-size: .8rem;
+                    font-size: 1.2rem;
                     margin: 1rem;
                 }
             }
-            /*
+            
             &-rights{
                 display: flex;
                 justify-content: center;
                 margin: 0 auto;
-                font-size: .8rem;
+                font-size: 1.2rem;
             }
-            */
+            
+        }
+        .nav-bx{
+            position: fixed;
+            border: 2px solid red;
+            margin-right: 0;
+            right: 2rem;
+            bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            .nav-bx-text{
+                display: flex;
+                background: linear-gradient(to right , #7B88B6 , #D6E0F5);
+                border-radius: 10px;
+                width: 16rem;
+                height: 2.8rem;
+                color: #062F86;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .icon-whatsapp {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 3rem;
+                margin-left: 1rem;
+                
+                
+            }
+            .icon-whatsapp:hover{
+                font-size: 2.3rem;
+                cursor: pointer;
+            }
         }
 }
 
 
 @media (max-width: 768px) {
-    .footer{
-        
-        &-logo{
-            width: 65%;
-            &-img{
+
+
+.footer{
+    
+    &-logo{
+        width: 82%;
+        &-img{
             
-            }
-            .footer-div{
-                .footer-div-item{
-                    
-                    .footer-items{
-                        font-size: 0.8rem;
-                        margin: 0.5rem;
-                    }
+        }
+        }
+        .footer-div{
+            .footer-div-item{
+                flex-direction: column;
+                align-items: center;
+                margin: 1rem auto;
+                .footer-items{
+                    font-size: .9rem;
+                        margin: 1rem;
                 }
+            }
+            
+            &-rights{
+                font-size: 0.8rem;
+            }
+            
+        }
+        .nav-bx{
+            display: none;
+            right: 0.6rem;
+            .nav-bx-text{
+                width: 9rem;
+                font-size: .8rem;
+            }
+            .icon-whatsapp {
+                
                 
             }
-    }
+            .icon-whatsapp:hover{
+                
+            }
+        }
 }
 }
