@@ -3,6 +3,11 @@
     width: 100%;
     padding: 0 2rem;
     background-color: #fff;
+    &-brand{
+        .header_whatsapp{
+            display: none;
+        }
+    }
     &-menu{
         margin: 0 0 0 1rem;
         .navbar-start{
@@ -18,6 +23,7 @@
                 
             }
         }
+       
         .navbar-end{
             .navbar-item{
                 .buttons{
@@ -55,6 +61,16 @@
     .navbar{
         
         padding: 0 0rem;
+        &-brand{
+            .header_whatsapp{
+                display: inline-block;
+                width: 1.2rem;
+                width: 2rem;
+                height: 2rem;
+                margin: auto;
+                margin-left: 4rem;
+            }
+        }
         
         &-menu{
             margin: 0;
@@ -64,6 +80,10 @@
                 }
                 &-item:hover{
                 
+                }
+                .header_whatsapp{
+                    display: inline-block;
+                    width: 2rem;
                 }
             }
             .navbar-end{
