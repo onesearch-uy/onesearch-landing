@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="imagenes/whtastappicon.jpeg">
+    <link rel="stylesheet" href="css/style.css">
+    <title>OneSearch</title>
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item"><img src="imagenes/onesearch.png" width="150" height="28"></a>
+            <a href="#"><img class="header_whatsapp" src="imagenes/whatsappChat.png" alt=""></a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html" >¿Quiénes somos?</a>
+                <a class="navbar-item" href="team.html">Nuestro equipo</a>
+                <a class="navbar-item" href="products.html">Productos</a>
+                <a class="navbar-item">Clientes</a>
+                <a class="navbar-item">Créditos</a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button "><strong>Iniciar sesión</strong></a>
+                        <a class="button is-blue">Registrate</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </nav>
+    <!----------------NAVBAR--END----------->
+    
+    <!----------------------CAROUSEL-IMAGES-------------->
+   <section class="container__land">
+       <img class="bg-image" src="imagenes/Rectangle.png" alt="">
+     <div class="container__landing">
+        <div class="container__landing__section">
+            <p class="container__landing__section__p">OneSearch UY es un proveedor global de soluciones de cumplimiento normativo y gestión de riesgos de terceros.</p>
+            <p class="container__landing__section__p">Trabajando con clientes en todo el mundo, hemos creado productos y servicios para ayudar a las empresas a evaluar los riesgos de terceros más rápido y con más confianza.</p>
+        </div>
+        <div >
+          <button class="container__landing__section__btn">Ver más</button>
+        </div>
+  </div>
+    <div class="container__landing__img">
+        <img class="container__landing__img__png" src="imagenes/landing.png" alt="">
+    </div>
+   </section>
+
+    <!-----------FOOTER------------------>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img class="footer-img" src="imagenes/onesearch.png" alt="">
+        </div>
+
+        <div class="footer-div">
+            <ul class="footer-div-item">
+                <li class="footer-items footer-items2"><a  href="#">¿Qué es One Search?</a></li>
+                <li class="footer-items footer-items2"><a href="#">Nuestro Equipo</a></li>
+                <li class="footer-items footer-items2"><a href="#">Contacto</a></li>
+                <li class="footer-items footer-items2"><a href="#">Términos y condiciones</a></li>
+            </ul>
+
+            <h5 class="footer-div-rights"> ©2021 onesearch All Rights reserved</h5>
+        </div>
+        <div class="nav-bx">
+            <a href=""><h6 class="nav-bx-text">Hola! Soy tu asistente virtual</h6></a>
+            <a href="#"><img class='icon-whatsapp' src="imagenes/whatsappChat.png"></a>
+        </div>
+    </footer>
+
+
+
+
+    <script src="navbar.js" ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+	<script>
+		bulmaCarousel.attach('#carousel-demo', {
+			slidesToScroll: 1,
+			slidesToShow: 1
+		});
+	</script>
+
+</body>
+</html>
+
