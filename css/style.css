@@ -1,5 +1,4 @@
-#productos {
-  height: 794px;
+#products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,95 +6,153 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#productos h1 {
-  position: absolute;
-  height: 20px;
-  top: 113px;
-  font-family: 'Alata', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 64px;
-  line-height: 20px;
-  /* identical to box height, or 31% */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-font-feature-settings: 'salt' on, 'liga' off;
-          font-feature-settings: 'salt' on, 'liga' off;
+#products h2 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 4rem;
   color: #062F86;
+  position: relative;
+  left: 15px;
+  top: 54px;
 }
 
-#productos p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 8px;
-  margin: 0 10px;
-  position: absolute;
-  height: 116px;
-  top: 181px;
-}
-
-#productos h2 {
-  position: absolute;
-  height: 20px;
-  top: 339px;
+#products p {
   font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 20px;
-  /* identical to box height, or 62% */
+  font-size: 1.125rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.625rem;
+  padding: 8px;
+  width: 70.5%;
+  position: relative;
+  top: 88px;
+}
+
+#products .benefits-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-font-feature-settings: 'salt' on, 'liga' off;
-          font-feature-settings: 'salt' on, 'liga' off;
-  color: #000000;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  top: 136px;
 }
 
-#productos .logo_slider {
+@media screen and (max-width: 768px) {
+  #products .benefits-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#products .benefits-container .benefit-item-1 {
+  margin: 0 31.5px;
+  position: relative;
+}
+
+#products .benefits-container .benefit-item-1 img {
+  min-width: 489px;
+  min-height: 374px;
+}
+
+#products .benefits-container .benefit-item-1 p {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 3rem;
+  color: #FFFFFF;
+  height: 150px;
+  line-height: 3.125rem;
+  position: absolute;
+  top: 138px;
+  left: 24px;
+}
+
+#products .benefits-container .benefit-item-2 {
+  margin: 0 31.5px;
+  position: relative;
+}
+
+#products .benefits-container .benefit-item-2 img {
+  min-width: 489px;
+  min-height: 374px;
+}
+
+#products .benefits-container .benefit-item-2 p {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 3rem;
+  color: #FFFFFF;
+  height: 150px;
+  line-height: 3.125rem;
+  position: absolute;
+  top: 138px;
+  left: 24px;
+}
+
+#products .services-container {
+  position: relative;
+  top: 287px;
+}
+
+#products .services-container p {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 3rem;
+  color: #FFFFFF;
+  position: absolute;
+  top: 250px;
+  left: 337px;
+}
+
+#products .services-container .services-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+#products .services-container .services-hover:hover {
+  opacity: 1;
+}
+
+#products h3 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 2.625rem;
+  color: #062F86;
+  position: relative;
+  top: 375px;
+}
+
+#products .logo-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
+  position: relative;
+  top: 407px;
   width: 73.959%;
   height: 223px;
-  top: 386px;
   background: url(../../imagenes/image.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 42px 42px 82px 82px;
 }
 
-#productos .logo_slider ul {
+#products .logo-slider ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +171,7 @@
   list-style: none;
 }
 
-#productos .logo_slider ul li {
+#products .logo-slider ul li {
   margin: 20px;
   width: 80px;
   height: 80px;
@@ -172,23 +229,21 @@
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 256px;
   width: 100%;
+  position: relative;
+  top: 497px;
   background: url(../../imagenes/image.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 256px;
+  }
 }
 
 .footer-logo {
@@ -199,7 +254,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
+  position: relative;
+  width: 218px;
+  height: 38px;
+  top: calc(50% - 38px/2 - 66px);
 }
 
 .footer-logo-img {
@@ -223,6 +282,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 27px auto 48px auto;
 }
 
 .footer .footer-div .footer-div-item {
@@ -232,7 +292,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 2rem auto;
+  margin: 1rem auto 0 auto;
 }
 
 .footer .footer-div .footer-div-item .footer-items {

@@ -1,9 +1,15 @@
 .footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    margin:0;
+    height: 256px;
     width: 100%;
+    position: relative;
+    top:497px;
+
+    @media screen and (max-width: 768px) {
+        height: 256px;
+    }
+
 
     background: url(../../imagenes/image.png);
     background-repeat: no-repeat;
@@ -13,7 +19,13 @@
         display: flex;
         justify-content: center; 
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto 2rem auto;
+        position: relative;
+        width: 218px;
+        height: 38px;
+        top: calc(50% - 38px/2 - 66px);
+
+
         &-img{
             display: flex;
             justify-content: center;
@@ -22,15 +34,15 @@
     }
 
     .footer-div{    
-
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 27px auto 48px auto ;
 
         .footer-div-item{
             display: flex;
             justify-content: center;
-            margin: 2rem auto;
+            margin: 1rem auto 0 auto;
 
             .footer-items{
                 font-size: .8rem;

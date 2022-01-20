@@ -1,69 +1,127 @@
-#productos{
-    height: 794px;
+#products{    
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
-    h1{
-        position: absolute;
-        height: 20px;
-        top: 113px;
-
-        font-family: 'Alata', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 64px;
-        line-height: 20px;
-        /* identical to box height, or 31% */
-
-        display: flex;
-        align-items: center;
-        font-feature-settings: 'salt' on, 'liga' off;
-
+    h2{
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 4rem;
         color: #062F86;   
-    }
+        position: relative;
+        left: 15px;
+        top: 54px;
+    } 
 
     p{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 8px;
-        margin: 0 10px;
-
-        position: absolute;
-        height: 116px;
-        top: 181px;
-    }
-
-    h2{
-        position: absolute;
-        height: 20px;
-        top: 339px;
-
         font-family: 'Inter', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 20px;
-        /* identical to box height, or 62% */
-
-        display: flex;
-        align-items: center;
-        font-feature-settings: 'salt' on, 'liga' off;
-
-        color: #000000;
+        font-size: 1.125rem;
+        justify-content: center;
+        line-height: 1.625rem;
+        padding: 8px;
+        width: 70.5%;
+        position: relative;
+        top:88px;
     }
 
-    .logo_slider {
+    .benefits-container{
         
         display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 136px;
+
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+        }
+
+        .benefit-item-1{
+            margin: 0 31.5px;
+            position: relative;
+
+            img{
+                min-width: 489px;
+                min-height: 374px;
+            }
+
+            p{  
+                font-family: 'Barlow Semi Condensed', sans-serif;
+                font-size: 3rem;
+                color: #FFFFFF;
+                height: 150px;
+                line-height: 3.125rem;
+                position: absolute;
+                top: 138px ;
+                left: 24px;
+            }
+        }
+
+        .benefit-item-2{
+            margin: 0 31.5px;
+            position: relative;
+
+            img{
+                min-width: 489px;
+                min-height: 374px;
+            }
+
+            p{
+                font-family: 'Barlow Semi Condensed', sans-serif;
+                font-size: 3rem;
+                color: #FFFFFF;   
+                height: 150px;
+                line-height: 3.125rem;
+                position: absolute;
+                top: 138px ;
+                left: 24px;
+            }
+        }
+    }   
+    
+    .services-container{
+        position: relative;
+        top:287px;
+
+        p{
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-size: 3rem;
+            color: #FFFFFF;   
+            position: absolute;
+            top:250px;
+            left: 337px;
+        }
+
+        .services-hover{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            object-fit: contain;
+            opacity: 0;
+            transition: opacity .5s;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    h3{
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 2.625rem;
+        color: #062F86;   
+        position:relative;
+        top: 375px;
+    }
+    
+    .logo-slider{
+        display: flex;
         justify-content: center;
-        position: absolute;
+        position: relative;
+        top:407px;
         width: 73.959%;
         height: 223px;
-        top: 386px;
+       
 
         background: url(../../imagenes/image.png);
         background-repeat: no-repeat;
