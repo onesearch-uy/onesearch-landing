@@ -7,69 +7,81 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="imagenes/OjoOneSearch.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Team</title>
 </head>
 <body>
 
-  
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.html" >
-          <img src="imagenes/onesearch.png" width="150" height="28">
-        </a>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img class="navbar-item-img" src="imagenes/onesearch.png" width="150" height="28">
+      </a>
+
+      <a href="#" class="whats__btn">
+        <img class="header_whatsapp" src="imagenes/whatsappChat.png" alt="">
+      </a>
+      
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
     
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item" href="index.html">
-              ¿Quiénes somos?
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html" >
+            ¿Quiénes somos?
+          </a>
+          
+    
+          <a class="navbar-item" href="#">
+            Nuestro equipo
+          </a>
+    
+          
+          <a class="navbar-item" href="productos.html">
+            Productos
             </a>
-      
-            <a class="navbar-item" >
-              Nuestro equipo
-            </a>
-      
-            
-            <a class="navbar-item">
-              Productos
+
+            <a class="navbar-item" href="clientes.html">
+                Clientes
               </a>
 
-              <a class="navbar-item">
-                  Clientes
+              <a class="navbar-item" href="creditos.html">
+                  Créditos
                 </a>
-                
-                
-            
-          </div>
-
-          
-          
-          <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                  <a class="button ">
-                    <strong>Iniciar sesión</strong>
-                  </a>
-                <a class="button is-blue">
-                    Registrate
-                </a>
-              </div>
+           
+             
               
+          
+        </div>
+
+        <div class="div__img">
+          <img class="div__img__header" src="imagenes/onesearch.png" width="150" height="28">
+        </div>
+        
+        <div class="navbar-end">
+          <div class="navbar-item">
+              <div class="buttons">
+                <a class="button ">
+                  <strong>Iniciar sesión</strong>
+                </a>
+              <a class="button is-blue">
+                  Registro
+              </a>
             </div>
             
           </div>
           
         </div>
         
-    </nav>
-
+      </div>
+      
+  </nav>
+  
 
     <!----------------NAVBAR--END----------->
 
@@ -78,9 +90,10 @@
 
 
     <section class="hero">
-        <h2 class="hero__title">Nuestro equipo</h2>
+      <img class="bg-image" src="imagenes/Rectangle.png" alt="">
+      <h2 class="hero__title">Nuestro equipo</h2>
+      <div class="hero__team">
 
-        <div class="hero__team">
 
             <div class="hero__team__flex">
 
@@ -153,8 +166,8 @@
 
 
 
-<script src="navbar.js" ></script>
 
 
+  <script src="navbar.js"></script> 
 </body>
 </html>

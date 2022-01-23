@@ -4,15 +4,18 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    top: 0;
+    
     &-logo{
         display: flex;
         justify-content: center;
         width: 100%;
         margin: 0 auto;
+        width: 13.625rem;
+        
         &-img{
             display: flex;
             justify-content: center;
-            width: 18rem;
         }
         }
         .footer-div{
@@ -20,23 +23,40 @@
                 display: flex;
                 justify-content: center;
                 margin: 2rem auto;
+                /*width: 37.75rem;*/
+                height: 1.625rem;
+                
                 .footer-items{
-                    font-size: 1.2rem;
-                    margin: 1rem;
+                    font-size: 0.9rem;
+                    line-height: 1.625rem;
+                    font-weight: 400;
+                    padding: 0rem;
+                    margin: 0 1rem;
+                    
+                    
+                    a{
+                        justify-content: center;
+                        color: $color-principal;
+                        text-decoration: none;
+                        font-family: $font-family-inter;
+                    }
                 }
             }
             
             &-rights{
+                
                 display: flex;
                 justify-content: center;
-                margin: 0 auto;
-                font-size: 1.2rem;
+                margin: 18.438 auto;
+                font-size: 0.875rem;
+                line-height: 24px;
+                color: $color-p;
             }
             
         }
         .nav-bx{
             position: fixed;
-            border: 2px solid red;
+            
             margin-right: 0;
             right: 2rem;
             bottom: 2rem;
@@ -46,15 +66,18 @@
             align-items: center;
             .nav-bx-text{
                 display: flex;
-                background: linear-gradient(to right , #7B88B6 , #D6E0F5);
+                background: linear-gradient(to right , #7B89B6 , #D4DFF5);
                 border-radius: 10px;
-                width: 16rem;
-                height: 2.8rem;
+                margin: 1.063rem 0.25rem;
+                width: 12.864rem;
+                font-size: 0.688rem;
+                height: 3.313rem;
+                font-weight: 600;
                 color: #062F86;
                 text-align: center;
                 justify-content: center;
                 align-items: center;
-                
+                font-family: $font-family-inter;
             }
             .icon-whatsapp {
                 display: flex;
