@@ -17,11 +17,13 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item">
-          <img src="imagenes/onesearch.png" width="150" height="28">
+          <img class="navbar-item-img" src="imagenes/onesearch.png" width="150" height="28">
         </a>
 
-        <a href="#"><img class="header_whatsapp" src="imagenes/whatsappChat.png" alt=""></a>
-    
+        <a href="#" class="whats__btn">
+          <img class="header_whatsapp" src="imagenes/whatsappChat.png" alt="">
+        </a>
+        
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -41,15 +43,15 @@
             </a>
       
             
-            <a class="navbar-item">
+            <a class="navbar-item" href="productos.html">
               Productos
               </a>
 
-              <a class="navbar-item">
+              <a class="navbar-item" href="clientes.html">
                   Clientes
                 </a>
 
-                <a class="navbar-item">
+                <a class="navbar-item" href="creditos.html">
                     Créditos
                   </a>
              
@@ -58,7 +60,9 @@
             
           </div>
 
-          
+          <div class="div__img">
+            <img class="div__img__header" src="imagenes/onesearch.png" width="150" height="28">
+          </div>
           
           <div class="navbar-end">
             <div class="navbar-item">
@@ -67,7 +71,7 @@
                     <strong>Iniciar sesión</strong>
                   </a>
                 <a class="button is-blue">
-                    Registrate
+                    Registro
                 </a>
               </div>
               
@@ -104,7 +108,7 @@
 
         <div class="footer-div">
             <ul class="footer-div-item">
-                <li class="footer-items footer-items2"><a  href="#">¿Qué es One Search?</a></li>
+                <li class="footer-items footer-items2"><a href="#">¿Qué es One Search?</a></li>
                 <li class="footer-items footer-items2"><a href="#">Nuestro Equipo</a></li>
                 <li class="footer-items footer-items2"><a href="#">Contacto</a></li>
                 <li class="footer-items footer-items2"><a href="#">Términos y condiciones</a></li>
@@ -120,250 +124,7 @@
 
 
 
-
-
-
-
-
-
-
-<script src="navbar.js" ></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-		<script>
-		bulmaCarousel.attach('#carousel-demo', {
-			slidesToScroll: 1,
-			slidesToShow: 1
-		});
-		</script>
+  <script src="navbar.js"></script>
 </body>
 </html>
 
-
-
-<!--
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.navbar{
-    width: 100%;
-}
-.navbar-menu{
-    margin: 0 0 0 1rem;
-    
-}
-
-.navbar-item{
-    transition: .8s;
-}
-
-.navbar-item:hover{
-    color: rgb(11, 11, 90);
-}
-
-.nav-bx{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.bxl-whatsapp{
-    color: rgb(30, 190, 16);
-    font-size: 2rem;
-}
-.bxl-whatsapp:hover{
-    cursor: pointer;
-    
-}
-
-.container__land{
-    height: 100vh;
-    width: 100%;
-   
-    background:  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-}
-.container__landing{
-    width: 50%;
-    margin: 3rem;
-}
-
-.container__landing__p{
-    color: #eee;
-    margin: 2rem auto;
-    
-    line-height: 3rem;
-    font-size: 1.2rem;
-}
-
-.container__landing__btn{
-    width: 6rem;
-    height: 3rem;
-    border-radius: 10px;
-    transition: .4s;
-}
-.container__landing__btn:hover{
-    cursor: pointer;
-}
-
-
-.container__landing__img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container__landing__img__png{
-    width: 30rem;
-    transition: .4s;
-}
-.container__landing__img__png:hover{
-    width: 31rem;
-}
-.is-blue{
-    color: #eee;
-    background-color: rgb(42, 82, 156);
-    transition: .6s;
-}
-.is-blue:hover{
-    color: #eee;
-    box-shadow: 2px 2px 2px 1px rgba(7, 9, 112, 0.527);
-}
-
-.carousel{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-}
-
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.foot-logo{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-}
-.foot-img{
-    display: flex;
-    justify-content: center;
-    width: 18rem;
-}
-
-
-.foot-item{
-    display: flex;
-    justify-content: center;
-    
-    margin: 2rem auto;
-}
-
-.foot-items{
-    font-size: .8rem;
-    margin: 1rem;
-    
-}
-
-.foot-rights{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    font-size: .8rem;
-    
-}
-
-
-.hero{
-    width: 100%;
-    
-    background:  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 100%);
-}
-.hero__team{
-    display: flex;
-    
-   
-}
-.hero__title{
-    justify-content: center;
-    text-align: center;
-    font-size: 3rem;
-    color: #eee;
-    margin-top: 2rem;
-}
-.hero__team{
-    display: flex;
-    justify-content: space-around;
-    
-
-}
-.hero__div{
-    display: flex;
-
-    margin-left: 2.8rem;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    
-    padding: 1rem 2.5rem;
-}
-.hero__flex{
-    
-    flex-direction: column;
-}
-
-.hero__team__title{
-    color: #eee;
-    font-size: 1.8rem;
-}
-.hero__team__subtitle{
-    color: rgb(206, 206, 206);
-    font-size: 1.2rem;
-}
-
-.hero__img{
-    width: 10rem;
-}
-.hero__png{
-    display: flex;
-    margin: 8rem auto;
-    justify-content: center;
-}
-
-.hero__png__img{
-    width: 26rem;
-    margin: 0 auto;
-   
-    
-}
-
-@media (max-width: 768px) {
-    .container__land{
-        display: flex;
-        flex-direction: column;
-    }
-    .hero__team{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-    
-    }
-    
-    .hero__div{
-        
-        display: flex;
-        flex-direction: column;
-    }
-}
--->
