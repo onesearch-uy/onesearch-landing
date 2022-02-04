@@ -92,7 +92,7 @@
     <div class="services-container">
         <img src="/imagenes/Servicios.png" alt="">
         <p>Nuestros servicios</p>
-        <img class="services-hover"src="/imagenes/Servicios-hover.png" alt="">
+        <img class="services-img2"src="/imagenes/Servicios-hover.png" alt="">
     </div>
 
     <h3>¿Qué tecnologías aplicamos?</h3>
@@ -137,6 +137,11 @@
 
 <script src="navbar.js"></script> 
 <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+<script> 
+  let services = document.getElemntbyClass("services-container");
+  services.addEventListener("click",()=> {services.classList.toggle("active")});
+</script>
 
 </body>
 </html>

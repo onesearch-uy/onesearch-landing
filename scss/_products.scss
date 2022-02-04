@@ -80,6 +80,13 @@
     .services-container{
         position: relative;
         top:287px;
+        transform: rotateY(0deg);
+        transition: 1s ease all;
+        transform-style: preserve-3d;
+
+        &:hover{
+            transform: rotateY(180deg);
+        }
 
         p{
             font-family: $font-family-1;
@@ -90,19 +97,15 @@
             left: 337px;
         }
 
-        .services-hover{
+        .services-img2{
             position: absolute;
             top: 0;
             right: 0;
             left: 0;
             bottom: 0;
             object-fit: contain;
-            opacity: 0;
-            transition: opacity .5s;
-
-            &:hover{
-                opacity: 1;
-            }
+            transform:rotateY(180deg);
+            backface-visibility: hidden;
         }
     }
 

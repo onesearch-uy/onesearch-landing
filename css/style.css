@@ -841,6 +841,17 @@
 #products .services-container {
   position: relative;
   top: 287px;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#products .services-container:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 #products .services-container p {
@@ -852,7 +863,7 @@
   left: 337px;
 }
 
-#products .services-container .services-hover {
+#products .services-container .services-img2 {
   position: absolute;
   top: 0;
   right: 0;
@@ -860,13 +871,10 @@
   bottom: 0;
   -o-object-fit: contain;
      object-fit: contain;
-  opacity: 0;
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
-}
-
-#products .services-container .services-hover:hover {
-  opacity: 1;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 #products h3 {
