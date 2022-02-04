@@ -567,8 +567,14 @@
   padding: 12px 32px;
   width: 250px;
   height: 48px;
-  background: #E3EDFF;
+  background-color: #E3EDFF;
   border-radius: 6px;
+}
+
+.contact-container button a {
+  font-family: "Inter", sans-serif;
+  color: #062F86;
+  text-decoration: none;
 }
 
 .navbar {

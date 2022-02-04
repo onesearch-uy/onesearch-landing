@@ -83,8 +83,14 @@
         padding: 12px 32px;
         width: 250px;
         height: 48px;
-        background: #E3EDFF;
+        background-color: #E3EDFF;
         border-radius: 6px;
+
+        a{
+            font-family: $font-family-inter;
+            color:#062F86;
+            text-decoration: none;
+        }
     }
 
 }
