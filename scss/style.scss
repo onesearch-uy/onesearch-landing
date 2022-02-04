@@ -3,13 +3,15 @@
     margin: 0;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
-@import "variables";
-@import "header";
+
 @import "index";
 @import "team";
+@import "products";
+@import "clients";
+@import "variables";
+@import "header";
 @import "footer";
 @import "footer-products";
-@import "products";
 
 
 

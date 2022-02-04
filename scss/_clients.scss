@@ -1,0 +1,90 @@
+#clients{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        font-family: $font-family-1;
+        font-size: 4rem;
+        color: #062F86;   
+        margin-left: 15px;
+        margin-top: 54px;
+    }
+
+    .clients-container{
+        width: 100%;
+        display:flex;
+        justify-content: space-evenly;
+        margin-top: 36px;
+
+        p{
+            width: 570px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .companies-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:153px;
+
+        h3{
+            font-family: $font-family-1;
+            font-size: 2.67rem;
+            color: #062F86;   
+        }
+
+        .companies-list{
+            margin-top: 17px;
+            p{
+                color:#0C1444;
+                font-family: $font-family-inter;
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            img{
+                margin-top: 35px;
+            }
+        }
+    }   
+}
+
+.contact-container{
+    margin-top: 28px;
+    background: url(../../imagenes/bg-contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 588px;
+ 
+
+    h3{
+        margin-top:68px;
+        text-align: center;
+        font-family: $font-family-1;
+        font-size: 2.67rem;
+        color: #ffffff; 
+    }
+
+    p{
+        font-family: $font-family-inter;
+        font-size: 1rem;
+        color: #ffffff; 
+        margin: 76px 166px 84px 166px;
+    }
+
+    button{
+        padding: 12px 32px;
+        width: 250px;
+        height: 48px;
+        background: #E3EDFF;
+        border-radius: 6px;
+    }
+
+}
