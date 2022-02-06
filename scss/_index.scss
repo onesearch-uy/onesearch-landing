@@ -27,8 +27,8 @@
         top: 20.75;
         
         &__section{
-            font-family: $font-family-inter;
             &__p{
+                font-family: $font-family-inter;
                 color: $text-main;
                 margin: 2rem auto;
                 line-height: 2rem;
@@ -36,25 +36,39 @@
                 font-weight: 400;
             }
         }
-        &__section__btn{
-            width: 7rem;
-            height: 3rem;
-            line-height: 1rem;
-            border-radius: 10px;
+        .buton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             transition: .4s;
-            font-size: $font-size-li;
-            font-weight: 500;
-            letter-spacing: 0.1rem;
-            color: #062F86;
-            background-color: #E3EDFF;
+            border-radius: 6px;
+            right: 10.313rem;
+            background-color: #e3edff;
+            height: 3rem;
+            width: 8.063rem;
+            
+            box-shadow: 16.1636px 9.98694px 34px -196px rgba(0, 0, 0, 0.12), 10.4764px 6.47302px 19.912px -196px rgba(0, 0, 0, 0.0911111), 6.22597px 3.84682px 10.8296px -196px rgba(0, 0, 0, 0.0728889), 3.23271px 1.99739px 5.525px -196px rgba(0, 0, 0, 0.06), 1.31703px 0.813751px 2.77037px -196px rgba(0, 0, 0, 0.0471111), 0.299325px 0.184943px 1.33796px -196px rgba(0, 0, 0, 0.0288889);
+            .button__btn{
+                font-family: $font-family-inter;
+                color: #062F86;
+                font-weight: 500;
+                font-size: 1rem;
+                font-height: 1.5rem;
+                
                 }
-        &__section__btn:hover{
-                cursor: pointer;
+            
+            }
+            .buton:hover{
                 background-color: #062F86;
                 box-shadow: $btn-boxShadow;
+                cursor: pointer;
                 color: $text-main;
-                
-        }
+                .button__btn{
+                    color: $text-main;;
+                }
+            }
+            
+
     }
     .container__landing__img{
         display: flex;

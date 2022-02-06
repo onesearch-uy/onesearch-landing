@@ -44,16 +44,17 @@
                     .hero__team__title{
                         font-family: $font-family-1;
                         color: $text-main;
-                        font-size: $font-size-title;
+                        font-size: $font-size-team-title;
                         line-height: 20px;
+                        font-weight: 600;
                     }
                     .hero__team__subtitle{
+                        font-family: $font-family-inter;
                         display: flex;
                         justify-content: flex-start;
                         color: $text-secondary;
-                        font-size: $font-size-subtitle;
+                        font-size: $font-size-team-subtitle;
                         font-weight: 300;
-                        font-family: $font-family-inter;
                         margin-top: 1rem;
                         
                         }
@@ -64,7 +65,7 @@
     .hero__png{
         display: flex;
         margin: 2rem auto;
-        margin-bottom: 6rem;
+        margin-bottom: 9rem;
         justify-content: center;
         
         &__img{

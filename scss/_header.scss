@@ -24,6 +24,7 @@
         .navbar-start{
             left: 3.688rem;
             .navbar-item{
+                font-family: $font-family-inter;
                 transition: .8s;
                 color: $color-principal;
                 font-size: $font-size-li;
@@ -74,6 +75,7 @@
                         border-radius: 6px;
                         right: 10.313rem;
                         width: 8.063rem;
+                        font-family: $font-family-inter;
                     }
                     .button:hover{
                         background-color: #062F86;
@@ -84,6 +86,7 @@
                             color: #fff;
                             background-color: #062F86;
                             box-shadow: $btn-boxShadow;
+                            font-family: $font-family-inter;
                         }
                     &:hover{
                         
