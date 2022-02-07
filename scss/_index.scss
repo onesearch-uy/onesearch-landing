@@ -1,0 +1,114 @@
+@import "variables";
+
+
+.container__land{
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    
+    .bg-image{
+        position: absolute; /*Aca esta el problema*/
+        width: 100%;
+        z-index: -1;
+        margin: 0;
+        left: 0;
+        bottom: 0;
+        background-size: contain;
+    }
+    .container__landing{
+        width: 33.75rem;
+        /*margin: 3rem;*/
+        left: 10.313rem;
+        height: 17rem;
+        top: 20.75;
+        
+        &__section{
+            font-family: $font-family-inter;
+            &__p{
+                color: $text-main;
+                margin: 2rem auto;
+                line-height: 2rem;
+                font-size: $font-size-p;
+                font-weight: 400;
+            }
+        }
+        &__section__btn{
+            width: 7rem;
+            height: 3rem;
+            line-height: 1rem;
+            border-radius: 10px;
+            transition: .4s;
+            font-size: $font-size-li;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
+            color: #062F86;
+            background-color: #E3EDFF;
+                }
+        &__section__btn:hover{
+                cursor: pointer;
+                background-color: #062F86;
+                box-shadow: $btn-boxShadow;
+                color: $text-main;
+                
+        }
+    }
+    .container__landing__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__png{
+            width: 36.433rem;
+            transition: .4s;
+        }
+        }
+}
+
+
+@media (max-width: 768px) {
+
+
+    .container__land{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 0 1rem;
+        .bg-image{
+            height: 100vh;
+        }
+        .container__landing{
+            width: 100%;
+            margin: 0 auto;
+            &__section{
+                margin: 2rem auto;
+                &__p{
+                    color: #eee;
+                    margin: 0rem 0.4rem;
+                    line-height: 2;
+                    font-size: 0.9rem;
+                }
+            }
+            &__section__btn{
+                        background-color: #eee;
+                        font-size: 0.5rem;
+                        width: 4rem;
+                        height: 2.3rem;
+                    }
+            &__section__btn:hover{
+                background-color: #062F86;
+                box-shadow: $btn-boxShadow;
+                
+            }
+        }
+        .container__landing__img{
+            width: 14rem;
+            &__png{
+                
+            }
+            }
+    }
+}
