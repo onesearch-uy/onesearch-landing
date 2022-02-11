@@ -10,6 +10,7 @@
 .container__land {
   height: 100vh;
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,9 +18,20 @@
   .container__land .bg-image {
     position: absolute;
     /*Aca esta el problema*/
+
     width: 100%;
-    z-index: -1;
+  }
+  .navbar-brand .whats__btn .header_whatsapp {
+    width: 2rem;
+    margin: 0 auto;
+    margin-right: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .navbar-menu {
     margin: 0;
+
     left: 0;
     bottom: 0;
     background-size: contain; }
@@ -61,12 +73,14 @@
       .container__land .container__landing .buton:hover .button__btn {
         color: #E3EDFF; }
   .container__land .container__landing__img {
+
     display: flex;
-    justify-content: center;
-    align-items: center; }
-    .container__land .container__landing__img__png {
-      width: 36.433rem;
-      transition: .4s; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 
 @media (max-width: 768px) {
   .container__land {
@@ -100,8 +114,16 @@
       z-index: -1;
       margin-top: 5rem; } }
 
-.hero {
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
+
   /*background:  $background-color; */ }
   .hero .bg-image {
     height: 50rem;
@@ -550,80 +572,108 @@
           margin-right: 0; } }
 
 .footer {
+
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  top: 0; }
-  .footer-logo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    width: 13.625rem; }
-    .footer-logo-img {
-      display: flex;
-      justify-content: center; }
-  .footer .footer-div .footer-div-item {
-    display: flex;
-    justify-content: center;
-    margin: 2rem auto;
-    /*width: 37.75rem;*/
-    height: 1.625rem; }
-    .footer .footer-div .footer-div-item .footer-items {
-      font-size: 0.9rem;
-      line-height: 1.625rem;
-      font-weight: 400;
-      padding: 0rem;
-      margin: 0 1rem; }
-      .footer .footer-div .footer-div-item .footer-items a {
-        justify-content: center;
-        color: #0C1444;
-        text-decoration: none;
-        font-family: "Inter", sans-serif; }
-  .footer .footer-div-rights {
-    display: flex;
-    justify-content: center;
-    margin: 18.438 auto;
-    font-size: 0.875rem;
-    line-height: 24px;
-    color: #0C1444; }
-  .footer .nav-bx {
-    position: fixed;
-    margin-right: 0;
-    right: 2rem;
-    bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center; }
-    .footer .nav-bx .nav-bx-text {
-      display: flex;
-      background: linear-gradient(to right, #7B89B6, #D4DFF5);
-      border-radius: 10px;
-      margin: 1.063rem 0.25rem;
-      width: 12.864rem;
-      font-size: 0.688rem;
-      height: 3.313rem;
-      font-weight: 600;
-      color: #062F86;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      font-family: "Inter", sans-serif; }
-    .footer .nav-bx .icon-whatsapp {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 3rem;
-      margin-left: 1rem; }
-    .footer .nav-bx .icon-whatsapp:hover {
-      font-size: 2.3rem;
-      cursor: pointer; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem auto;
+  /*width: 37.75rem;*/
+  height: 1.625rem;
+}
+
+.footer .footer-div .footer-div-item .footer-items {
+  font-size: 0.9rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+  padding: 0rem;
+  margin: 0 1rem;
+}
+
+.footer .footer-div .footer-div-item .footer-items a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #0C1444;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.footer .footer-div-rights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 18.438 auto;
+  font-size: 0.875rem;
+  line-height: 24px;
+  color: #0C1444;
+}
+
+.footer .nav-bx {
+  position: fixed;
+  margin-right: 0;
+  right: 2rem;
+  bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .nav-bx .nav-bx-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, right top, from(#7B89B6), to(#D4DFF5));
+  background: linear-gradient(to right, #7B89B6, #D4DFF5);
+  border-radius: 10px;
+  margin: 1.063rem 0.25rem;
+  width: 12.864rem;
+  font-size: 0.688rem;
+  height: 3.313rem;
+  font-weight: 600;
+  color: #062F86;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+.footer .nav-bx .icon-whatsapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 3rem;
+  margin-left: 1rem;
+}
+
+.footer .nav-bx .icon-whatsapp:hover {
+  font-size: 2.3rem;
+  cursor: pointer;
+}
 
 @media (max-width: 768px) {
   .footer-logo {
+
     width: 82%; }
   .footer .footer-div {
     width: 100%; }
@@ -643,6 +693,7 @@
       width: 9rem;
       font-size: .8rem; } }
 
+
 .footer-products {
   padding: 0;
   margin: 0;
@@ -652,6 +703,7 @@
   top: 497px;
   background: url(../../imagenes/image.png);
   background-repeat: no-repeat;
+
   background-size: cover; }
   @media screen and (max-width: 768px) {
     .footer-products {
@@ -735,3 +787,4 @@
     .footer-products .nav-bx .icon-whatsapp:hover {
       font-size: 2.3rem;
       cursor: pointer; }
+

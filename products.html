@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter&display=swap" rel="stylesheet">
 
-    <title>Team</title>
+    <title>Products</title>
 </head>
 
 
@@ -54,11 +54,9 @@
         <div class="navbar-end">
           <div class="navbar-item">
               <div class="buttons">
-
-                <a class="buttonn">Iniciar Sesión</a>
-                <a class="buttonn is-blue-btn">Registro</a>
-              </div>
-
+                <a class="button "><strong>Iniciar sesión</strong></a>
+                <a class="button is-blue">Registro</a>
+            </div>
           </div>
         </div>
       </div>
@@ -68,56 +66,52 @@
 
 <!-----------SECTION----------------->
 
+<section class="container is-fluid" id="products">
+    <h2>¿Qué ofrecemos?</h2>
 
-  <section class="hero">
-    <img class="bg-image" src="imagenes/Rectangle.png" alt="">
-    <h2 class="hero__title">Nuestro equipo</h2>
-    <div class="hero__team">
+    <p>
+        OneSearch Uy desarrolla soluciones tecnológicas para diferentes actores de la sociedad teniendo en cuenta las particularidades y necesidades de cada uno. 
+        <br>Para nosotros una herramienta exitosa es la que logra pasar la barrera de lo exclusivo y democratiza su acceso.
+        <br><strong>Bienvenidos a OneSearch, tu asistente virtual.</strong>
+    </p>
 
-      <div class="hero__team__flex">
+    <div class="benefits-container">
 
-        <div class="hero__team__flex__div">
-          <img class="hero__img" src="imagenes/team1.png" alt="">
-          <div class="hero__team__sec">
-            <h3 class="hero__team__title">Anl. Sist. Nicolás López</h3>
-            <h5 class="hero__team__subtitle">CTO-Managing Director</h5>
-          </div>
+        <div class="benefit-item-1">
+            <img src="/imagenes/Beneficios1.png" alt="">
+            <p>Facilita tu ejercicio profesional</p>
         </div>
 
-        <!-------->
-
-        <div class="hero__team__flex__div">
-          <img class="hero__img" src="imagenes/team2.0.png" alt="">
-          <div class="hero__team__sec">
-              <h3 class="hero__team__title">Ing. Pablo H. Baldi</h3>
-              <h5 class="hero__team__subtitle">COO-Managing Director</h5>
-          </div>
+        <div class="benefit-item-2">
+            <img src="/imagenes/Beneficios2.png" alt="">
+            <p>Nueva alianza para brindar soluciones</p>
         </div>
 
-        <!-------->
-
-        <div class="hero__team__flex__div">
-          <img class="hero__img" src="imagenes/team3.0.png" alt="">
-          <div class="hero__team__sec">
-              <h3 class="hero__team__title">Esc. Dayana García Barreiro</h3>
-              <h5 class="hero__team__subtitle">CTO-Managing Director</h5>
-          </div>
-        </div>
-
-        <!-------->
-      </div>
-            
-      <div class="hero__png">
-        <img class="hero__png__img" src="imagenes/team.png" alt="">
-      </div>     
-  
     </div>
-  </section>
+
+    <div class="services-container">
+        <img src="/imagenes/Servicios.png" alt="">
+        <p>Nuestros servicios</p>
+        <img class="services-img2"src="/imagenes/Servicios-hover.png" alt="">
+    </div>
+
+    <h3>¿Qué tecnologías aplicamos?</h3>
+
+    <div class="logo-slider">
+        <ul>
+            <li><a href=""><span class="iconify" data-icon="logos:postgresql" data-width="80" data-height="80"></span></a></li>
+            <li><a href=""><span class="iconify" data-icon="logos:aws" data-width="80"></span></a></li>
+            <li><a href=""><span class="iconify" data-icon="logos:digital-ocean" data-width="80" data-height="80"></span></a></li>
+            <li><a href=""><span class="iconify" data-icon="logos:whatsapp" data-width="80" data-height="80"></span></a></li>
+            <li><a href=""><span class="iconify" data-icon="logos:python" data-width="80" data-height="80"></span></a></li>
+        </ul>
+    </div>
+</section>
 
   <!-----------FOOTER------------------>
-<footer class="footer">
+<footer class="footer-products">
   <div class="footer-logo">
-      <img class="footer-img" src="imagenes/onesearch.png" alt="">
+      <img class="footer-img" src="imagenes/onesearch2.png" alt="">
   </div>
 
   <div class="footer-div">
@@ -128,9 +122,12 @@
       <li class="footer-items footer-items2"><a href="#">Términos y condiciones</a></li>
     </ul>
 
+    <hr class="solid">
+
     <h5 class="footer-div-rights"> ©2021 onesearch All Rights reserved</h5>
 
   </div>
+  
   <div class="nav-bx">
     <a href=""><h6 class="nav-bx-text">Hola! Soy tu asistente virtual</h6></a>
     <a href="#"><img class='icon-whatsapp' src="imagenes/whatsappChat.png"></a>
@@ -139,6 +136,12 @@
 
 
 <script src="navbar.js"></script> 
+<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+<script> 
+  let services = document.getElemntbyClass("services-container");
+  services.addEventListener("click",()=> {services.classList.toggle("active")});
+</script>
 
 </body>
 </html>
