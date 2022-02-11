@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 5rem 6rem 0;
     
     .bg-image{
         position: absolute; /*Aca esta el problema*/
@@ -96,7 +96,7 @@
         }
         .container__landing{
             width: 100%;
-            margin: 0 auto;
+            margin: 50px auto;
             &__section{
                 margin: 2rem auto;
                 &__p{
@@ -119,7 +119,9 @@
             }
         }
         .container__landing__img{
-            width: 14rem;
+            width: 16rem;
+            z-index: -1;
+            margin-top: 5rem;
             &__png{
                 
             }

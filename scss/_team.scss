@@ -17,7 +17,7 @@
         font-size: 4rem;
         color: #eee;
         width: 100%;
-        margin-top: 7rem;
+        margin-top: 6rem;
         font-weight: 600;
         line-height: 1.25rem;
         
@@ -90,7 +90,7 @@
             }
         &__team{
             flex-direction: column;
-            margin-top: 2rem;
+            margin-top: 7rem;
             &__flex{
                 
                 &__div{
@@ -102,8 +102,13 @@
                         margin: 0 auto;
                     }
                     .hero__team__sec{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                         .hero__team__title{
-                            
+                            margin-top: 1rem;
+                            font-size: 1.7rem;
                         }
                         .hero__team__subtitle{
                         
