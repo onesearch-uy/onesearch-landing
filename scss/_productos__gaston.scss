@@ -1,0 +1,84 @@
+.tarjeta{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    transform: rotateY(0deg);
+    transition:.3s ease all;
+    transform-style: preserve-3d;
+    margin-top: 12rem;
+    .first__image__txt{
+        color: #fff;
+        font-size: 3rem;
+        position: absolute;
+        z-index: 6;
+        font-family: $font-family-1;
+        line-height: 3.125rem;
+        font-weight: 600;
+        transition: .2s;
+    }
+    
+    .first__image,
+    .second__image{
+        width: 64.375rem;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+    .first__image{
+        
+        position: absolute;
+        
+    }
+    .second__image{
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+    }
+    
+}
+
+.tarjeta.active{
+    transform: rotateY(180deg);
+    .first__image__txt{
+        transition: .1s;
+        z-index: 0;
+    }
+}
+
+/*
+.tarjeta{
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    transform: rotateY(0deg);
+    transition:.3s ease all;
+    transform-style: preserve-3d;
+}
+
+
+.first__image,
+.second__image{
+    width: 64.375rem;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.first__image{
+    border: 2px solid blue;
+    
+    position: absolute;
+}
+
+.second__image{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.tarjeta.active{
+    transform: rotateY(180deg);
+}
+*/

@@ -1,8 +1,12 @@
 
+
 .navbar{
     width: 100%;
-    
+    height: 72px;
     background-color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(37, 37, 37, 0.1);
+    position: fixed;
+    top: 0;
     &-brand{
         .navbar-item{
             .navbar-item-img{
@@ -24,10 +28,11 @@
         .navbar-start{
             left: 3.688rem;
             .navbar-item{
+                font-family: $font-family-inter!important;
                 transition: .8s;
                 color: $color-principal;
                 font-size: $font-size-li;
-                font-weight: bold;
+                font-weight: 500;
                 
             }
             .navbar-item::after{
@@ -37,7 +42,7 @@
                 height: 3px;
                 width: 0;
                 left: 12px;
-                bottom: 17px;
+                bottom: 24px;
                 transition: .4s;
             }
             .navbar-item:hover::after{
@@ -53,7 +58,7 @@
                 
                 /* border: 2px solid red; */
                 /* margin: 0 -20rem; */
-                margin-right: 18rem;
+                margin-right: 6rem;
                 &__header{
                     width: 13.625rem;
                     top: 1.063rem;
@@ -62,28 +67,45 @@
         }
         .navbar-end{
             .navbar-item{
+                
+                
+                margin-right: 10.313rem;
                 .buttons{
-                    .button{
-                        background-color: #e3edff;
+                    position: relative;
+                    
+                    
+                    .buttonn{
                         font-size: $font-size-li;
-                        transition: .4s;
+                        background-color: #e3edff;
                         color: $color-principal;
-                        line-height: 1.25rem;
-                        font-weight: 400;
+                        font-weight: 500;
                         height: 2.5rem;
-                        border-radius: 6px;
-                        right: 10.313rem;
                         width: 8.063rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: $font-family-inter!important;
+                        border-radius: 6px;
+                        transition: .4s;
+                        right: 10.313rem;
+                        padding: 10px 20px;
+                        line-height: 1.25rem;
+                        
+                        /*
+                        */
                     }
-                    .button:hover{
+                    .buttonn:hover{
                         background-color: #062F86;
                         box-shadow: $btn-boxShadow;
                         color: $text-main;
                     }
-                        .is-blue{
+                        .is-blue-btn{
                             color: #fff;
                             background-color: #062F86;
                             box-shadow: $btn-boxShadow;
+                            font-family: $font-family-inter!important;
+                            width: 6rem;
+                            margin-left: 1rem;
                         }
                     &:hover{
                         
@@ -100,9 +122,12 @@
 
 @media (max-width: 768px) {
     .navbar{
-        
+        height: 50px;
         padding: 0 0rem;
         &-brand{
+            .navbar-burger{
+                width: 7.25rem!important;
+            }
             .navbar-item{
                 .navbar-item-img{
                     display: inline-flex;
@@ -122,9 +147,15 @@
         &-menu{
             margin: 0;
             .navbar-start{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 .navbar-item{
                     
                 }
+                .navbar-item:hover::after{
+                    width: 0%;
+                }    
                 &-item:hover{
                 
                 }
@@ -140,6 +171,7 @@
                 display: flex;
                 justify-content: center;
                 .navbar-item{
+                    margin-right: 0;
                     .buttons{
                         .button{
                             
