@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="imagenes/OjoOneSearch.png">
     <link rel="stylesheet" href="css/style.css">
-
+    
     <!--Link a fuentes de Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,68 +54,72 @@
         <div class="navbar-end">
           <div class="navbar-item">
               <div class="buttons">
-                <a class="button "><strong>Iniciar sesión</strong></a>
-                <a class="button is-blue">Registro</a>
-            </div>
+
+                <a class="buttonn">Iniciar Sesión</a>
+                <a class="buttonn is-blue-btn">Registro</a>
+              </div>
+
           </div>
         </div>
       </div>
   </nav>
+
   
 <!-----------NAVBAR-END------------->
 
 <!-----------SECTION----------------->
 
 <section class="container is-fluid" id="products">
-    <h2>¿Qué ofrecemos?</h2>
+  <h2>¿Qué ofrecemos?</h2>
 
-    <p>
-        OneSearch Uy desarrolla soluciones tecnológicas para diferentes actores de la sociedad teniendo en cuenta las particularidades y necesidades de cada uno. 
-        <br>Para nosotros una herramienta exitosa es la que logra pasar la barrera de lo exclusivo y democratiza su acceso.
-        <br><strong>Bienvenidos a OneSearch, tu asistente virtual.</strong>
-    </p>
+  <p>
+      OneSearch Uy desarrolla soluciones tecnológicas para diferentes actores de la sociedad teniendo en cuenta las particularidades y necesidades de cada uno. 
+      <br>Para nosotros una herramienta exitosa es la que logra pasar la barrera de lo exclusivo y democratiza su acceso.
+      <br><strong>Bienvenidos a OneSearch, tu asistente virtual.</strong>
+  </p>
 
-    <div class="benefits-container">
+  <div class="benefits-container">
 
-        <div class="benefit-item-1">
-            <img src="/imagenes/Beneficios1.png" alt="">
-            <p>Facilita tu ejercicio profesional</p>
-        </div>
+      <div class="benefit-item-1">
+          <img src="imagenes/Beneficios1.png" alt="">
+          <p>Facilita tu ejercicio profesional</p>
+      </div>
 
-        <div class="benefit-item-2">
-            <img src="/imagenes/Beneficios2.png" alt="">
-            <p>Nueva alianza para brindar soluciones</p>
-        </div>
+      <div class="benefit-item-2">
+          <img src="imagenes/Beneficios2.png" alt="">
+          <p>Nueva alianza para brindar soluciones</p>
+      </div>
 
-    </div>
+  </div>
 
-    <div class="services-container">
-        <img src="/imagenes/Servicios.png" alt="">
-        <p>Nuestros servicios</p>
-        <img class="services-img2"src="/imagenes/Servicios-hover.png" alt="">
-    </div>
+  <div class="services-container">
+      <img src="imagenes/Servicios.png" alt="">
+      <p>Nuestros servicios</p>
+      <img class="services-img2"src="imagenes/Servicios-hover.png" alt="">
+  </div>
 
-    <h3>¿Qué tecnologías aplicamos?</h3>
+  <h3>¿Qué tecnologías aplicamos?</h3>
 
-    <div class="logo-slider">
-        <ul>
-            <li><a href=""><span class="iconify" data-icon="logos:postgresql" data-width="80" data-height="80"></span></a></li>
-            <li><a href=""><span class="iconify" data-icon="logos:aws" data-width="80"></span></a></li>
-            <li><a href=""><span class="iconify" data-icon="logos:digital-ocean" data-width="80" data-height="80"></span></a></li>
-            <li><a href=""><span class="iconify" data-icon="logos:whatsapp" data-width="80" data-height="80"></span></a></li>
-            <li><a href=""><span class="iconify" data-icon="logos:python" data-width="80" data-height="80"></span></a></li>
-        </ul>
-    </div>
+  <div class="logo-slider">
+      <ul>
+          <li><a href=""><span class="iconify" data-icon="logos:postgresql" data-width="80" data-height="80"></span></a></li>
+          <li><a href=""><span class="iconify" data-icon="logos:aws" data-width="80"></span></a></li>
+          <li><a href=""><span class="iconify" data-icon="logos:digital-ocean" data-width="80" data-height="80"></span></a></li>
+          <li><a href=""><span class="iconify" data-icon="logos:whatsapp" data-width="80" data-height="80"></span></a></li>
+          <li><a href=""><span class="iconify" data-icon="logos:python" data-width="80" data-height="80"></span></a></li>
+      </ul>
+  </div>
 </section>
 
+
   <!-----------FOOTER------------------>
-<footer class="footer-products">
+<footer class="footer footer-products" >
   <div class="footer-logo">
       <img class="footer-img" src="imagenes/onesearch2.png" alt="">
   </div>
 
-  <div class="footer-div">
-    <ul class="footer-div-item">
+  <div class="footer-div footer-div2">
+    <ul class="footer-div-item footer-div-item2">
       <li class="footer-items footer-items2"><a  href="#">¿Qué es One Search?</a></li>
       <li class="footer-items footer-items2"><a href="#">Nuestro Equipo</a></li>
       <li class="footer-items footer-items2"><a href="#">Contacto</a></li>
@@ -137,9 +141,10 @@
 
 <script src="navbar.js"></script> 
 <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+<script src="tarjeta.js"></script>
 
 <script> 
-  let services = document.getElemntbyClass("services-container");
+  let services = document.getElementbyClass("services-container");
   services.addEventListener("click",()=> {services.classList.toggle("active")});
 </script>
 

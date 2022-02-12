@@ -298,77 +298,6 @@
         height: 80px;
         box-sizing: border-box; }
 
-.tarjeta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: rotateY(0deg);
-  transition: .3s ease all;
-  transform-style: preserve-3d;
-  margin-top: 12rem; }
-  .tarjeta .first__image__txt {
-    color: #fff;
-    font-size: 3rem;
-    position: absolute;
-    z-index: 6;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    line-height: 3.125rem;
-    font-weight: 600;
-    transition: .2s; }
-  .tarjeta .first__image,
-  .tarjeta .second__image {
-    width: 64.375rem;
-    cursor: pointer;
-    border-radius: 6px; }
-  .tarjeta .first__image {
-    position: absolute; }
-  .tarjeta .second__image {
-    transform: rotateY(180deg);
-    backface-visibility: hidden; }
-
-.tarjeta.active {
-  transform: rotateY(180deg); }
-  .tarjeta.active .first__image__txt {
-    transition: .1s;
-    z-index: 0; }
-
-/*
-.tarjeta{
-    width: 100;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid red;
-    transform: rotateY(0deg);
-    transition:.3s ease all;
-    transform-style: preserve-3d;
-}
-
-
-.first__image,
-.second__image{
-    width: 64.375rem;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-.first__image{
-    border: 2px solid blue;
-    
-    position: absolute;
-}
-
-.second__image{
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-}
-
-.tarjeta.active{
-    transform: rotateY(180deg);
-}
-*/
 #clients {
   display: flex;
   flex-direction: column;
@@ -393,29 +322,32 @@
     flex-direction: column;
     align-items: center;
     margin-top: 153px; }
-    #clients .companies-container h3 {
-      font-family: "Barlow Semi Condensed", sans-serif;
-      font-size: 2.67rem;
-      color: #062F86; }
-    #clients .companies-container .companies-list {
-      margin-top: 17px; }
-      #clients .companies-container .companies-list p {
-        color: #0C1444;
-        font-family: "Inter", sans-serif;
-        font-size: 1rem;
-        text-align: center; }
-      #clients .companies-container .companies-list img {
-        margin-top: 35px; }
+  #clients h3 {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 2.67rem;
+    color: #062F86; }
+  #clients .companies-list {
+    margin-top: 17px; }
+    #clients .companies-list p {
+      color: #0C1444;
+      font-family: "Inter", sans-serif;
+      font-size: 1rem;
+      text-align: center; }
+    #clients .companies-list img {
+      margin-top: 35px; }
 
 .contact-container {
   margin-top: 28px;
-  background: url(../../imagenes/bg-contact.png);
+  background: url(".../imagenes/bg-contact.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 588px; }
+  align-items: center; }
+  .contact-container .contact-image {
+    width: 100%;
+    z-index: -10;
+    position: absolute; }
   .contact-container h3 {
     margin-top: 68px;
     text-align: center;
@@ -650,7 +582,7 @@
   width: 100%;
   position: relative;
   top: 497px;
-  background: url(../../imagenes/image.png);
+  background: linear-gradient(to left, #1C2386, #32528C);
   background-repeat: no-repeat;
   background-size: cover; }
   @media screen and (max-width: 768px) {
