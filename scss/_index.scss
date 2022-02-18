@@ -96,9 +96,9 @@
         }
         .container__landing{
             width: 100%;
-            margin: 50px auto;
+            margin: 3rem auto 0;
             &__section{
-                margin: 2rem auto;
+                margin: 2rem auto 1rem;
                 &__p{
                     color: #eee;
                     margin: 0rem 0.4rem;
@@ -117,11 +117,15 @@
                 box-shadow: $btn-boxShadow;
                 
             }
+            .buton{
+                height: 2rem;
+                width: 5.063rem;
+            }
         }
         .container__landing__img{
-            width: 16rem;
+            width: 20rem;
             z-index: -1;
-            margin-top: 5rem;
+            /*margin-top: 5rem;*/
             &__png{
                 
             }
