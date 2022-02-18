@@ -119,7 +119,7 @@
                     margin-bottom: -55px;
                 }
                 .credits-link{
-                    padding: 12px 64px;
+                    padding: 0.75rem 4rem;
                     border: 2px solid #062F86;
                     border-radius: 6px;
                     transition: .4s;
@@ -136,10 +136,10 @@
     }
 
 
-    @media (max-width: 768px) {
+    @media (max-width: 768px){
         .section-credits{
             .bg-image{
-                height: 355vh;
+                height: 180vh;
             }
             .credits{
                 .credits-title{
@@ -151,9 +151,39 @@
                 }
                 .render{
                     .credits-card{
-                        margin: 1.3rem 2rem;
+                        margin: 1.3rem 1rem;
+                        width: 11rem;
+                        .credit-card-title{
+                            font-size: 2rem;
+                        }
+                        .credits-link{
+                            padding: 0.75rem 2rem;
+                        }
                     }
                 }
             }
         }
     }
+
+
+    @media (max-width: 425px){
+        .section-credits{
+            .bg-image{
+                height: 360vh;
+            }
+            .credits{
+            
+                .render{
+                    .credits-card{
+                        .credit-card-title{
+                            
+                        }
+                        .credits-link{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
