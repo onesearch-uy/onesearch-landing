@@ -522,8 +522,8 @@
       line-height: 1.625rem;
       margin: 2rem 2rem 0; }
     .section--responsive--credits .swiper {
-      width: 200px;
-      height: 253px;
+      width: 60%;
+      height: 50%;
       top: 0;
       display: flex; }
       .section--responsive--credits .swiper .swiper-wrapper .swiper-slide {
