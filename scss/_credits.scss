@@ -153,11 +153,11 @@
 
         .section--responsive--credits{
             background-image: url("../scss/Fondo2.png");
-            height: 100vh;
-            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
+            height: 100vh;
             padding-bottom: 1.1rem;
             .credits-title-responsive{
                 font-size: 1.4rem;
