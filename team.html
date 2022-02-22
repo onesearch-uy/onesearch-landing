@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="imagenes/OjoOneSearch.png">
     <link rel="stylesheet" href="css/style.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Link a fuentes de Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,7 +74,7 @@
     <h2 class="hero__title">Nuestro equipo</h2>
     <div class="hero__team">
 
-      <div class="hero__team__flex">
+      <div class="hero__team__flex" data-aos="fade-right">
 
         <div class="hero__team__flex__div">
           <img class="hero__img" src="imagenes/team1.png" alt="">
@@ -107,7 +107,7 @@
         <!-------->
       </div>
             
-      <div class="hero__png">
+      <div class="hero__png" data-aos="flip-right">
         <img class="hero__png__img" src="imagenes/team.png" alt="">
       </div>     
   
@@ -139,6 +139,9 @@
 
 
 <script src="navbar.js"></script> 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

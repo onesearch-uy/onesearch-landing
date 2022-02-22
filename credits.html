@@ -10,6 +10,7 @@
     <link rel="icon" href="imagenes/OjoOneSearch.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Link a fuentes de Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,7 +71,7 @@
             <h2 class="credits-title">Consigue créditos</h2>
             <h5 class="credits-subtitle">Explicación de qué son los créditos, para qué sirven y recordar al usuario que los créditos vencen tras 30 días después de su adquisición.</h5>
             
-            <div class="render">
+            <div class="render" data-aos="zoom-in">
 
                 <div class="credits-card">
                   <h3 class="credit-best-sell">¡El más vendido!</h3>
@@ -201,11 +202,17 @@
 
 <script src="navbar.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   var swiper = new Swiper(".mySwiper", {
     effect: "cards",
     grabCursor: true,
   });
 </script>
+
+<script>
+    AOS.init();
+</script>
+
 </body>
 </html>
