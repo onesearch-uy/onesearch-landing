@@ -15,7 +15,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 6rem 0; }
+  padding: 5rem 6rem 0;
+  background-size: cover; }
   .container__land .bg-image {
     position: absolute;
     /*Aca esta el problema*/
@@ -124,12 +125,13 @@
     font-size: 4rem;
     color: #eee;
     width: 100%;
+    margin-top: 7rem;
     font-weight: 600;
     line-height: 1.25rem; }
   .hero__team {
     display: flex;
     width: 100%;
-    margin-top: 11rem; }
+    margin-top: 4rem; }
     .hero__team__flex {
       flex-direction: column; }
       .hero__team__flex__div {
@@ -615,9 +617,8 @@
           color: #062F86;
           font-weight: 600;
           line-height: 20px;
-          font-size: 2.25rem;
-          text-transform: uppercase;
-          margin-top: 2rem; }
+          font-size: 1.5rem;
+          text-transform: uppercase; }
         .section--responsive--credits .swiper .swiper-wrapper .swiper-slide .credits-card-price {
           font-family: "Inter", sans-serif;
           font-weight: 300;
@@ -637,9 +638,8 @@
         .section--responsive--credits .swiper .swiper-wrapper .swiper-slide .credit-best-sell {
           height: 3.2rem;
           width: 0.1rem;
-          position: absolute;
           padding: 0 70px;
-          margin-top: -12.688rem;
+          margin-top: -1.4rem;
           background: linear-gradient(105.36deg, #A23131 2.47%, #FF9E2D 129.48%);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 6px;
@@ -654,9 +654,8 @@
         .section--responsive--credits .swiper .swiper-wrapper .swiper-slide .credit-best-value {
           height: 3.2rem;
           width: 0.1rem;
-          position: absolute;
           padding: 0 70px;
-          margin-top: -12.688rem;
+          margin-top: -1.4rem;
           background: linear-gradient(105.36deg, #0080FF 2.47%, #74E462 129.48%);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           border-radius: 6px;
