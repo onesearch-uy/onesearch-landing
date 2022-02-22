@@ -192,7 +192,7 @@
                             flex-direction: column;
                             background-color: #eee;
                             .credit-card-title{
-                                font-family-inter: 'Inter', sans-serif!important;
+                                font-family: $font-family-inter!important;
                                 color: #062F86;
                                 font-weight: 600;
                                 line-height: 20px;
@@ -201,7 +201,7 @@
                                 margin-top: 2rem;
                             }
                             .credits-card-price{
-                                font-family-inter: 'Inter', sans-serif;
+                                font-family: $font-family-inter;
                                 font-weight: 300;
                                 font-style: normal;
                                 font-size: 1.75rem;
