@@ -1,6 +1,9 @@
 .hero{
     width: 100%;
     /*background:  $background-color; */
+    background-image: url("../scss/Fondo2.png");
+    background-repeat: no-repeat;
+    
     .bg-image{
         height: 50rem;
         
@@ -12,19 +15,19 @@
     
     &__title{
         font-family: $font-family-1;
-        position: absolute;
+        
         text-align: center;
         font-size: 4rem;
         color: #eee;
         width: 100%;
-        margin-top: 6rem;
+        
         font-weight: 600;
         line-height: 1.25rem;
         
         }
         &__team{
             display: flex;
-            position: absolute;
+            
             width: 100%;
             margin-top:11rem;
         &__flex{
@@ -82,15 +85,17 @@
 
 @media (max-width: 768px)  {
     .hero{
+        background-size: cover;
         .bg-image{
             height: 75rem;
         }
         &__title{
             font-size: 2rem;
+            margin-top: 5rem;
             }
         &__team{
             flex-direction: column;
-            margin-top: 7rem;
+            margin-top: 0;
             &__flex{
                 
                 &__div{
@@ -111,16 +116,15 @@
                             font-size: 1.7rem;
                         }
                         .hero__team__subtitle{
-                        
                             }
                     }
                     }
             }
         }
         .hero__png{
-            margin: 2rem auto;
+            margin: 0 auto;
             &__img{
-                width: 19.797rem;
+                width: 18.797rem;
             }
         }
     

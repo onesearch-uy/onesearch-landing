@@ -4,6 +4,7 @@
 .container__land{
     height: 100vh;
     width: 100%;
+    background-image: url("../scss/Fondo2.png");
     
     display: flex;
     justify-content: space-between;
@@ -34,6 +35,7 @@
                 line-height: 2rem;
                 font-size: $font-size-p;
                 font-weight: 400;
+                text-align: justify;
             }
         }
         .buton{
@@ -91,6 +93,7 @@
         width: 100%;
         height: 100%;
         padding: 0 1rem;
+        background-size: cover;
         .bg-image{
             height: 100vh;
         }
@@ -123,8 +126,9 @@
             }
         }
         .container__landing__img{
-            width: 20rem;
-            z-index: -1;
+            width: 17rem;
+            margin-top: 5rem;
+            
             /*margin-top: 5rem;*/
             &__png{
                 
