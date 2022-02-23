@@ -2,36 +2,38 @@
 
 
 .container__land{
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     background-image: url("../scss/Fondo2.png");
     background-repeat: round;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 6rem 0;
+    /*padding: 5rem 6rem 0;*/
     background-size: cover;
-    .bg-image{
-        position: absolute; /*Aca esta el problema*/
+    padding-right: 3.125rem;
+    /*.bg-image{
+        position: absolute;
         width: 100%;
         z-index: -1;
         margin: 0;
         left: 0;
         bottom: 0;
         background-size: contain;
-    }
+    }*/
     .container__landing{
         width: 33.75rem;
         /*margin: 3rem;*/
         left: 10.313rem;
         height: 17rem;
-        top: 20.75;
+        /*top: 20.75rem;*/
         
         &__section{
+            /*margin-top: 3.25rem;*/
             &__p{
                 font-family: $font-family-inter;
                 color: $text-main;
-                margin: 2rem auto;
+                margin: 1rem auto;
                 line-height: 2rem;
                 font-size: $font-size-p;
                 font-weight: 400;
@@ -76,8 +78,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 36.433rem;
+        /*margin-top: 6.875rem;*/
+        
+        /*margin-right: 3.125rem;*/
         &__png{
-            width: 36.433rem;
             transition: .4s;
         }
         }
