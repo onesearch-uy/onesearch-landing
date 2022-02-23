@@ -125,6 +125,7 @@
         width: 100%;
         height: 50px;
         padding: 0 0rem;
+        min-height: 0!important;
         &-brand{
             .navbar-burger{
                 width: 7.25rem!important;
@@ -191,5 +192,13 @@
                 }
             }
         }
+    }
+}
+
+
+
+@media (max-width: 425px) {
+    .navbar{
+        min-height: 0!important;
     }
 }

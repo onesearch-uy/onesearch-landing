@@ -83,7 +83,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 0 1rem;
+    padding: 0 4rem;
     background-size: cover; }
     .container__land .bg-image {
       height: 100vh; }
@@ -109,9 +109,22 @@
         height: 2rem;
         width: 5.063rem; }
     .container__land .container__landing__img {
-      width: 17rem;
+      width: 28rem;
+      margin-top: -6rem; } }
+
+@media (max-width: 425px) {
+  .container__land {
+    padding: 0 1rem; }
+    .container__land .container__landing__img {
       margin-top: 5rem;
-      /*margin-top: 5rem;*/ } }
+      width: 17rem; } }
+
+@media (min-width: 2000px) {
+  .container__land {
+    height: 100vh; }
+    .container__land .container__landing {
+      width: 80%;
+      margin: 0 8rem; } }
 
 .hero {
   width: 100%;
@@ -456,21 +469,14 @@
 
 .section-credits {
   width: 100%;
-  height: 150vh;
   background-image: url("../scss/Fondo2.png");
   background-size: cover; }
-  .section-credits .bg-image {
-    width: 100%;
-    height: 160vh;
-    background-size: cover;
-    z-index: -1; }
   .section-credits .credits {
     top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100vh; }
+    width: 100%; }
     .section-credits .credits .credits-title {
       font-family: "Barlow Semi Condensed", sans-serif;
       font-size: 4rem;
@@ -602,8 +608,8 @@
       line-height: 1.625rem;
       margin: 2rem 2rem 0; }
     .section--responsive--credits .swiper {
-      width: 60%;
-      height: 50%;
+      width: 50%;
+      height: 45%;
       top: 0;
       display: flex; }
       .section--responsive--credits .swiper .swiper-wrapper .swiper-slide {
@@ -623,7 +629,8 @@
           font-weight: 600;
           line-height: 20px;
           font-size: 1.5rem;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          margin-top: 2.7rem; }
         .section--responsive--credits .swiper .swiper-wrapper .swiper-slide .credits-card-price {
           font-family: "Inter", sans-serif;
           font-weight: 300;
@@ -650,6 +657,8 @@
           border-radius: 6px;
           color: #fff;
           font-size: 1.125rem;
+          position: absolute;
+          margin-top: -11.4rem;
           /*font-weight: 700;*/
           font-style: normal;
           font-family: "Inter", sans-serif;
@@ -671,7 +680,9 @@
           font-family: "Inter", sans-serif;
           display: flex;
           justify-content: center;
-          align-items: center; }
+          align-items: center;
+          position: absolute;
+          margin-top: -11.4rem; }
         .section--responsive--credits .swiper .swiper-wrapper .swiper-slide .credits-card-sub {
           font-family: "Inter", sans-serif;
           font-weight: 300;
@@ -705,13 +716,13 @@
 }
 */
 @media (max-width: 768px) {
-  .section-credits {
-    height: 130vh; }
-    .section-credits .credits .render {
-      width: 100%; }
-      .section-credits .credits .render .credits-card {
-        width: 12.938rem;
-        margin: 1rem; } }
+  .section-credits .credits .credits-subtitle {
+    margin: 0 2rem; }
+  .section-credits .credits .render {
+    width: 100%; }
+    .section-credits .credits .render .credits-card {
+      width: 12.938rem;
+      margin: 1rem; } }
 
 .navbar {
   width: 100%;
@@ -797,7 +808,8 @@
   .navbar {
     width: 100%;
     height: 50px;
-    padding: 0 0rem; }
+    padding: 0 0rem;
+    min-height: 0 !important; }
     .navbar-brand .navbar-burger {
       width: 7.25rem !important; }
     .navbar-brand .navbar-item .navbar-item-img {
@@ -826,6 +838,10 @@
         justify-content: center; }
         .navbar-menu .navbar-end .navbar-item {
           margin-right: 0; } }
+
+@media (max-width: 425px) {
+  .navbar {
+    min-height: 0 !important; } }
 
 .footer {
   display: flex;

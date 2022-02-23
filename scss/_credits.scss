@@ -1,15 +1,9 @@
 .section-credits{
     width: 100%;
-    height: 150vh;
+    
     background-image: url("../scss/Fondo2.png");
     background-size: cover;
-    .bg-image{
-        width: 100%;
-        height: 160vh;
-        background-size: cover;
-        z-index: -1;
-        
-    }
+    
     .credits{
         
         top: 0;
@@ -17,7 +11,7 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        
         
         .credits-title{
             font-family: $font-family-1;
@@ -175,8 +169,8 @@
                 margin: 2rem 2rem 0;
             }
                 .swiper{
-                    width: 60%;
-                    height: 50%;
+                    width: 50%;
+                    height: 45%;
                     top: 0;
                     display: flex;
                     .swiper-wrapper{
@@ -198,7 +192,7 @@
                                 line-height: 20px;
                                 font-size: 1.5rem;
                                 text-transform: uppercase;
-                                
+                                margin-top: 2.7rem;
                             }
                             .credits-card-price{
                                 font-family: $font-family-inter;
@@ -228,6 +222,8 @@
                                 border-radius: 6px;
                                 color: #fff;
                                 font-size: 1.125rem;
+                                position: absolute;
+                                margin-top: -11.4rem;
                                 /*font-weight: 700;*/
                                 
                                 font-style: normal;
@@ -254,6 +250,8 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
+                                position: absolute;
+                                margin-top: -11.4rem;
                             }
                             .credits-card-sub{
                                 font-family: $font-family-inter;
@@ -301,8 +299,11 @@
 
 @media (max-width: 768px) {
     .section-credits{
-        height: 130vh;
+        
         .credits{
+            .credits-subtitle{
+                margin: 0 2rem;
+            }
             .render{
                 width: 100%;
                 .credits-card{
