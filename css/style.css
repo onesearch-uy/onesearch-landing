@@ -488,7 +488,8 @@
       font-weight: 400;
       font-size: 1.125rem;
       color: #FCFCFF;
-      line-height: 1.625rem; }
+      line-height: 1.625rem;
+      text-align: justify; }
     .section-credits .credits .render {
       display: flex;
       justify-content: center;
@@ -595,22 +596,22 @@
     width: 100%;
     padding-bottom: 1.1rem; }
     .section--responsive--credits .credits-title-responsive {
-      font-size: 1.5rem;
-      margin-top: 4rem;
+      font-size: 2.5rem;
+      margin-top: 6rem;
       color: #fff;
       font-family: "Barlow Semi Condensed", sans-serif;
       font-weight: 500; }
     .section--responsive--credits .credits-subtitle-responsive {
       font-family: "Inter", sans-serif;
       font-weight: 400;
-      font-size: 0.8rem;
+      font-size: 1rem;
       color: #FCFCFF;
       line-height: 1.625rem;
-      margin: 2rem 2rem 0; }
+      margin: 3rem 1rem 0; }
     .section--responsive--credits .swiper {
       width: 50%;
-      height: 45%;
-      top: 0;
+      height: 38%;
+      top: 3em;
       display: flex; }
       .section--responsive--credits .swiper .swiper-wrapper .swiper-slide {
         margin-top: 2rem;
@@ -811,7 +812,8 @@
     padding: 0 0rem;
     min-height: 0 !important; }
     .navbar-brand .navbar-burger {
-      width: 7.25rem !important; }
+      width: 7.25rem !important;
+      margin-left: 1rem; }
     .navbar-brand .navbar-item .navbar-item-img {
       display: inline-flex; }
     .navbar-brand .whats__btn {
@@ -822,7 +824,7 @@
         margin-right: 0;
         display: inline-flex; }
     .navbar-menu {
-      margin: 0; }
+      margin: -2px; }
       .navbar-menu .navbar-start {
         display: flex;
         flex-direction: column;
