@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="imagenes/OjoOneSearch.png">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!--Link a fuentes de Google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="imagenes/OjoOneSearch.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>Products</title>
+  <!--Link a fuentes de Google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter&display=swap" rel="stylesheet">
+
+  <!--Link a Slick carousel-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Products</title>
 </head>
 
 
@@ -58,12 +63,12 @@
                 <a class="buttonn">Iniciar Sesión</a>
                 <a class="buttonn is-blue-btn">Registro</a>
               </div>
+
           </div>
         </div>
       </div>
   </nav>
 
-  
   <!-----------NAVBAR-END------------->
 
   <!-----------SECTION----------------->
@@ -98,53 +103,56 @@
 
     <h3>¿Qué tecnologías aplicamos?</h3>
 
-    <div class="logo-slider">
-      <ul>
-        <li><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="color: #dae9f4;" data-width="80" data-height="80"></span></li>
-        <li><span class="iconify" data-icon="logos:postgresql" data-width="80" data-height="80"></span></li>
-        <li><span class="iconify" data-icon="logos:aws" data-width="80"></span></li>
-        <li><span class="iconify" data-icon="logos:digital-ocean" data-width="80" data-height="80"></span></li>
-        <li><span class="iconify" data-icon="logos:whatsapp" data-width="80" data-height="80"></span></li>
-        <li><span class="iconify" data-icon="logos:python" data-width="80" data-height="80"></span></li>
-        <li><span class="iconify" data-icon="dashicons:arrow-right-alt2" style="color: #dae9f4;" data-width="80" data-height="80"></span></li>
-      </ul>
+    <div class="wrapper">
+      <img class="prev"src="imagenes/arrowLeft.png" alt="">
+      <div class="carousel">
+          <div class="item"><img src="imagenes/logos_python.png"></div>
+          <div class="item"><img src="imagenes/logos_aws.png"></div>
+          <div class="item"><img src="imagenes/logos_postgresql.png"></div>
+          <div class="item"><img src="imagenes/logos_digital-ocean.png"></div>
+          <div class="item"><img src="imagenes/logos_whatsapp.png"></div>
+      </div>
+      <img class="next"src="imagenes/arrowRight.png" alt="">     
     </div>
+
   </section>
 
 
   <!-----------FOOTER----------------->
   <footer class="footer">
     <div class="footer-logo">
-      <img class="footer-img" src="imagenes/onesearch.png" alt="">
+        <img class="footer-img" src="imagenes/onesearch.png" alt="">
     </div>
-
+  
     <div class="footer-div">
       <ul class="footer-div-item">
-        <li class="footer-items footer-items2"><a href="#">¿Qué es One Search?</a></li>
+        <li class="footer-items footer-items2"><a  href="#">¿Qué es One Search?</a></li>
         <li class="footer-items footer-items2"><a href="#">Nuestro Equipo</a></li>
         <li class="footer-items footer-items2"><a href="#">Contacto</a></li>
         <li class="footer-items footer-items2"><a href="#">Términos y condiciones</a></li>
       </ul>
-
+  
       <h5 class="footer-div-rights"> ©2021 onesearch All Rights reserved</h5>
-
+  
     </div>
-
     <div class="nav-bx">
       <a href=""><h6 class="nav-bx-text">Hola! Soy tu asistente virtual</h6></a>
       <a href="#"><img class='icon-whatsapp' src="imagenes/whatsappChat.png"></a>
-    </div>     
+    </div>
   </footer>
 
+  <!--JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script>
+    let services = document.getElementbyClass("services-container");
+    services.addEventListener("click",()=> {services.classList.toggle("active")});
+    
+  </script>
 
-<script src="navbar.js"></script> 
-<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-<script src="tarjeta.js"></script>
-
-<script> 
-  let services = document.getElementbyClass("services-container");
-  services.addEventListener("click",()=> {services.classList.toggle("active")});
-</script>
+  <script src="navbar.js"></script>
+   
 
 </body>
 </html>
