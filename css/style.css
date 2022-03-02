@@ -368,6 +368,13 @@
   line-height: 1.25rem;
 }
 
+@media screen and (max-width: 768px) {
+  #products h2 {
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+}
+
 #products p {
   font-family: "Inter", sans-serif;
   font-size: 1.125rem;
@@ -400,38 +407,24 @@
   }
 }
 
-#products .benefits-container .benefit-item-1 {
+#products .benefits-container .benefit-item-1, #products .benefits-container .benefit-item-2 {
   margin: 0 2rem;
   position: relative;
 }
 
-#products .benefits-container .benefit-item-1 img {
-  min-width: 489px;
-  min-height: 374px;
+#products .benefits-container .benefit-item-1 img, #products .benefits-container .benefit-item-2 img {
+  min-width: 30.5rem;
+  min-height: 23.375rem;
 }
 
-#products .benefits-container .benefit-item-1 p {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 3rem;
-  color: #FFFFFF;
-  height: 150px;
-  line-height: 3.125rem;
-  position: absolute;
-  top: 5.5rem;
-  left: 1.5rem;
+@media screen and (min-width: 768px) {
+  #products .benefits-container .benefit-item-1 img, #products .benefits-container .benefit-item-2 img {
+    min-width: 24.4rem;
+    min-height: 18.7rem;
+  }
 }
 
-#products .benefits-container .benefit-item-2 {
-  margin: 0 2rem;
-  position: relative;
-}
-
-#products .benefits-container .benefit-item-2 img {
-  min-width: 489px;
-  min-height: 374px;
-}
-
-#products .benefits-container .benefit-item-2 p {
+#products .benefits-container .benefit-item-1 p, #products .benefits-container .benefit-item-2 p {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 3rem;
   color: #FFFFFF;
@@ -478,6 +471,13 @@
           transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  #products .services-container .services-img1, #products .services-container .services-img2 {
+    min-width: 60%;
+    min-height: 60%;
+  }
 }
 
 #products h3 {
@@ -1376,7 +1376,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
   margin: 0 auto;
   width: 13.625rem;
 }
@@ -1493,7 +1492,7 @@
 
 @media (max-width: 768px) {
   .footer-logo {
-    width: 82%;
+    width: 13.625rem;
   }
   .footer .footer-div {
     width: 100%;
