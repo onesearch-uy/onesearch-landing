@@ -113,37 +113,43 @@
         margin-top: 5rem;
        
     }
-    
-    .logo-slider{
+
+    .wrapper{
+        width:994px;
+        height: 188px;
+        text-align:center;
         display: flex;
         justify-content: center;
-        margin-top: 1rem;
-        margin-bottom: 5.5rem;
-        width: 73.959%;
-        height: 223px;
-       
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 9rem;
 
         background: url(../../imagenes/image.png);
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 42px 42px 82px 82px;
-        
-        ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 0px;
-            margin: 0;
-            list-style: none;
 
-            
-            li {
-                margin: 20px;
-                width: 80px;
-                height: 80px;
-                box-sizing: border-box;
-            }        
+        .carousel{
+          width:454px;
+          margin:0px auto;
+          
+          .slick-slide{
+            margin:0;
+          }
+
+          .selected{
+            filter: grayscale(100%);
+          }
+        }
+
+        .next{
+            margin-right: 5.5rem;
+        }
+
+        .prev{
+            margin-left: 5.5rem;
         }
     }
+    
+    
 }

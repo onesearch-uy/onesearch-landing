@@ -21,5 +21,8 @@
     "url": "https://github.com/gastondaruda/proyecto-os/issues"
   },
   "homepage": "https://github.com/gastondaruda/proyecto-os#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
 }

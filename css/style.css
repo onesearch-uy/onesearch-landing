@@ -487,48 +487,47 @@
   margin-top: 5rem;
 }
 
-#products .logo-slider {
+#products .wrapper {
+  width: 994px;
+  height: 188px;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 5.5rem;
-  width: 73.959%;
-  height: 223px;
-  background: url(../../imagenes/image.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 42px 42px 82px 82px;
-}
-
-#products .logo-slider ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px;
-  margin: 0;
-  list-style: none;
+  margin-top: 2rem;
+  margin-bottom: 9rem;
+  background: url(../../imagenes/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 42px 42px 82px 82px;
 }
 
-#products .logo-slider ul li {
-  margin: 20px;
-  width: 80px;
-  height: 80px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+#products .wrapper .carousel {
+  width: 454px;
+  margin: 0px auto;
+}
+
+#products .wrapper .carousel .slick-slide {
+  margin: 0;
+}
+
+#products .wrapper .carousel .selected {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+#products .wrapper .next {
+  margin-right: 5.5rem;
+}
+
+#products .wrapper .prev {
+  margin-left: 5.5rem;
 }
 
 #clients {
@@ -1417,6 +1416,10 @@
   font-family: "Inter", sans-serif;
 }
 
+.footer .footer-div .footer-div-item .footer-items .a-products {
+  color: #FFFFFF;
+}
+
 .footer .footer-div-rights {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1521,6 +1524,13 @@
     width: 9rem;
     font-size: .8rem;
   }
+}
+
+.footer-products {
+  background: -webkit-gradient(linear, right top, left top, from(#1C2386), to(#32528C));
+  background: linear-gradient(to left, #1C2386, #32528C);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer-products {
