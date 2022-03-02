@@ -1,6 +1,9 @@
 .hero{
     width: 100%;
     /*background:  $background-color; */
+    background-image: url("../scss/Fondo2.png");
+    background-repeat: round;
+    
     .bg-image{
         height: 50rem;
         
@@ -12,7 +15,7 @@
     
     &__title{
         font-family: $font-family-1;
-        position: absolute;
+        
         text-align: center;
         font-size: 4rem;
         color: #eee;
@@ -24,9 +27,9 @@
         }
         &__team{
             display: flex;
-            position: absolute;
+            
             width: 100%;
-            margin-top:11rem;
+            margin-top:4rem;
         &__flex{
             flex-direction: column;
             &__div{
@@ -44,16 +47,17 @@
                     .hero__team__title{
                         font-family: $font-family-1;
                         color: $text-main;
-                        font-size: $font-size-title;
+                        font-size: $font-size-team-title;
                         line-height: 20px;
+                        font-weight: 600;
                     }
                     .hero__team__subtitle{
+                        font-family: $font-family-inter;
                         display: flex;
                         justify-content: flex-start;
                         color: $text-secondary;
-                        font-size: $font-size-subtitle;
+                        font-size: $font-size-team-subtitle;
                         font-weight: 300;
-                        font-family: $font-family-inter;
                         margin-top: 1rem;
                         
                         }
@@ -64,7 +68,7 @@
     .hero__png{
         display: flex;
         margin: 2rem auto;
-        margin-bottom: 6rem;
+        margin-bottom: 9rem;
         justify-content: center;
         
         &__img{
@@ -81,15 +85,17 @@
 
 @media (max-width: 768px)  {
     .hero{
+        background-size: cover;
         .bg-image{
             height: 75rem;
         }
         &__title{
             font-size: 2rem;
+            margin-top: 5rem;
             }
         &__team{
             flex-direction: column;
-            margin-top: 2rem;
+            margin-top: 0;
             &__flex{
                 
                 &__div{
@@ -101,20 +107,23 @@
                         margin: 0 auto;
                     }
                     .hero__team__sec{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                         .hero__team__title{
-                            
+                            margin-top: 1rem;
+                            font-size: 1.7rem;
                         }
-                        .hero__team__subtitle{
                         
-                            }
                     }
                     }
             }
         }
         .hero__png{
-            margin: 2rem auto;
+            margin: 0 auto;
             &__img{
-                
+                width: 18.797rem;
             }
         }
     

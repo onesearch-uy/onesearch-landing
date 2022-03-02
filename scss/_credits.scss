@@ -1,0 +1,318 @@
+.section-credits{
+    width: 100%;
+    
+    background-image: url("../scss/Fondo2.png");
+    background-size: cover;
+    
+    .credits{
+        
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+        
+        .credits-title{
+            font-family: $font-family-1;
+            font-size: 4rem;
+            font-weight: 600;
+            margin-top: 5rem;
+            color: #fff;
+        }
+        .credits-subtitle{
+            font-family: $font-family-inter;
+            font-weight: 400;
+            font-size: 1.125rem;
+            color: #FCFCFF;
+            line-height: 1.625rem;
+            text-align: justify;
+        }
+        
+
+            .render{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 80%;
+                margin-top: 4rem;
+                .credits-card{
+                    width: 15.938rem;
+                    height: 17.5rem;
+                    background-color: #fff;
+                    border-radius: 6px;
+                    box-shadow: -43.2067px 55.0743px 80px rgba(0, 0, 0, 0.17), -28.0043px 35.6963px 46.8519px rgba(0, 0, 0, 0.129074), -16.6426px 21.2138px 25.4815px rgba(0, 0, 0, 0.103259), -8.64134px 11.0149px 13px rgba(0, 0, 0, 0.085), -3.52054px 4.48754px 6.51852px rgba(0, 0, 0, 0.0667407), -0.800124px 1.0199px 3.14815px rgba(0, 0, 0, 0.0409259);
+                    margin: 1rem 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    .credit-best-sell{
+                        height: 4.125rem;
+                        width: 8.625rem;
+                        position: absolute;
+                        padding: 0 70px;
+                        margin-top: -19.688rem;                   
+                        background: linear-gradient(105.36deg, #A23131 2.47%, #FF9E2D 129.48%);
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 6px;
+                        color: #fff;
+                        font-size: 1.125rem;
+                        /*font-weight: 700;*/
+                        font-style: normal;
+                        font-family: $font-family-inter;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                    }
+                    .credit-best-value{
+                        height: 4.125rem;
+                        width: 8.625rem;
+                        position: absolute;
+                        padding: 0 70px;
+                        margin-top: -17.688rem;  
+                        background: linear-gradient(105.36deg, #0080FF
+                        2.47%, #74E462 129.48%);
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 6px;
+                        color: #fff;
+                        font-size: 1.125rem;
+                        /*font-weight: 700;*/
+                        font-style: normal;
+                        font-family: $font-family-inter;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .credit-card-title{
+                        font-family: $font-family-1;
+                        font-size: 2.25rem;
+                        color: #062F86;
+                        line-height: 20px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        transition: .4s;
+                    }
+                    /*
+                    .credit-card-title:hover{
+                        cursor: pointer;
+                        text-decoration-line: underline;
+                        
+                    }
+                    */
+                    .credits-card-price{
+                        font-family: $font-family-inter;
+                        font-weight: 300;
+                        font-style: normal;
+                        font-size: 1.75rem;
+                        line-height: 20px;
+                        color: #062F86;
+
+                    }
+                    .credits-card-sub{
+                        font-family: $font-family-inter;
+                        font-weight: 300;
+                        font-size: 0.875rem;
+                        line-height: 24px;
+                        color: #000;
+                        position: absolute;
+                        margin-bottom: -55px;
+                    }
+                    .credits-link{
+                        padding: 0.75rem 4rem;
+                        border: 2px solid #062F86;
+                        border-radius: 6px;
+                        transition: .4s;
+                    }
+                    .credits-link:hover{
+                        background-color: #062F86;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        
+        }
+    }
+    .section--responsive--credits{
+        display: none;
+    }
+
+
+    @media (max-width: 425px){
+        .section-credits{
+            display: none;
+        }
+    
+
+        .section--responsive--credits{
+            background-image: url("../scss/Fondo2.png");
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            padding-bottom: 1.1rem;
+            .credits-title-responsive{
+                font-size: 2.5rem;
+                margin-top: 6rem;
+                color: #fff;
+                font-family: $font-family-1;
+                font-weight: 500;
+            }
+            .credits-subtitle-responsive{
+                font-family: $font-family-inter;
+                font-weight: 400;
+                font-size: 1rem;
+                color: #FCFCFF;
+                line-height: 1.625rem;
+                margin: 3rem 1rem 0;
+            }
+                .swiper{
+                    width: 50%;
+                    height: 38%;
+                    top: 3em;
+                    display: flex;
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            margin-top: 2rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            border-radius: 18px;
+                            font-size: 25px;
+                            font-weight: bold;
+                            color: #fff;
+                            flex-direction: column;
+                            background-color: #eee;
+                            .credit-card-title{
+                                font-family: $font-family-inter!important;
+                                color: #062F86;
+                                font-weight: 600;
+                                line-height: 20px;
+                                font-size: 1.5rem;
+                                text-transform: uppercase;
+                                margin-top: 2.7rem;
+                            }
+                            .credits-card-price{
+                                font-family: $font-family-inter;
+                                font-weight: 300;
+                                font-style: normal;
+                                font-size: 1.75rem;
+                                line-height: 20px;
+                                line-height: 20px;
+                                margin-top: 0;
+                                color: #062F86;
+                            }
+                            .credits-link{
+                                padding: 0.75rem 1rem;
+                                border: 2px solid #062F86;
+                                border-radius: 6px;
+                                transition: .4s;
+                                font-size: 1.2rem;
+                                text-decoration: none;
+                            }
+                            .credit-best-sell{
+                                height: 3.2rem;
+                                width: 0.1rem;
+                                padding: 0 70px;
+                                margin-top: -1.4rem;                   
+                                background: linear-gradient(105.36deg, #A23131 2.47%, #FF9E2D 129.48%);
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 6px;
+                                color: #fff;
+                                font-size: 1.125rem;
+                                position: absolute;
+                                margin-top: -11.4rem;
+                                /*font-weight: 700;*/
+                                
+                                font-style: normal;
+                                font-family: $font-family-inter;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .credit-best-value{
+                                height: 3.2rem;
+                                width: 0.1rem;
+                                
+                                padding: 0 70px;
+                                margin-top: -1.4rem;  
+                                background: linear-gradient(105.36deg, #0080FF
+                                2.47%, #74E462 129.48%);
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 6px;
+                                color: #fff;
+                                font-size: 1.125rem;
+                                /*font-weight: 700;*/
+                                font-style: normal;
+                                font-family: $font-family-inter;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                margin-top: -11.4rem;
+                            }
+                            .credits-card-sub{
+                                font-family: $font-family-inter;
+                                font-weight: 300;
+                                font-size: 0.875rem;
+                                line-height: 24px;
+                                color: #000;
+                                position: absolute;
+                                margin-bottom: -57px;
+                            }
+                        }
+                    }
+                }  
+        
+
+
+            }
+
+    }
+        
+/*
+    @media (max-width: 425px){
+        .section-credits{
+            .bg-image{
+                height: 360vh;
+            }
+            .credits{
+            
+                .render{
+                    .credits-card{
+                        .credit-card-title{
+                            
+                        }
+                        .credits-link{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+*/
+
+
+@media (max-width: 768px) {
+    .section-credits{
+        
+        .credits{
+            .credits-subtitle{
+                margin: 0 2rem;
+            }
+            .render{
+                width: 100%;
+                .credits-card{
+                    width: 12.938rem;
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}

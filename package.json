@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "navbar.js",
   "devDependencies": {
-    "node-sass": "^7.0.0",
+    "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
   },
   "scripts": {

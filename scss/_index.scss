@@ -2,66 +2,87 @@
 
 
 .container__land{
-    height: 100vh;
+    height: 130vh;
     width: 100%;
-    
+    background-image: url("../scss/Fondo2.png");
+    background-repeat: round;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
-    
-    .bg-image{
-        position: absolute; /*Aca esta el problema*/
+    /*padding: 5rem 6rem 0;*/
+    background-size: cover;
+    padding-right: 3.125rem;
+    /*.bg-image{
+        position: absolute;
         width: 100%;
         z-index: -1;
         margin: 0;
         left: 0;
         bottom: 0;
         background-size: contain;
-    }
+    }*/
     .container__landing{
         width: 33.75rem;
         /*margin: 3rem;*/
         left: 10.313rem;
         height: 17rem;
-        top: 20.75;
+        /*top: 20.75rem;*/
         
         &__section{
-            font-family: $font-family-inter;
+            /*margin-top: 3.25rem;*/
             &__p{
+                font-family: $font-family-inter;
                 color: $text-main;
-                margin: 2rem auto;
+                margin: 1rem auto;
                 line-height: 2rem;
                 font-size: $font-size-p;
                 font-weight: 400;
+                text-align: justify;
             }
         }
-        &__section__btn{
-            width: 7rem;
-            height: 3rem;
-            line-height: 1rem;
-            border-radius: 10px;
+        .buton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             transition: .4s;
-            font-size: $font-size-li;
-            font-weight: 500;
-            letter-spacing: 0.1rem;
-            color: #062F86;
-            background-color: #E3EDFF;
+            border-radius: 6px;
+            right: 10.313rem;
+            background-color: #e3edff;
+            height: 3rem;
+            width: 8.063rem;
+            
+            box-shadow: 16.1636px 9.98694px 34px -196px rgba(0, 0, 0, 0.12), 10.4764px 6.47302px 19.912px -196px rgba(0, 0, 0, 0.0911111), 6.22597px 3.84682px 10.8296px -196px rgba(0, 0, 0, 0.0728889), 3.23271px 1.99739px 5.525px -196px rgba(0, 0, 0, 0.06), 1.31703px 0.813751px 2.77037px -196px rgba(0, 0, 0, 0.0471111), 0.299325px 0.184943px 1.33796px -196px rgba(0, 0, 0, 0.0288889);
+            .button__btn{
+                font-family: $font-family-inter;
+                color: #062F86;
+                font-weight: 500;
+                font-size: 1rem;
+                /*font-height: 1.5rem;*/
+                
                 }
-        &__section__btn:hover{
-                cursor: pointer;
+            
+            }
+            .buton:hover{
                 background-color: #062F86;
                 box-shadow: $btn-boxShadow;
+                cursor: pointer;
                 color: $text-main;
-                
-        }
+                .button__btn{
+                    color: $text-main;;
+                }
+            }
+            
+
     }
     .container__landing__img{
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 36.433rem;
+        /*margin-top: 6.875rem;*/
+        
+        /*margin-right: 3.125rem;*/
         &__png{
-            width: 36.433rem;
             transition: .4s;
         }
         }
@@ -76,15 +97,16 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
-        padding: 0 1rem;
+        padding: 0 4rem;
+        background-size: cover;
         .bg-image{
             height: 100vh;
         }
         .container__landing{
             width: 100%;
-            margin: 0 auto;
+            margin: 3rem auto 0;
             &__section{
-                margin: 2rem auto;
+                margin: 2rem auto 1rem;
                 &__p{
                     color: #eee;
                     margin: 0rem 0.4rem;
@@ -103,12 +125,47 @@
                 box-shadow: $btn-boxShadow;
                 
             }
+            .buton{
+                height: 2rem;
+                width: 5.063rem;
+            }
         }
         .container__landing__img{
-            width: 14rem;
-            &__png{
-                
+            width: 28rem;
+            margin-top: -6rem;
+            
             }
+    }
+}
+
+
+@media (max-width: 425px) {
+    .container__land{
+        padding: 0 1rem;
+        
+        .container__landing{
+            &__section{
+                &__p{}
             }
+            &__section__btn{}
+            &__section__btn:hover{}
+            .buton{}
+        }
+        .container__landing__img{
+            margin-top: 5rem;
+            width: 17rem;
+            }
+    }
+}
+
+
+@media (min-width: 2000px) {
+    .container__land{
+        height: 100vh;
+        .container__landing{
+            width: 80%;
+            margin: 0 8rem;
+    
+        }
     }
 }

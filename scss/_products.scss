@@ -7,9 +7,9 @@
         font-family: $font-family-1;
         font-size: 4rem;
         color: #062F86;   
-        position: relative;
-        left: 15px;
-        top: 54px;
+        margin-left: 1rem;
+        margin-top: 7rem;
+        line-height: 1.25rem;
     } 
 
     p{
@@ -19,23 +19,21 @@
         line-height: 1.625rem;
         padding: 8px;
         width: 70.5%;
-        position: relative;
-        top:88px;
+        margin-top: 2.5rem;
     }
 
     .benefits-container{
         
         display: flex;
         flex-direction: row;
-        position: relative;
-        top: 136px;
+        margin-top: 3rem;
 
         @media screen and (max-width:768px) {
             flex-direction: column;
         }
 
         .benefit-item-1{
-            margin: 0 31.5px;
+            margin: 0 2rem;
             position: relative;
 
             img{
@@ -50,13 +48,13 @@
                 height: 150px;
                 line-height: 3.125rem;
                 position: absolute;
-                top: 138px ;
-                left: 24px;
+                top: 5.5rem;
+                left: 1.5rem;
             }
         }
 
         .benefit-item-2{
-            margin: 0 31.5px;
+            margin: 0 2rem;
             position: relative;
 
             img{
@@ -71,15 +69,14 @@
                 height: 150px;
                 line-height: 3.125rem;
                 position: absolute;
-                top: 138px ;
-                left: 24px;
+                top: 5.5rem;
+                left: 1.5rem;
             }
         }
     }   
     
     .services-container{
-        position: relative;
-        top:287px;
+        margin-top: 9rem;
         transform: rotateY(0deg);
         transition: 1s ease all;
         transform-style: preserve-3d;
@@ -93,8 +90,8 @@
             font-size: 3rem;
             color: #FFFFFF;   
             position: absolute;
-            top:250px;
-            left: 337px;
+            top:13.25rem;
+            left: 22rem;
         }
 
         .services-img2{
@@ -113,15 +110,15 @@
         font-family: $font-family-1;
         font-size: 2.625rem;
         color: #062F86;   
-        position:relative;
-        top: 375px;
+        margin-top: 5rem;
+       
     }
     
     .logo-slider{
         display: flex;
         justify-content: center;
-        position: relative;
-        top:407px;
+        margin-top: 1rem;
+        margin-bottom: 5.5rem;
         width: 73.959%;
         height: 223px;
        
