@@ -42,11 +42,12 @@
                     background-color: #fff;
                     border-radius: 6px;
                     box-shadow: -43.2067px 55.0743px 80px rgba(0, 0, 0, 0.17), -28.0043px 35.6963px 46.8519px rgba(0, 0, 0, 0.129074), -16.6426px 21.2138px 25.4815px rgba(0, 0, 0, 0.103259), -8.64134px 11.0149px 13px rgba(0, 0, 0, 0.085), -3.52054px 4.48754px 6.51852px rgba(0, 0, 0, 0.0667407), -0.800124px 1.0199px 3.14815px rgba(0, 0, 0, 0.0409259);
-                    margin: 1rem 2rem;
+                    margin: 1.5rem 2rem;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-evenly;
+
                     .credit-best-sell{
                         height: 4.125rem;
                         width: 8.625rem;
@@ -124,6 +125,10 @@
                         border: 2px solid #062F86;
                         border-radius: 6px;
                         transition: .4s;
+                        font-weight: 500;
+                        font-family: $font-family-inter;
+                        margin-bottom: -2rem;
+                        color: #062f86;
                     }
                     .credits-link:hover{
                         background-color: #062F86;
@@ -273,30 +278,7 @@
             }
 
     }
-        
-/*
-    @media (max-width: 425px){
-        .section-credits{
-            .bg-image{
-                height: 360vh;
-            }
-            .credits{
-            
-                .render{
-                    .credits-card{
-                        .credit-card-title{
-                            
-                        }
-                        .credits-link{
-                            
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-*/
+
 
 
 @media (max-width: 768px) {

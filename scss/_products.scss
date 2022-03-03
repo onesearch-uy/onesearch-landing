@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
+    width: 100%;
+     
     h2{
         font-family: $font-family-1;
         font-size: 4rem;
@@ -37,7 +39,11 @@
             flex-direction: column;
         }
 
-        .benefit-item-1, .benefit-item-2{
+        h2{
+            font-size: 2rem;
+        }
+        .benefit-item-1{
+
             margin: 0 2rem;
             position: relative;
 
@@ -60,6 +66,7 @@
                 position: absolute;
                 top: 5.5rem;
                 left: 1.5rem;
+                padding: 0;
             }
         }
     }   
@@ -147,5 +154,80 @@
         }
     }
     
-    
+
+}
+@media screen and (min-width:767px) {
+    .products__responsive{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .products__responsive{
+        display: none;
+    }
+}
+@media screen and (min-width: 1088px) {
+
+    .container.is-fluid {
+        
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+
+@media screen and (max-width:767px) {
+    #products{
+        width: 100%;
+        h2{
+            font-size: 2rem;
+            margin-top: 5rem;
+        }
+        p{
+            padding: 0;
+            font-size: 0.9rem;
+        }
+        .benefits-container{
+            display: none;
+            }
+        
+        .services-container{
+            display: none;
+        }
+        h3{
+            display: none;
+        }
+        .logo-slider{
+            display: none;
+        }
+    }
+    .products__responsive{
+        width: 100%;
+        .item__1,
+        .item__2,
+        .item__3,
+        .item__12,
+        .item__3{
+            margin: 1rem;
+        }
+        .item__1,
+        .item__12,
+        .item__2{
+            .subitem__1,
+            .subitem__12,
+            .subitem__2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .item__title__1,
+                .item__title__12,
+                .item__title__2{
+                    color: #eee;
+                    position: absolute;
+                }
+            }
+        }
+        
+    }
+
 }
