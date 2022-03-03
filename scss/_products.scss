@@ -12,6 +12,11 @@
         margin-left: 1rem;
         margin-top: 7rem;
         line-height: 1.25rem;
+
+        @media screen and (max-width:768px){
+            margin-top: 5rem;
+            font-size: 2rem;
+        }
     } 
 
     p{
@@ -33,16 +38,24 @@
         @media screen and (max-width:768px) {
             flex-direction: column;
         }
+
         h2{
             font-size: 2rem;
         }
-        .benefit-item-1{
+        .benefit-item-1,
+        .benefit-item-2{
+
             margin: 0 2rem;
             position: relative;
 
             img{
-                min-width: 489px;
-                min-height: 374px;
+                min-width: 30.5rem;
+                min-height: 23.375rem;
+
+                @media screen and (min-width:768px) {
+                    min-width: 24.4rem;
+                    min-height: 18.7rem;
+                }
             }
 
             p{  
@@ -55,27 +68,6 @@
                 top: 5.5rem;
                 left: 1.5rem;
                 padding: 0;
-            }
-        }
-
-        .benefit-item-2{
-            margin: 0 2rem;
-            position: relative;
-
-            img{
-                min-width: 489px;
-                min-height: 374px;
-            }
-
-            p{
-                font-family: $font-family-1;
-                font-size: 3rem;
-                color: #FFFFFF;   
-                height: 150px;
-                line-height: 3.125rem;
-                position: absolute;
-                top: 5.5rem;
-                left: 1.5rem;
             }
         }
     }   
@@ -109,6 +101,13 @@
             transform:rotateY(180deg);
             backface-visibility: hidden;
         }
+
+        .services-img1, .services-img2{
+            @media screen and (max-width:768px) {
+                min-width: 60%;
+                min-height: 60%;
+            }
+        }
     }
 
     h3{
@@ -118,8 +117,11 @@
         margin-top: 5rem;
        
     }
-    
-    .logo-slider{
+
+    .wrapper{
+        width:994px;
+        height: 188px;
+        text-align:center;
         display: flex;
         justify-content: center;
         margin-top: 1rem;
@@ -130,27 +132,39 @@
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 42px 42px 82px 82px;
-        
-        ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 0px;
-            margin: 0;
-            list-style: none;
 
+        .carousel{
+          width:85%;
+          margin:0px auto;
+          display: flex;
+          .item{
+            width: 12rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             
-            li {
-                margin: 20px;
-                width: 80px;
-                height: 80px;
-                box-sizing: border-box;
-            }        
+        }
+          }
+          .slick-slide{
+            margin:0;
+          }
+
+          .selected{
+            filter: grayscale(100%);
+          }
+        }
+
+        .next{
+            margin-right: 5.5rem;
+        }
+
+        .prev{
+            margin-left: 5.5rem;
         }
     }
     
-}
+
+
 @media screen and (min-width:767px) {
     .products__responsive{
         margin-left: 0;
@@ -192,7 +206,7 @@
         h3{
             display: none;
         }
-        .logo-slider{
+        .wrapper{
             display: none;
         }
     }
@@ -224,4 +238,5 @@
         }
         
     }
+
 }

@@ -9,7 +9,6 @@
     &-logo{
         display: flex;
         justify-content: center;
-        width: 100%;
         margin: 0 auto;
         width: 13.625rem;
         
@@ -40,11 +39,11 @@
                         text-decoration: none;
                         font-family: $font-family-inter;
                     }
-                }
+
+                }  
             }
             
             &-rights{
-                
                 display: flex;
                 justify-content: center;
                 margin: 18.438 auto;
@@ -102,10 +101,8 @@
 .footer{
     
     &-logo{
-        width: 82%;
-        &-img{
-            
-        }
+        width: 13.625rem;
+       
         }
         .footer-div{
             
@@ -132,13 +129,6 @@
                 width: 9rem;
                 font-size: .8rem;
             }
-            .icon-whatsapp {
-                
-                
-            }
-            .icon-whatsapp:hover{
-                
-            }
         }
-}
+}   
 }
