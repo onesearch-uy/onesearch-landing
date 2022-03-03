@@ -42,7 +42,8 @@
         h2{
             font-size: 2rem;
         }
-        .benefit-item-1{
+        .benefit-item-1,
+        .benefit-item-2{
 
             margin: 0 2rem;
             position: relative;
@@ -123,19 +124,27 @@
         text-align:center;
         display: flex;
         justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-        margin-bottom: 9rem;
-
-        background: url(../imagenes/image.png);
+        margin-top: 1rem;
+        margin-bottom: 5.5rem;
+        width: 73.959%;
+        height: 223px;
+        background: url(../../imagenes/image.png);
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 42px 42px 82px 82px;
 
         .carousel{
-          width:454px;
+          width:85%;
           margin:0px auto;
-          
+          display: flex;
+          .item{
+            width: 12rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+          }
           .slick-slide{
             margin:0;
           }
@@ -155,7 +164,7 @@
     }
     
 
-}
+
 @media screen and (min-width:767px) {
     .products__responsive{
         margin-left: 0;
@@ -197,7 +206,7 @@
         h3{
             display: none;
         }
-        .logo-slider{
+        .wrapper{
             display: none;
         }
     }

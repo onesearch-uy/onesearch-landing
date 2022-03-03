@@ -95,6 +95,22 @@
                         text-transform: uppercase;
                         transition: .4s;
                     }
+                    .credit-card-title::after{
+                        content: "";
+                        position: absolute;
+                        background-color: #0080FF;
+                        height: 5px;
+                        width: 0;
+                        margin-top: 2rem;
+                        margin-left: -10rem;
+                        border-radius: 6px;
+                        /*left: 140px;
+                        top: 110px;*/
+                        transition: .4s;
+                    }
+                    .credit-card-title:hover::after{
+                        width: 15%;
+                    }
                     /*
                     .credit-card-title:hover{
                         cursor: pointer;
