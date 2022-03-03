@@ -636,6 +636,20 @@
           font-weight: 600;
           text-transform: uppercase;
           transition: .4s; }
+        .section-credits .credits .render .credits-card .credit-card-title::after {
+          content: "";
+          position: absolute;
+          background-color: #0080FF;
+          height: 5px;
+          width: 0;
+          margin-top: 2rem;
+          margin-left: -10rem;
+          border-radius: 6px;
+          /*left: 140px;
+                        top: 110px;*/
+          transition: .4s; }
+        .section-credits .credits .render .credits-card .credit-card-title:hover::after {
+          width: 15%; }
         .section-credits .credits .render .credits-card .credits-card-price {
           font-family: "Inter", sans-serif;
           font-weight: 300;
