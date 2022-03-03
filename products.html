@@ -9,7 +9,8 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="imagenes/OjoOneSearch.png">
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" type="text/css" href="glider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Link a fuentes de Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -111,6 +112,38 @@
     </div>
   </section>
 
+  <!-----------FOOTER-Gaston-responsive----------------->
+<section class="products__responsive">
+    
+  <div class="item__1">
+      <div class="subitem__1">
+        <img class="prod__image" src="imagenes/Beneficios1.png" alt="">
+        <h3 class="item__title__1">Facilita tu ejercicio profesional</h3>
+      </div>
+    </div>
+
+    <div class="item__12">
+      <div class="subitem__12">
+        <img class="prod__image" src="imagenes/Beneficios2.png" alt="">
+        <h3 class="item__title__12">Facilita tu ejercicio profesional</h3>
+      </div>
+    </div>
+
+    
+      
+    <div class="item__2">
+      <div class="subitem__2">
+        <img class="prod__image2" src="imagenes/Servicios.png" alt="">
+        <h3 class="item__title__2">Nuestros servicios</h3>
+      </div>
+    </div>
+
+      <div class="item__3">
+        <img src="imagenes/Servicios-hover.png" alt="">
+      </div>
+</section>
+
+
 
   <!-----------FOOTER----------------->
   <footer class="footer">
@@ -139,8 +172,9 @@
 
 <script src="navbar.js"></script> 
 <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-<script src="tarjeta.js"></script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="products.js"></script>
 <script> 
   let services = document.getElementbyClass("services-container");
   services.addEventListener("click",()=> {services.classList.toggle("active")});

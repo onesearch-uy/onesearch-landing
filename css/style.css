@@ -219,7 +219,9 @@
 #products {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
   #products h2 {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 4rem;
@@ -242,6 +244,8 @@
     @media screen and (max-width: 768px) {
       #products .benefits-container {
         flex-direction: column; } }
+    #products .benefits-container h2 {
+      font-size: 2rem; }
     #products .benefits-container .benefit-item-1 {
       margin: 0 2rem;
       position: relative; }
@@ -256,7 +260,8 @@
         line-height: 3.125rem;
         position: absolute;
         top: 5.5rem;
-        left: 1.5rem; }
+        left: 1.5rem;
+        padding: 0; }
     #products .benefits-container .benefit-item-2 {
       margin: 0 2rem;
       position: relative; }
@@ -324,6 +329,85 @@
         width: 80px;
         height: 80px;
         box-sizing: border-box; }
+
+@media screen and (min-width: 767px) {
+  .products__responsive {
+    margin-left: 0;
+    margin-right: 0; }
+  .products__responsive {
+    display: none; } }
+
+@media screen and (min-width: 1088px) {
+  .container.is-fluid {
+    margin-left: 0;
+    margin-right: 0; } }
+
+@media screen and (max-width: 767px) {
+  #products {
+    width: 100%; }
+    #products h2 {
+      font-size: 2rem;
+      margin-top: 5rem; }
+    #products p {
+      padding: 0;
+      font-size: 0.9rem; }
+    #products .benefits-container {
+      display: none; }
+    #products .services-container {
+      display: none; }
+    #products h3 {
+      display: none; }
+    #products .logo-slider {
+      display: none; }
+  .products__responsive {
+    width: 100%; }
+    .products__responsive .item__1,
+    .products__responsive .item__2,
+    .products__responsive .item__3,
+    .products__responsive .item__12,
+    .products__responsive .item__3 {
+      margin: 1rem; }
+    .products__responsive .item__1 .subitem__1,
+    .products__responsive .item__1 .subitem__12,
+    .products__responsive .item__1 .subitem__2,
+    .products__responsive .item__12 .subitem__1,
+    .products__responsive .item__12 .subitem__12,
+    .products__responsive .item__12 .subitem__2,
+    .products__responsive .item__2 .subitem__1,
+    .products__responsive .item__2 .subitem__12,
+    .products__responsive .item__2 .subitem__2 {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .products__responsive .item__1 .subitem__1 .item__title__1,
+      .products__responsive .item__1 .subitem__1 .item__title__12,
+      .products__responsive .item__1 .subitem__1 .item__title__2,
+      .products__responsive .item__1 .subitem__12 .item__title__1,
+      .products__responsive .item__1 .subitem__12 .item__title__12,
+      .products__responsive .item__1 .subitem__12 .item__title__2,
+      .products__responsive .item__1 .subitem__2 .item__title__1,
+      .products__responsive .item__1 .subitem__2 .item__title__12,
+      .products__responsive .item__1 .subitem__2 .item__title__2,
+      .products__responsive .item__12 .subitem__1 .item__title__1,
+      .products__responsive .item__12 .subitem__1 .item__title__12,
+      .products__responsive .item__12 .subitem__1 .item__title__2,
+      .products__responsive .item__12 .subitem__12 .item__title__1,
+      .products__responsive .item__12 .subitem__12 .item__title__12,
+      .products__responsive .item__12 .subitem__12 .item__title__2,
+      .products__responsive .item__12 .subitem__2 .item__title__1,
+      .products__responsive .item__12 .subitem__2 .item__title__12,
+      .products__responsive .item__12 .subitem__2 .item__title__2,
+      .products__responsive .item__2 .subitem__1 .item__title__1,
+      .products__responsive .item__2 .subitem__1 .item__title__12,
+      .products__responsive .item__2 .subitem__1 .item__title__2,
+      .products__responsive .item__2 .subitem__12 .item__title__1,
+      .products__responsive .item__2 .subitem__12 .item__title__12,
+      .products__responsive .item__2 .subitem__12 .item__title__2,
+      .products__responsive .item__2 .subitem__2 .item__title__1,
+      .products__responsive .item__2 .subitem__2 .item__title__12,
+      .products__responsive .item__2 .subitem__2 .item__title__2 {
+        color: #eee;
+        position: absolute; } }
 
 #clients {
   display: flex;
@@ -498,7 +582,7 @@
         background-color: #fff;
         border-radius: 6px;
         box-shadow: -43.2067px 55.0743px 80px rgba(0, 0, 0, 0.17), -28.0043px 35.6963px 46.8519px rgba(0, 0, 0, 0.129074), -16.6426px 21.2138px 25.4815px rgba(0, 0, 0, 0.103259), -8.64134px 11.0149px 13px rgba(0, 0, 0, 0.085), -3.52054px 4.48754px 6.51852px rgba(0, 0, 0, 0.0667407), -0.80012px 1.0199px 3.14815px rgba(0, 0, 0, 0.0409259);
-        margin: 1rem 2rem;
+        margin: 1.5rem 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -571,7 +655,11 @@
           padding: 0.75rem 4rem;
           border: 2px solid #062F86;
           border-radius: 6px;
-          transition: .4s; }
+          transition: .4s;
+          font-weight: 500;
+          font-family: "Inter", sans-serif;
+          margin-bottom: -2rem;
+          color: #062f86; }
         .section-credits .credits .render .credits-card .credits-link:hover {
           background-color: #062F86;
           color: #fff;
@@ -689,29 +777,6 @@
           position: absolute;
           margin-bottom: -57px; } }
 
-/*
-    @media (max-width: 425px){
-        .section-credits{
-            .bg-image{
-                height: 360vh;
-            }
-            .credits{
-            
-                .render{
-                    .credits-card{
-                        .credit-card-title{
-                            
-                        }
-                        .credits-link{
-                            
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-*/
 @media (max-width: 768px) {
   .section-credits .credits .credits-subtitle {
     margin: 0 2rem; }
@@ -797,7 +862,7 @@
       color: #fff;
       background-color: #062F86;
       box-shadow: #2a529c;
-      font-family: "Inter", sans-serif !important;
+      /*font-family: $font-family-inter!important;*/
       width: 6rem;
       margin-left: 1rem; }
 
