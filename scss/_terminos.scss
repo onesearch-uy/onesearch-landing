@@ -1,0 +1,36 @@
+
+.term{
+    margin: 8rem 10rem;
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 2px 9px 19px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 3rem;    
+    .term-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #062F86;
+        height: 3rem;
+        width: 100%;
+        color: #eee;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-family: $font-family-1;
+    }
+    .term__p{
+        margin: 0 8rem;
+        font-weight: 300;
+        font-family: $font-family-inter;
+        
+    }
+    .term__subt{
+        font-family: $font-family-1;
+        font-size: 1.5rem;
+        margin: 2rem auto;
+    }
+}
