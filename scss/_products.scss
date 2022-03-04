@@ -131,29 +131,30 @@
         background: url(../../imagenes/image.png);
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: 42px 42px 82px 82px;
-
+        border-radius: 42px 42px;
+        box-shadow: 2px 9px 19px 1px rgba(0, 0, 0, 0.2);
         .carousel{
-          width:85%;
-          margin:0px auto;
-          display: flex;
-          .item{
+            width:85%;
+            margin:0px auto;
+            display: flex;
+            .item{
             width: 12rem;
             display: flex;
             align-items: center;
             justify-content: center;
             
         }
-          }
-          .slick-slide{
+    
+        }
+        .slick-slide{
             margin:0;
-          }
-
-          .selected{
-            filter: grayscale(100%);
-          }
         }
 
+        .selected{
+            filter: grayscale(100%);
+        }
+        }
+        
         .next{
             margin-right: 5.5rem;
         }
