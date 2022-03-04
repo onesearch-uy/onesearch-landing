@@ -34,3 +34,17 @@
         margin: 2rem auto;
     }
 }
+
+@media (max-width: 768px) {
+    .term{
+        margin: 5rem 1rem;
+        .term__p{
+            margin: 0 1rem;
+            font-size: .7rem;
+            line-height: 1.2rem;
+        }
+        .term__subt{
+            font-size: 1rem;
+        }
+    }
+}

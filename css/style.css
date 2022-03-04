@@ -319,7 +319,8 @@
     background: url(../../imagenes/image.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 42px 42px 82px 82px; }
+    border-radius: 42px 42px;
+    box-shadow: 2px 9px 19px 1px rgba(0, 0, 0, 0.2); }
     #products .wrapper .carousel {
       width: 85%;
       margin: 0px auto;
@@ -701,10 +702,11 @@
     align-items: center;
     height: 100vh;
     width: 100%;
-    padding-bottom: 1.1rem; }
+    padding-bottom: 1.1rem;
+    margin-top: 3rem; }
     .section--responsive--credits .credits-title-responsive {
       font-size: 2.5rem;
-      margin-top: 6rem;
+      margin-top: 1rem;
       color: #fff;
       font-family: "Barlow Semi Condensed", sans-serif;
       font-weight: 500; }
@@ -714,14 +716,13 @@
       font-size: 1rem;
       color: #FCFCFF;
       line-height: 1.625rem;
-      margin: 3rem 1rem 0; }
+      margin: 1rem; }
     .section--responsive--credits .swiper {
-      width: 50%;
-      height: 38%;
-      top: 3em;
+      width: 60% !important;
+      height: 49% !important;
+      margin-top: 1rem;
       display: flex; }
       .section--responsive--credits .swiper .swiper-wrapper .swiper-slide {
-        margin-top: 2rem;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -766,7 +767,7 @@
           color: #fff;
           font-size: 1.125rem;
           position: absolute;
-          margin-top: -11.4rem;
+          margin-top: -12.4rem;
           /*font-weight: 700;*/
           font-style: normal;
           font-family: "Inter", sans-serif;
@@ -790,7 +791,7 @@
           justify-content: center;
           align-items: center;
           position: absolute;
-          margin-top: -11.4rem; }
+          margin-top: -12.4rem; }
         .section--responsive--credits .swiper .swiper-wrapper .swiper-slide .credits-card-sub {
           font-family: "Inter", sans-serif;
           font-weight: 300;
@@ -798,9 +799,11 @@
           line-height: 24px;
           color: #000;
           position: absolute;
-          margin-bottom: -57px; } }
+          margin-bottom: -57px; }
+        .section--responsive--credits .swiper .swiper-wrapper .swiper-slide .swiper-slide-active {
+          width: 11rem; } }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) and (max-width: 768px) {
   .section-credits .credits .credits-subtitle {
     margin: 0 2rem; }
   .section-credits .credits .render {
@@ -1052,3 +1055,13 @@
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 1.5rem;
     margin: 2rem auto; }
+
+@media (max-width: 768px) {
+  .term {
+    margin: 5rem 1rem; }
+    .term .term__p {
+      margin: 0 1rem;
+      font-size: .7rem;
+      line-height: 1.2rem; }
+    .term .term__subt {
+      font-size: 1rem; } }
