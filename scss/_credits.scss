@@ -202,7 +202,7 @@
                             
                             display: flex;
                             align-items: center;
-                            justify-content: space-evenly;
+                            justify-content: space-around;
                             border-radius: 18px;
                             font-size: 25px;
                             font-weight: bold;
@@ -216,24 +216,24 @@
                                 line-height: 20px;
                                 font-size: 1.5rem;
                                 text-transform: uppercase;
-                                margin-top: 2.7rem;
+                                margin-top: 3rem;
                             }
                             .credits-card-price{
                                 font-family: $font-family-inter;
                                 font-weight: 300;
                                 font-style: normal;
-                                font-size: 1.75rem;
+                                font-size: 154%;
                                 line-height: 20px;
                                 line-height: 20px;
                                 margin-top: 0;
                                 color: #062F86;
                             }
                             .credits-link{
-                                padding: 0.75rem 1rem;
+                                padding: 0.75rem 2rem;
                                 border: 2px solid #062F86;
                                 border-radius: 6px;
                                 transition: .4s;
-                                font-size: 1.2rem;
+                                font-size: 1.4rem;
                                 text-decoration: none;
                             }
                             .credit-best-sell{
@@ -247,7 +247,7 @@
                                 color: #fff;
                                 font-size: 1.125rem;
                                 position: absolute;
-                                margin-top: -12.4rem;
+                                margin-top: -103%;
                                 /*font-weight: 700;*/
                                 
                                 font-style: normal;
@@ -259,9 +259,7 @@
                             .credit-best-value{
                                 height: 3.2rem;
                                 width: 0.1rem;
-                                
-                                padding: 0 70px;
-                                margin-top: -1.4rem;  
+                                padding: 0 70px; 
                                 background: linear-gradient(105.36deg, #0080FF
                                 2.47%, #74E462 129.48%);
                                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -275,7 +273,7 @@
                                 justify-content: center;
                                 align-items: center;
                                 position: absolute;
-                                margin-top: -12.4rem;
+                                margin-top: -103%;
                             }
                             .credits-card-sub{
                                 font-family: $font-family-inter;
@@ -284,7 +282,7 @@
                                 line-height: 24px;
                                 color: #000;
                                 position: absolute;
-                                margin-bottom: -57px;
+                                margin-bottom: -40%;
                             }
                             .swiper-slide-active {
                                 width: 11rem;
