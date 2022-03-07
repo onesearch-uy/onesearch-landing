@@ -719,7 +719,7 @@
       margin: 1rem; }
     .section--responsive--credits .swiper {
       width: 50% !important;
-      height: 50% !important;
+      height: 47% !important;
       margin: 1rem auto;
       display: flex; }
       .section--responsive--credits .swiper .swiper-wrapper {
@@ -728,7 +728,7 @@
           display: flex;
           align-items: center;
           justify-content: space-around;
-          border-radius: 6px;
+          border-radius: 20px;
           font-size: 1.4rem;
           font-weight: bold;
           color: #fff;
@@ -741,7 +741,7 @@
             line-height: 20px;
             font-size: 95%;
             text-transform: uppercase;
-            margin-top: 3rem;
+            margin-top: 2rem;
             text-decoration-line: underline;
             text-decoration-color: #0080FF; }
           .section--responsive--credits .swiper .swiper-wrapper .swiper-slide .credits-card-price {
@@ -791,7 +791,7 @@
             line-height: 24px;
             color: #000;
             position: absolute;
-            margin-bottom: -40%; }
+            margin-bottom: -36%; }
           .section--responsive--credits .swiper .swiper-wrapper .swiper-slide .swiper-slide-active {
             width: 11rem; } }
 
@@ -886,22 +886,26 @@
 
 @media (max-width: 768px) {
   .navbar {
-    width: 100%;
+    /*width: 100%;*/
     height: 50px;
     padding: 0 0rem;
     min-height: 0 !important; }
-    .navbar-brand .navbar-burger {
-      width: 7.25rem !important;
-      margin-left: 1rem; }
-    .navbar-brand .navbar-item .navbar-item-img {
-      display: inline-flex; }
-    .navbar-brand .whats__btn {
-      width: 100%; }
-      .navbar-brand .whats__btn .header_whatsapp {
-        width: 2rem;
-        margin: 0 auto;
-        margin-right: 0;
+    .navbar-brand {
+      display: inline-flex;
+      justify-content: space-between; }
+      .navbar-brand .navbar-burger {
+        /* width: 7.25rem!important;*/
+        position: absolute;
+        right: 0; }
+      .navbar-brand .navbar-item .navbar-item-img {
         display: inline-flex; }
+      .navbar-brand .whats__btn {
+        margin-left: 2rem; }
+        .navbar-brand .whats__btn .header_whatsapp {
+          width: 2rem;
+          margin: 0 auto;
+          margin-right: 0;
+          display: inline-flex; }
     .navbar-menu {
       margin: -2px; }
       .navbar-menu .navbar-start {
@@ -920,10 +924,13 @@
         .navbar-menu .navbar-end .navbar-item {
           margin-right: 0; } }
 
+/*
 @media (max-width: 425px) {
-  .navbar {
-    min-height: 0 !important; } }
-
+    .navbar{
+        min-height: 0!important;
+    }
+}
+*/
 .footer {
   display: flex;
   flex-direction: column;
