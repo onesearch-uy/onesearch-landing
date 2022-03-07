@@ -598,11 +598,19 @@
         align-items: center;
         justify-content: space-evenly;
         /*
-                    .credit-card-title:hover{
-                        cursor: pointer;
-                        text-decoration-line: underline;
-                        text-decoration-color: #0080FF;
-                        
+                    .credit-card-title::after{
+                        content: "";
+                        position: absolute;
+                        background-color: #0080FF;
+                        height: 5px;
+                        width:3%;
+                        margin-top: 2rem;
+                        margin-left: -10rem;
+                        border-radius: 6px;
+                        transition: .4s;
+                    }
+                    .credit-card-title:hover::after{
+                        width: 15%;
                     }
                     */ }
         .section-credits .credits .render .credits-card .credit-best-sell {
@@ -646,19 +654,12 @@
           line-height: 20px;
           font-weight: 600;
           text-transform: uppercase;
-          transition: .3s; }
-        .section-credits .credits .render .credits-card .credit-card-title::after {
-          content: "";
-          position: absolute;
-          background-color: #0080FF;
-          height: 5px;
-          width: 0;
-          margin-top: 2rem;
-          margin-left: -10rem;
-          border-radius: 6px;
-          transition: .4s; }
-        .section-credits .credits .render .credits-card .credit-card-title:hover::after {
-          width: 15%; }
+          transition: 1s;
+          text-decoration-color: transparent; }
+        .section-credits .credits .render .credits-card .credit-card-title:hover {
+          cursor: pointer;
+          text-decoration: underline solid #0080FF 5px;
+          transition: 2s; }
         .section-credits .credits .render .credits-card .credits-card-price {
           font-family: "Inter", sans-serif;
           font-weight: 300;
@@ -717,8 +718,8 @@
       line-height: 1.625rem;
       margin: 1rem; }
     .section--responsive--credits .swiper {
-      width: 60% !important;
-      height: 49% !important;
+      width: 50% !important;
+      height: 50% !important;
       margin: 1rem auto;
       display: flex; }
       .section--responsive--credits .swiper .swiper-wrapper {
@@ -727,7 +728,7 @@
           display: flex;
           align-items: center;
           justify-content: space-around;
-          border-radius: 18px;
+          border-radius: 6px;
           font-size: 1.4rem;
           font-weight: bold;
           color: #fff;
