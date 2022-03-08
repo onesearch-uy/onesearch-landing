@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +9,17 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="imagenes/OjoOneSearch.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="glider.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--Link a fuentes de Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter&display=swap" rel="stylesheet">
-
+    
+      <!--Link a Slick carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="productos.css">
     <title>Products</title>
 
 </head>
@@ -115,6 +118,54 @@
 
   </section>
 
+  <section class="section-areas">
+    <div class="area">
+      <div class="area-div">
+        <i class='bx bx-right-arrow-alt' id="i1" onclick="btn()" ></i>
+        <h3  class="area-title">Área legal</h3>
+      </div>
+      <ul class="area-ul" id="ul-1" >
+        <li class="area-li">Sistema de seguimiento y alertas de trámites en diferentes oficinas públicas</li>
+        <li class="area-li">Listado personalizado de trámites en proceso y finalizados en la Dirección General de Registros</li>
+        <li class="area-li">Envío y respaldo de la plancha de inscripción digital de documentos inscriptos en DGR</li>
+        <li class="area-li">Asistente para los informes de debida diligencia para la prevención de lavado de activos</li>
+        <li class="area-li">Almacenamiento en la plataforma de todos los informes realizados</li>
+        <li class="area-li">Seguimiento automático de cotizaciones</li>
+        <li class="area-li">Asistente virtual vía whatsapp</li>
+        <li class="area-li">Mi estudio digital</li>
+      </ul>
+    </div>
+    
+
+    <div class="area">
+      <div class="area-div">
+        <i class='bx bx-right-arrow-alt' id="i2" onclick="btn2()"></i>
+        <h3 class="area-title">Sector inmobiliario</h3>
+      </div>
+      <ul class="area-ul" id="ul-2">
+        <li class="area-li">Propy: app enfocada al área convivencia y organización de edificios, complejos habitacionales</li>
+        <li class="area-li">Publicidad y gestión de informes de propiedades a la venta y/o alquilar</li>
+        <li class="area-li">Mi tarjeta digital</li>
+        <li class="area-li">Asistente para los informes de debia diligencia para la prevención de lavado de activos</li>
+        <li class="area-li">Almacenamiento en la plataforma de todos los informes realizados</li>
+      </ul>
+    </div>
+
+    <div class="area">
+      <div class="area-div">
+        <i class='bx bx-right-arrow-alt' id="i3" onclick="btn3()"></i>
+        <h3  class="area-title">Otros</h3>
+      </div>
+      <ul class="area-ul" id="ul-3">
+        <li class="area-li">Agencias de viajes: Sistema de seguimiento de equipaje</li>
+        <li class="area-li">Asistente de citas, recordatorios</li>
+        <li class="area-li">Servicio de consultoría personalizada</li>
+        <li class="area-li">Capacitaciones</li>
+        <li class="area-li">Tarjeta digital</li>
+      </ul>
+    </div>
+  </section>
+
   <!-----------products-Gaston-responsive----------------->
 <section class="products__responsive">
     
@@ -144,6 +195,17 @@
       <div class="item__3">
         <img src="imagenes/Servicios-hover.png" alt="">
       </div>
+
+      <div class="logos-responsive">
+        <h3 class="logos-responsive-h3">¿Qué tecnologías aplicamos?</h3>
+        <div class="items-responsive">
+          <div class="item-responsive"><img src="imagenes/logos_python.png"></div>
+          <div class="item-responsive"><img src="imagenes/logos_aws.png"></div>
+          <div class="item-responsive"><img src="imagenes/logos_postgresql.png"></div>
+          <div class="item-responsive"><img src="imagenes/logos_digital-ocean.png"></div>
+          <div class="item-responsive"><img src="imagenes/logos_whatsapp.png"></div>
+        </div>
+      </div>
 </section>
 
 
@@ -166,10 +228,10 @@
 
     </div>
 
-    <div class="nav-bx">
-      <a href=""><h6 class="nav-bx-text">Hola! Soy tu asistente virtual</h6></a>
-      <a href="#"><img class='icon-whatsapp' src="imagenes/whatsappChat.png"></a>
-    </div>     
+      <div class="nav-bx">
+        <a href=""><h6 class="nav-bx-text">Hola! Soy tu asistente virtual</h6></a>
+        <a href="#"><img class='icon-whatsapp' src="imagenes/whatsappChat.png"></a>
+      </div>     
   </footer>
 
   <!--JQuery-->
@@ -184,15 +246,10 @@
 
 
 <script src="navbar.js"></script> 
+<script src="carousel.js"></script>
 <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="products.js"></script>
-<script> 
-  let services = document.getElementbyClass("services-container");
-  services.addEventListener("click",()=> {services.classList.toggle("active")});
-</script>
-
+<script src="productos.js"></script>
 
 </body>
 </html>
