@@ -61,6 +61,21 @@
                         margin-top: 1rem;
                         
                         }
+                        .hero-linkedin{
+                            display: flex;
+                            align-items: center;
+                            .bx{
+                                color: #eee;
+                                font-size: 1.5rem;
+                            }
+                            .linkedin-h5{
+                                font-family: $font-family-inter;
+                                font-weight: 300;
+                                font-style: italic;
+                                font-size: 1.125rem;
+                                color: #E3EDFF;
+                            }
+                        }
                 }
                 }
         }

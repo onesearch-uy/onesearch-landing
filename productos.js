@@ -7,6 +7,8 @@ const icon1 = document.getElementById("i1");
 const icon2 = document.getElementById("i2");
 const icon3 = document.getElementById("i3");
 
+const sectionArea = document.getElementById("section-areas");
+
 function btn(){
     ul1.classList.toggle("active");
     icon1.classList.toggle("active");
@@ -21,6 +23,9 @@ function btn3(){
     icon3.classList.toggle("active");
 }
 
+function info(){
+    sectionArea.classList.toggle("activee");
+}
 
 
 /*
