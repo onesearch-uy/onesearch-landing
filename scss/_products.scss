@@ -115,7 +115,6 @@
         font-size: 2.625rem;
         color: #062F86;   
         margin-top: 5rem;
-       
     }
 
     .wrapper{
@@ -128,7 +127,7 @@
         margin-bottom: 5.5rem;
         width: 73.959%;
         height: 223px;
-        background: url(../../imagenes/image.png);
+        background: url(../imagenes/image.png);
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 42px 42px;
@@ -137,14 +136,23 @@
             width:85%;
             margin:0px auto;
             display: flex;
+            align-items: center;
             .item{
             width: 12rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            
+            transition: .4s;            
         }
-    
+        .active{
+            width: 5rem;
+        }
+        /*
+        .item:hover{
+            width: 18rem;
+            cursor: pointer;
+        }
+        */
         }
         .slick-slide{
             margin:0;
@@ -155,6 +163,7 @@
         }
         }
         
+        
         .next{
             margin-right: 5.5rem;
         }
@@ -162,6 +171,7 @@
         .prev{
             margin-left: 5.5rem;
         }
+        
     }
     
 
@@ -174,6 +184,53 @@
     .products__responsive{
         display: none;
     }
+    .section-areas{
+        margin: 0 auto;
+        .area{
+            margin:  0 12.813rem;
+            .area-div{
+                display: flex;
+                background-color: #E3EDFF;
+                height: 5rem;
+                border-radius: 6px;
+                align-items: center;
+                margin: 2.5rem auto;
+                .bx{
+                    font-size: 2.531rem;
+                    color: #0C1444;
+                }
+                .active{
+                    transform: rotate(90deg);
+                    margin: auto 0;
+                }
+                .area-title{
+                    font-size: 2.25rem;
+                    font-weight: 600;
+                    color: #0C1444;
+                    margin-left: 1.063rem;
+                }
+                
+            }
+            .area-ul{
+                display: none;
+            }
+            .active{
+                display: inline-block;
+                flex-direction: column;
+                margin-top: -2rem;
+                    .area-li{
+                        font-family: $font-family-inter;
+                        font-size: 1.125rem;
+                        font-weight: 400;
+                        margin: 1rem 2rem;
+                        list-style-type: disc;
+                    }
+                }
+            
+            }
+            
+        }
+    
 }
 @media screen and (min-width: 1088px) {
 
@@ -196,6 +253,7 @@
         p{
             padding: 0;
             font-size: 0.9rem;
+            text-align: justify;
         }
         .benefits-container{
             display: none;
@@ -237,7 +295,73 @@
                 }
             }
         }
-        
+        .logos-responsive{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .logos-responsive-h3{
+                font-size: 1.5rem;
+                color: #062F86;
+                margin-bottom: 1rem;
+            }
+            .items-responsive{
+                display: flex;
+                margin: 0 1rem;
+            }
+        }
     }
 
+}
+
+
+@media screen and (max-width:767px) {
+    .section-areas{
+        margin: 0 auto;
+        width: 100%;
+        .area{
+            margin:  0 1.813rem;
+            .area-div{
+                display: flex;
+                background-color: #E3EDFF;
+                height: 3rem;
+                border-radius: 6px;
+                align-items: center;
+                margin: 2.5rem auto;
+                justify-content: flex-start;
+                .bx{
+                    font-size: 2.531rem;
+                    color: #0C1444;
+                }
+                .active{
+                    transform: rotate(90deg);
+                    margin: auto 0;
+                }
+                .area-title{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: #0C1444;
+                    margin-left: 1.063rem;
+                }
+                
+            }
+            .area-ul{
+                display: none;
+            }
+            .active{
+                display: inline-block;
+                flex-direction: column;
+                margin-top: -2rem;
+                    .area-li{
+                        font-family: $font-family-inter;
+                        font-size: .9rem;
+                        font-weight: 400;
+                        margin: 1rem 2rem;
+                        list-style-type: disc;
+                    }
+                }
+            
+            }
+            
+        }
 }

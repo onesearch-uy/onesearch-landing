@@ -316,7 +316,7 @@
     margin-bottom: 5.5rem;
     width: 73.959%;
     height: 223px;
-    background: url(../../imagenes/image.png);
+    background: url(../imagenes/image.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 42px 42px;
@@ -324,12 +324,22 @@
     #products .wrapper .carousel {
       width: 85%;
       margin: 0px auto;
-      display: flex; }
+      display: flex;
+      align-items: center;
+      /*
+        .item:hover{
+            width: 18rem;
+            cursor: pointer;
+        }
+        */ }
       #products .wrapper .carousel .item {
         width: 12rem;
         display: flex;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        transition: .4s; }
+      #products .wrapper .carousel .active {
+        width: 5rem; }
     #products .wrapper .slick-slide {
       margin: 0; }
     #products .wrapper .selected {
@@ -344,7 +354,41 @@
     margin-left: 0;
     margin-right: 0; }
   .products__responsive {
-    display: none; } }
+    display: none; }
+  .section-areas {
+    margin: 0 auto; }
+    .section-areas .area {
+      margin: 0 12.813rem; }
+      .section-areas .area .area-div {
+        display: flex;
+        background-color: #E3EDFF;
+        height: 5rem;
+        border-radius: 6px;
+        align-items: center;
+        margin: 2.5rem auto; }
+        .section-areas .area .area-div .bx {
+          font-size: 2.531rem;
+          color: #0C1444; }
+        .section-areas .area .area-div .active {
+          transform: rotate(90deg);
+          margin: auto 0; }
+        .section-areas .area .area-div .area-title {
+          font-size: 2.25rem;
+          font-weight: 600;
+          color: #0C1444;
+          margin-left: 1.063rem; }
+      .section-areas .area .area-ul {
+        display: none; }
+      .section-areas .area .active {
+        display: inline-block;
+        flex-direction: column;
+        margin-top: -2rem; }
+        .section-areas .area .active .area-li {
+          font-family: "Inter", sans-serif;
+          font-size: 1.125rem;
+          font-weight: 400;
+          margin: 1rem 2rem;
+          list-style-type: disc; } }
 
 @media screen and (min-width: 1088px) {
   .container.is-fluid {
@@ -359,7 +403,8 @@
       margin-top: 5rem; }
     #products p {
       padding: 0;
-      font-size: 0.9rem; }
+      font-size: 0.9rem;
+      text-align: justify; }
     #products .benefits-container {
       display: none; }
     #products .services-container {
@@ -416,7 +461,57 @@
       .products__responsive .item__2 .subitem__2 .item__title__12,
       .products__responsive .item__2 .subitem__2 .item__title__2 {
         color: #eee;
-        position: absolute; } }
+        position: absolute; }
+    .products__responsive .logos-responsive {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .products__responsive .logos-responsive .logos-responsive-h3 {
+        font-size: 1.5rem;
+        color: #062F86;
+        margin-bottom: 1rem; }
+      .products__responsive .logos-responsive .items-responsive {
+        display: flex;
+        margin: 0 1rem; } }
+
+@media screen and (max-width: 767px) {
+  .section-areas {
+    margin: 0 auto;
+    width: 100%; }
+    .section-areas .area {
+      margin: 0 1.813rem; }
+      .section-areas .area .area-div {
+        display: flex;
+        background-color: #E3EDFF;
+        height: 3rem;
+        border-radius: 6px;
+        align-items: center;
+        margin: 2.5rem auto;
+        justify-content: flex-start; }
+        .section-areas .area .area-div .bx {
+          font-size: 2.531rem;
+          color: #0C1444; }
+        .section-areas .area .area-div .active {
+          transform: rotate(90deg);
+          margin: auto 0; }
+        .section-areas .area .area-div .area-title {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: #0C1444;
+          margin-left: 1.063rem; }
+      .section-areas .area .area-ul {
+        display: none; }
+      .section-areas .area .active {
+        display: inline-block;
+        flex-direction: column;
+        margin-top: -2rem; }
+        .section-areas .area .active .area-li {
+          font-family: "Inter", sans-serif;
+          font-size: .9rem;
+          font-weight: 400;
+          margin: 1rem 2rem;
+          list-style-type: disc; } }
 
 #clients {
   display: flex;
