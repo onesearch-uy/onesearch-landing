@@ -30,8 +30,10 @@
   .container__land .container__landing {
     width: 33.75rem;
     /*margin: 3rem;*/
-    left: 10.313rem;
+    left: 2.313rem;
     height: 17rem;
+    position: absolute;
+    z-index: 100;
     /*top: 20.75rem;*/ }
     .container__land .container__landing__section {
       /*margin-top: 3.25rem;*/ }
@@ -43,6 +45,10 @@
         font-size: 1.125rem;
         font-weight: 400;
         text-align: justify; }
+        .container__land .container__landing__section__p span {
+          font-weight: bold;
+          font-family: "Inter", sans-serif;
+          font-size: 1.125rem; }
     .container__land .container__landing .buton {
       display: flex;
       justify-content: center;
@@ -71,7 +77,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36.433rem;
+    width: 51rem;
+    opacity: .5;
+    filter: blur(4px);
+    background: linear-gradient(0deg, rgba(6, 47, 134, 0.1), rgba(6, 47, 134, 0.1));
+    overflow: hidden;
+    position: absolute;
+    top: 3rem;
+    right: 0;
     /*margin-top: 6.875rem;*/
     /*margin-right: 3.125rem;*/ }
     .container__land .container__landing__img__png {
@@ -176,6 +189,18 @@
           font-size: 1.25rem;
           font-weight: 300;
           margin-top: 1rem; }
+        .hero__team__flex__div .hero__team__sec .hero-linkedin {
+          display: flex;
+          align-items: center; }
+          .hero__team__flex__div .hero__team__sec .hero-linkedin .bx {
+            color: #eee;
+            font-size: 1.5rem; }
+          .hero__team__flex__div .hero__team__sec .hero-linkedin .linkedin-h5 {
+            font-family: "Inter", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+            font-size: 1.125rem;
+            color: #E3EDFF; }
     .hero__team .hero__png {
       display: flex;
       margin: 2rem auto;
@@ -297,6 +322,23 @@
       object-fit: contain;
       transform: rotateY(180deg);
       backface-visibility: hidden; }
+    #products .services-container .services-btn {
+      backface-visibility: hidden;
+      position: absolute;
+      left: 0rem;
+      bottom: -3rem;
+      transform: rotateY(180deg);
+      height: 3rem;
+      padding: 12px 32px;
+      border-radius: 6px;
+      background-color: #E3EDFF;
+      color: #062F86;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      z-index: 1; }
+    #products .services-container .services-btn:hover {
+      cursor: pointer; }
     @media screen and (max-width: 768px) {
       #products .services-container .services-img1, #products .services-container .services-img2 {
         min-width: 60%;
@@ -356,39 +398,46 @@
   .products__responsive {
     display: none; }
   .section-areas {
-    margin: 0 auto; }
-    .section-areas .area {
-      margin: 0 12.813rem; }
-      .section-areas .area .area-div {
+    display: none; }
+  .activee {
+    margin: 1rem auto 0;
+    width: 100%;
+    display: inline-block; }
+    .activee .area {
+      margin: 0 9.813rem; }
+      .activee .area .area-div {
         display: flex;
         background-color: #E3EDFF;
         height: 5rem;
         border-radius: 6px;
         align-items: center;
         margin: 2.5rem auto; }
-        .section-areas .area .area-div .bx {
+        .activee .area .area-div .bx {
           font-size: 2.531rem;
           color: #0C1444; }
-        .section-areas .area .area-div .active {
+        .activee .area .area-div .active {
           transform: rotate(90deg);
           margin: auto 0; }
-        .section-areas .area .area-div .area-title {
+        .activee .area .area-div .area-title {
           font-size: 2.25rem;
           font-weight: 600;
           color: #0C1444;
-          margin-left: 1.063rem; }
-      .section-areas .area .area-ul {
+          margin-left: 1.063rem;
+          margin-top: 0 !important; }
+      .activee .area .area-ul {
         display: none; }
-      .section-areas .area .active {
+      .activee .area .active {
         display: inline-block;
         flex-direction: column;
         margin-top: -2rem; }
-        .section-areas .area .active .area-li {
+        .activee .area .active .area-li {
           font-family: "Inter", sans-serif;
           font-size: 1.125rem;
           font-weight: 400;
           margin: 1rem 2rem;
-          list-style-type: disc; } }
+          list-style-type: disc;
+          line-height: 51px;
+          color: #000; } }
 
 @media screen and (min-width: 1088px) {
   .container.is-fluid {
@@ -473,7 +522,11 @@
         margin-bottom: 1rem; }
       .products__responsive .logos-responsive .items-responsive {
         display: flex;
-        margin: 0 1rem; } }
+        margin: 0 1rem; }
+        .products__responsive .logos-responsive .items-responsive .item-responsive {
+          font-family: "Inter", sans-serif;
+          text-align: justify;
+          line-height: 3.213rem; } }
 
 @media screen and (max-width: 767px) {
   .section-areas {
@@ -511,7 +564,9 @@
           font-size: .9rem;
           font-weight: 400;
           margin: 1rem 2rem;
-          list-style-type: disc; } }
+          list-style-type: disc;
+          line-height: 30px;
+          color: #000; } }
 
 #clients {
   display: flex;

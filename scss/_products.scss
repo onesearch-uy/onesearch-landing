@@ -101,6 +101,25 @@
             transform:rotateY(180deg);
             backface-visibility: hidden;
         }
+        .services-btn{
+            backface-visibility: hidden;
+            position: absolute;
+            left: 0rem;
+            bottom: -3rem;
+            transform: rotateY(180deg);
+            height: 3rem;
+            padding: 12px 32px;
+            border-radius: 6px;
+            background-color: #E3EDFF;
+            color: #062F86;
+            font-family: $font-family-inter;
+            font-weight: 500;
+            font-size: 1rem;
+            z-index: 1;
+        }
+        .services-btn:hover{
+            cursor: pointer;
+        }
 
         .services-img1, .services-img2{
             @media screen and (max-width:768px) {
@@ -185,9 +204,14 @@
         display: none;
     }
     .section-areas{
-        margin: 0 auto;
+        display: none;
+    }
+    .activee{
+        margin: 1rem auto 0;
+        width: 100%;
+        display: inline-block;
         .area{
-            margin:  0 12.813rem;
+            margin:  0 9.813rem;
             .area-div{
                 display: flex;
                 background-color: #E3EDFF;
@@ -208,6 +232,7 @@
                     font-weight: 600;
                     color: #0C1444;
                     margin-left: 1.063rem;
+                    margin-top: 0!important;
                 }
                 
             }
@@ -224,6 +249,8 @@
                         font-weight: 400;
                         margin: 1rem 2rem;
                         list-style-type: disc;
+                        line-height: 51px;
+                        color: #000;
                     }
                 }
             
@@ -308,6 +335,11 @@
             .items-responsive{
                 display: flex;
                 margin: 0 1rem;
+                .item-responsive{
+                    font-family: $font-family-inter;
+                    text-align: justify;
+                    line-height: 3.213rem;
+                }
             }
         }
     }
@@ -358,6 +390,8 @@
                         font-weight: 400;
                         margin: 1rem 2rem;
                         list-style-type: disc;
+                        line-height: 30px;
+                        color: #000;
                     }
                 }
             

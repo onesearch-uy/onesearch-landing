@@ -24,8 +24,10 @@
     .container__landing{
         width: 33.75rem;
         /*margin: 3rem;*/
-        left: 10.313rem;
+        left: 2.313rem;
         height: 17rem;
+        position: absolute;
+        z-index: 100;
         /*top: 20.75rem;*/
         
         &__section{
@@ -38,6 +40,11 @@
                 font-size: $font-size-p;
                 font-weight: 400;
                 text-align: justify;
+                span{
+                    font-weight: bold;
+                    font-family: $font-family-inter;
+                    font-size: $font-size-p
+                }
             }
         }
         .buton{
@@ -78,7 +85,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 36.433rem;
+        width: 51rem;
+        opacity: .5;
+        filter: blur(4px);
+        background: linear-gradient(0deg, rgba(6, 47, 134, 0.1), rgba(6, 47, 134, 0.1));
+        overflow: hidden;
+        position: absolute;
+        top: 3rem;
+        right: 0;
+
         /*margin-top: 6.875rem;*/
         
         /*margin-right: 3.125rem;*/
