@@ -94,7 +94,8 @@
   <!-----------CONTACT------------------>
   <div class="contact-container">
     
-    <h3>¿Necesitas más información?</h3>
+    <!--<button class="button is-large is-link is-rounded is-fullwidth js-modal-trigger"
+                        data-target="modal-js-example">Más información</button>-->
     
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat egestas aenean morbi eget ornare ultrices. 
@@ -105,9 +106,23 @@
         Nunc tincidunt vitae augue feugiat consequat felis quis. Tincidunt urna leo enim sed eget.
     </p>
 
-    <button><a>¡Contactá con nosotros!</a></button>
+    <button class="js-modal-trigger" data-target="modal-js-example"><a>¡Contactá con nosotros!</a></button>
 
   </div>
+
+  <div id="modal-js-example" class="modal">
+    <div class="modal-background"></div>
+
+    <div class="modal-content is-clipped">
+
+        <iframe class="box" src="https://form.jotform.com/220643664794666"
+              width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Cargando…
+        </iframe>
+
+    </div>
+
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
 
 
   
@@ -139,7 +154,7 @@
 
 
 <script src="navbar.js"></script> 
+<script src="clientes.js"></script>
 
-<
 </body>
 </html>
