@@ -27,6 +27,13 @@
         padding: 8px;
         width: 70.5%;
         margin-top: 2.5rem;
+        color: #0C1444;
+
+        strong{
+            color: #0C1444;
+            font-family: $font-family-inter;
+            font-size: $font-size-p;
+        }
     }
 
     .benefits-container{
