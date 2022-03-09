@@ -112,6 +112,13 @@
             }
         }
     }
+    .is-active{
+        .is-clipped{
+            .box{
+                height: 30rem!important;
+            }
+        }
+    }
 }
 
 .contact-container{

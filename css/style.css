@@ -220,7 +220,7 @@
           .hero__team__flex__div .hero__team__sec .hero-linkedin .linkedin-h5 {
             font-family: "Inter", sans-serif;
             font-weight: 300;
-            font-style: italic;
+            font-style: normal;
             font-size: 1.125rem;
             color: #E3EDFF; }
     .hero__team .hero__png {
@@ -676,6 +676,8 @@
             font-size: 0.9rem; } }
       #clients .companies-container .companies-list img {
         margin-top: 2rem; }
+  #clients .is-active .is-clipped .box {
+    height: 30rem !important; }
 
 .contact-container {
   margin-top: 1.75rem;
