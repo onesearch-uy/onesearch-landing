@@ -139,9 +139,10 @@
     .wrapper{
         width:994px;
         height: 188px;
-        text-align:center;
+    
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-top: 1rem;
         margin-bottom: 5.5rem;
         width: 73.959%;
@@ -292,7 +293,7 @@
         h3{
             //display: none;
             font-size: 1.625rem!important;
-            margin-top: 0!importants;
+            margin-top: 0!important;
 
         }
         .wrapper{
