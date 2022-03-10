@@ -260,6 +260,10 @@
       margin: 0 auto; }
       .hero .hero__png__img {
         width: 18.797rem; } }
+    @media (max-width: 768px) and (max-width: 768px) {
+      .hero .hero__png {
+        margin-top: 4rem;
+        margin-bottom: 1rem; } }
 
 #products {
   display: flex;
@@ -654,6 +658,9 @@
         #clients .clients-container .client-p-div .client-p span {
           font-weight: 700;
           font-size: 1.5rem; }
+          @media screen and (max-width: 768px) {
+            #clients .clients-container .client-p-div .client-p span {
+              font-size: 0.9rem; } }
         @media screen and (min-width: 1440px) {
           #clients .clients-container .client-p-div .client-p {
             margin-left: 6rem; } }
@@ -699,9 +706,6 @@
             font-size: 0.9rem; } }
       #clients .companies-container .companies-list img {
         margin-top: 2rem; }
-      @media screen and (max-width: 768px) {
-        #clients .companies-container .companies-list {
-          height: 20rem; } }
   #clients .is-active .is-clipped .box {
     height: 30rem !important; }
 
@@ -721,12 +725,13 @@
   .contact-container .contact-h3 {
     font-size: 3.5rem;
     color: #fff;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    margin-top: 3rem; }
     @media screen and (max-width: 768px) {
       .contact-container .contact-h3 {
         text-align: justify;
         font-size: 1.5rem;
-        margin-top: 2rem; } }
+        margin-top: 4rem; } }
   .contact-container p {
     font-family: "Inter", sans-serif;
     font-size: 1.125rem;
@@ -755,13 +760,13 @@
         .contact-container button a {
           font-size: 0.8rem; } }
 
-.modal-content .is-clipped iframe {
-  height: 34rem; }
-
-@media screen and (max-width: 767px) and (min-width: 767px) {
-  .modal-content .box {
-    height: 34rem; } }
-
+/*
+@media screen and (max-width:767px) and (min-width:767px) {
+    .box{
+        height: 34rem;
+    }
+}
+}*/
 .section-credits {
   width: 100%;
   background-image: url("../scss/Fondo2.png");
