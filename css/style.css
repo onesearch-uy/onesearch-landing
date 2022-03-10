@@ -636,6 +636,9 @@
       justify-content: center;
       align-items: center;
       margin-right: 1.5rem; }
+      @media screen and (max-width: 768px) {
+        #clients .clients-container .client-p-div {
+          margin-right: 0; } }
       #clients .clients-container .client-p-div .client-p {
         text-align: justify;
         font-size: 1.5rem;
@@ -652,7 +655,7 @@
             margin-left: 6rem; } }
         @media screen and (max-width: 768px) {
           #clients .clients-container .client-p-div .client-p {
-            width: 80%;
+            width: 100%;
             margin-left: 0;
             margin-right: 0;
             margin-bottom: 1rem;
@@ -678,7 +681,8 @@
       color: #062F86; }
       @media screen and (max-width: 768px) {
         #clients .companies-container h3 {
-          font-size: 1.25rem; } }
+          font-size: 1.25rem;
+          text-align: justify; } }
     #clients .companies-container .companies-list {
       margin-top: 1rem; }
       #clients .companies-container .companies-list p {
@@ -691,6 +695,9 @@
             font-size: 0.9rem; } }
       #clients .companies-container .companies-list img {
         margin-top: 2rem; }
+      @media screen and (max-width: 768px) {
+        #clients .companies-container .companies-list {
+          height: 20rem; } }
   #clients .is-active .is-clipped .box {
     height: 30rem !important; }
 
@@ -711,20 +718,11 @@
     font-size: 3.5rem;
     color: #fff;
     margin-bottom: 1rem; }
-  .contact-container .contact-image {
-    width: 100%;
-    z-index: -10;
-    position: absolute; }
-  .contact-container h3 {
-    margin-top: 4.25rem;
-    text-align: center;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-size: 2.67rem;
-    color: #ffffff; }
     @media screen and (max-width: 768px) {
-      .contact-container h3 {
-        margin-top: 2rem;
-        font-size: 1.34rem; } }
+      .contact-container .contact-h3 {
+        text-align: justify;
+        font-size: 1.5rem;
+        margin-top: 2rem; } }
   .contact-container p {
     font-family: "Inter", sans-serif;
     font-size: 1.125rem;

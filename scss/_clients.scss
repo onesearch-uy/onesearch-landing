@@ -44,6 +44,9 @@
             justify-content: center;
             align-items: center;
             margin-right: 1.5rem;
+            @media screen and (max-width:768px){
+                margin-right: 0;
+            }
         
         .client-p{
             //width: 37%;
@@ -66,7 +69,7 @@
            
 
             @media screen and (max-width:768px){
-                width:80%;
+                width:100%;
                 margin-left: 0;
                 margin-right: 0;
                 margin-bottom: 1rem;
@@ -105,6 +108,7 @@
 
             @media screen and (max-width:768px){
                 font-size: 1.25rem;
+                text-align: justify;
             }
         }
 
@@ -123,6 +127,9 @@
 
             img{
                 margin-top: 2rem;
+            }
+            @media screen and (max-width:768px) {
+                height: 20rem;
             }
         }
     }
@@ -153,26 +160,13 @@
         font-size: 3.5rem;
         color: #fff;
         margin-bottom: 1rem;
-    }
-
-    .contact-image{
-        width: 100%;
-        z-index: -10;
-        position: absolute;
-    }
-
-    h3{
-        margin-top:4.25rem;
-        text-align: center;
-        font-family: $font-family-1;
-        font-size: 2.67rem;
-        color: #ffffff; 
-
         @media screen and (max-width:768px){
-            margin-top:2rem;
-            font-size: 1.34rem;
+            text-align: justify;
+            font-size: 1.5rem;
+            margin-top: 2rem;
         }
     }
+    
 
     p{
         font-family: $font-family-inter;
@@ -209,3 +203,6 @@
         }
     }
 }
+
+
+
