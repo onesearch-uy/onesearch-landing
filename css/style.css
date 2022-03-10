@@ -409,6 +409,13 @@
   }
 }
 
+@media (max-width: 768px) and (max-width: 768px) {
+  .hero .hero__png {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+}
+
 #products {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1030,6 +1037,12 @@
 #clients .clients-container .client-p-div .client-p span {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  #clients .clients-container .client-p-div .client-p span {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
