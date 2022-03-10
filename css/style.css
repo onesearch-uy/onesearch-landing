@@ -307,7 +307,8 @@
       #products .benefits-container .benefit-item-1 img,
       #products .benefits-container .benefit-item-2 img {
         min-width: 30.5rem;
-        min-height: 23.375rem; }
+        min-height: 23.375rem;
+        border-radius: 10px; }
         @media screen and (min-width: 768px) {
           #products .benefits-container .benefit-item-1 img,
           #products .benefits-container .benefit-item-2 img {
@@ -338,6 +339,9 @@
       position: absolute;
       top: 13.25rem;
       left: 22rem; }
+    #products .services-container .services-img1,
+    #products .services-container .services-img2 {
+      border-radius: 10px; }
     #products .services-container .services-img2 {
       position: absolute;
       top: 0;
@@ -750,6 +754,13 @@
       @media screen and (max-width: 768px) {
         .contact-container button a {
           font-size: 0.8rem; } }
+
+.modal-content .is-clipped iframe {
+  height: 34rem; }
+
+@media screen and (max-width: 767px) and (min-width: 767px) {
+  .modal-content .box {
+    height: 34rem; } }
 
 .section-credits {
   width: 100%;

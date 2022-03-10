@@ -23,9 +23,6 @@ function btn3(){
     icon3.classList.toggle("active");
 }
 
-function info(){
-    sectionArea.classList.toggle("activee");
-}
 
 
 /*
