@@ -158,6 +158,7 @@
             display: none;
             }
             .index-image-responsive{
+                display: inline-block;
                 width: 15rem;
                 background: var(--overlay-color);
                 mix-blend-mode: overlay;
