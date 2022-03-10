@@ -630,23 +630,33 @@
         align-items: center;
         justify-content: space-evenly;
         margin-top: 1rem; } }
-    #clients .clients-container p {
-      width: 37%;
+    #clients .clients-container .client-p-div {
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      text-align: justify;
-      font-size: 1.125rem;
       margin-right: 1.5rem; }
-      @media screen and (min-width: 1440px) {
-        #clients .clients-container p {
-          margin-left: 6rem; } }
-      @media screen and (max-width: 768px) {
-        #clients .clients-container p {
-          width: 80%;
-          margin-left: 0;
-          margin-right: 0;
-          margin-bottom: 1rem;
-          font-size: 0.9rem; } }
+      #clients .clients-container .client-p-div .client-p {
+        text-align: justify;
+        font-size: 1.5rem;
+        margin: 1rem auto;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        color: #0C1444;
+        line-height: 2rem; }
+        #clients .clients-container .client-p-div .client-p span {
+          font-weight: 700;
+          font-size: 1.5rem; }
+        @media screen and (min-width: 1440px) {
+          #clients .clients-container .client-p-div .client-p {
+            margin-left: 6rem; } }
+        @media screen and (max-width: 768px) {
+          #clients .clients-container .client-p-div .client-p {
+            width: 80%;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 1rem;
+            font-size: 0.9rem; } }
     @media screen and (min-width: 1440px) {
       #clients .clients-container img {
         margin-right: 3rem; } }
@@ -691,11 +701,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  justify-self: center;
   flex-direction: column;
   align-items: center; }
   @media screen and (max-width: 768px) {
     .contact-container {
       padding-bottom: 4rem; } }
+  .contact-container .contact-h3 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 1rem; }
   .contact-container .contact-image {
     width: 100%;
     z-index: -10;
