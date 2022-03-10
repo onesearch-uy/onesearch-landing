@@ -59,7 +59,7 @@
                 
                 /* border: 2px solid red; */
                 /* margin: 0 -20rem; */
-                margin-right: 6rem;
+                margin-right: 17rem;
                 &__header{
                     width: 13.625rem;
                     top: 1.063rem;
@@ -136,12 +136,13 @@
                 right: 0;
             }
             .navbar-item{
+                margin-left: 3rem;
                 .navbar-item-img{
                     display: inline-flex;
                 }
             }
             .whats__btn{
-                    margin-left: 4rem;
+                    margin-left: 0;
                 .header_whatsapp{
                     width: 2rem;
                     margin: 0 auto;
@@ -170,13 +171,16 @@
                 display: none;
             }
             .navbar-end{
-                display: flex;
+                display: none;
                 justify-content: center;
                 .navbar-item{
                     margin-right: 0;
                     
                 }
             }
+        }
+        .is-active{
+            border-radius: 0px 0px 20px 20px;
         }
     }
 }
