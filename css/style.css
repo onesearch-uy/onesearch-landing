@@ -481,159 +481,114 @@
 
 @media screen and (max-width: 768px) {
   #products .benefits-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
 
-#products .benefits-container h2 {
-  font-size: 2rem;
-}
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem; }
+    @media screen and (max-width: 768px) {
+      #products .benefits-container {
+        flex-direction: column; } }
+    #products .benefits-container h2 {
+      font-size: 2rem; }
+    #products .benefits-container .benefit-item-1,
+    #products .benefits-container .benefit-item-2 {
+      margin: 0 2rem;
+      position: relative; }
+      #products .benefits-container .benefit-item-1 img,
+      #products .benefits-container .benefit-item-2 img {
+        min-width: 30.5rem;
+        min-height: 23.375rem;
+        border-radius: 10px; }
+        @media screen and (min-width: 768px) {
+          #products .benefits-container .benefit-item-1 img,
+          #products .benefits-container .benefit-item-2 img {
+            min-width: 24.4rem;
+            min-height: 18.7rem; } }
+      #products .benefits-container .benefit-item-1 p,
+      #products .benefits-container .benefit-item-2 p {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 3rem;
+        color: #FFFFFF;
+        height: 150px;
+        line-height: 3.125rem;
+        position: absolute;
+        top: 5.5rem;
+        left: 1.5rem;
+        padding: 0; }
+  #products .services-container {
+    margin-top: 9rem;
+    transform: rotateY(0deg);
+    transition: 1s ease all;
+    transform-style: preserve-3d; }
+    #products .services-container:hover {
+      transform: rotateY(180deg); }
+    #products .services-container p {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-size: 3rem;
+      color: #FFFFFF;
+      position: absolute;
+      top: 13.25rem;
+      left: 22rem; }
+    #products .services-container .services-img1,
+    #products .services-container .services-img2 {
+      border-radius: 10px; }
+    #products .services-container .services-img2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      object-fit: contain;
+      transform: rotateY(180deg);
+      backface-visibility: hidden; }
+    #products .services-container .services-btn {
+      backface-visibility: hidden;
+      position: absolute;
+      left: 0rem;
+      bottom: -3rem;
+      transform: rotateY(180deg);
+      height: 3rem;
+      padding: 12px 32px;
+      border-radius: 6px;
+      background-color: #E3EDFF;
+      color: #062F86;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      z-index: 1; }
+    #products .services-container .services-btn:hover {
+      cursor: pointer; }
+    @media screen and (max-width: 768px) {
+      #products .services-container .services-img1, #products .services-container .services-img2 {
+        min-width: 60%;
+        min-height: 60%; } }
+  #products h3 {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 2.625rem;
+    color: #062F86;
+    margin-top: 5rem; }
+  #products .wrapper {
+    width: 994px;
+    height: 188px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 5.5rem;
+    width: 73.959%;
+    height: 223px;
+    background: url(../imagenes/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 42px 42px;
+    box-shadow: 2px 9px 19px 1px rgba(0, 0, 0, 0.2); }
+    #products .wrapper .carousel {
+      width: 85%;
+      margin: 0px auto;
+      display: flex;
+      align-items: center;
+      /*
 
-#products .benefits-container .benefit-item-1,
-#products .benefits-container .benefit-item-2 {
-  margin: 0 2rem;
-  position: relative;
-}
-
-#products .benefits-container .benefit-item-1 img,
-#products .benefits-container .benefit-item-2 img {
-  min-width: 30.5rem;
-  min-height: 23.375rem;
-}
-
-@media screen and (min-width: 768px) {
-  #products .benefits-container .benefit-item-1 img,
-  #products .benefits-container .benefit-item-2 img {
-    min-width: 24.4rem;
-    min-height: 18.7rem;
-  }
-}
-
-#products .benefits-container .benefit-item-1 p,
-#products .benefits-container .benefit-item-2 p {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 3rem;
-  color: #FFFFFF;
-  height: 150px;
-  line-height: 3.125rem;
-  position: absolute;
-  top: 5.5rem;
-  left: 1.5rem;
-  padding: 0;
-}
-
-#products .services-container {
-  margin-top: 9rem;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  -webkit-transition: 1s ease all;
-  transition: 1s ease all;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-#products .services-container:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-#products .services-container p {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 3rem;
-  color: #FFFFFF;
-  position: absolute;
-  top: 13.25rem;
-  left: 22rem;
-}
-
-#products .services-container .services-img2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-#products .services-container .services-btn {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  position: absolute;
-  left: 0rem;
-  bottom: -3rem;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  height: 3rem;
-  padding: 12px 32px;
-  border-radius: 6px;
-  background-color: #E3EDFF;
-  color: #062F86;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  z-index: 1;
-}
-
-#products .services-container .services-btn:hover {
-  cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-  #products .services-container .services-img1, #products .services-container .services-img2 {
-    min-width: 60%;
-    min-height: 60%;
-  }
-}
-
-#products h3 {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 2.625rem;
-  color: #062F86;
-  margin-top: 5rem;
-}
-
-#products .wrapper {
-  width: 994px;
-  height: 188px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 5.5rem;
-  width: 73.959%;
-  height: 223px;
-  background: url(../imagenes/image.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 42px 42px;
-  -webkit-box-shadow: 2px 9px 19px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 9px 19px 1px rgba(0, 0, 0, 0.2);
-}
-
-#products .wrapper .carousel {
-  width: 85%;
-  margin: 0px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*
         .item:hover{
             width: 18rem;
             cursor: pointer;
@@ -1209,6 +1164,13 @@
     font-size: 0.8rem;
   }
 }
+
+.modal-content .is-clipped iframe {
+  height: 34rem; }
+
+@media screen and (max-width: 767px) and (min-width: 767px) {
+  .modal-content .box {
+    height: 34rem; } }
 
 .section-credits {
   width: 100%;

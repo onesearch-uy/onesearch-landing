@@ -58,6 +58,7 @@
             img{
                 min-width: 30.5rem;
                 min-height: 23.375rem;
+                border-radius: 10px;
 
                 @media screen and (min-width:768px) {
                     min-width: 24.4rem;
@@ -96,6 +97,10 @@
             position: absolute;
             top:13.25rem;
             left: 22rem;
+        }
+        .services-img1,
+        .services-img2{
+            border-radius: 10px;
         }
 
         .services-img2{
@@ -414,3 +419,5 @@
             display: none;
         }
 }
+
+

@@ -207,6 +207,19 @@
         }
     }
 }
+.modal-content{
+    .is-clipped{
+        iframe{
+            height: 34rem;
+        }
+}
 
 
 
+
+@media screen and (max-width:767px) and (min-width:767px) {
+    .box{
+        height: 34rem;
+    }
+}
+}
