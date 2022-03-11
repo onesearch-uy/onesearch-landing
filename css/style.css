@@ -1187,6 +1187,8 @@
     font-size: 0.875rem;
     line-height: 24px;
     color: #0C1444; }
+    .footer .footer-div-rights #year {
+      margin-right: .5rem; }
   .footer .nav-bx {
     position: fixed;
     margin-right: 0;
