@@ -1,155 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="imagenes/OjoOneSearch.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="iframe.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imagenes/OjoOneSearch.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="iframe.css" />
     <!--Link a fuentes de Google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Clients</title>
-</head>
+  </head>
 
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item"
+          ><img
+            class="navbar-item-img"
+            src="imagenes/onesearch.png"
+            width="150"
+            height="28"
+        /></a>
 
-<body>
+        <a href="#" class="whats__btn"
+          ><img class="header_whatsapp" src="imagenes/whatsappChat.png" alt=""
+        /></a>
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item"><img class="navbar-item-img" src="imagenes/onesearch.png" width="150" height="28"></a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-      <a href="#" class="whats__btn"><img class="header_whatsapp" src="imagenes/whatsappChat.png" alt=""></a>
-      
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="index.html" >¿Quiénes somos?</a>
-          
+          <a class="navbar-item" href="index.html">¿Quiénes somos?</a>
+
           <a class="navbar-item" href="team.html">Nuestro equipo</a>
-    
+
           <a class="navbar-item" href="products.html">Productos</a>
 
           <a class="navbar-item" href="clients.html">Clientes</a>
 
-          <a class="navbar-item" href="credits.html">Créditos</a>
+          <!-- <a class="navbar-item" href="credits.html">Créditos</a> -->
         </div>
 
         <div class="div__img">
-          <img class="div__img__header" src="imagenes/onesearch.png" width="150" height="28">
+          <a href="index.html">
+            <img
+              class="div__img__header"
+              src="imagenes/onesearch.png"
+              width="150"
+              height="28"
+            />
+          </a>
         </div>
-        
+
         <div class="navbar-end">
           <div class="navbar-item">
-              <div class="buttons">
-
-                <a class="buttonn">Iniciar Sesión</a>
-                <a class="buttonn is-blue-btn">Registro</a>
-              </div>
+            <a class="buttonn" href="https://onesearch.com.uy" target="_blank"
+              >Plafaforma</a
+            >
+            <!-- <a class="buttonn is-blue-btn">Registro</a> -->
           </div>
         </div>
       </div>
-  </nav>
-  
-<!-----------NAVBAR-END------------->
+    </nav>
 
-<!-----------SECTION----------------->
+    <!-----------NAVBAR-END------------->
 
-  <section id="clients">
-    <h2>Nuestros Clientes</h2>
+    <!-----------SECTION----------------->
 
-    <div class="clients-container">
-      <div class="client-p-div">
-        
-        <p class="client-p">Son el <span> foco central de nuestro trabajo.</span> Mediante una colaboración permanente conseguimos una relación fructífera y eficiente.</p>
-        
-        <p class="client-p">Todos los clientes para los que trabajamos, independientemente de su tamaño, son únicos e igualmente importantes.</p>
-        
-        <p class="client-p">Ser recomendados por un cliente es nuestro mayor orgullo. De esta forma, intentamos cada día satisfacer y cumplir con los objetivos de miles de clientes.       
-        </p>
+    <section id="clients">
+      <h2>Nuestros Clientes</h2>
+
+      <div class="clients-container">
+        <div class="client-p-div">
+          <p class="client-p">
+            Son el <span> foco central de nuestro trabajo.</span> Mediante una
+            colaboración permanente conseguimos una relación fructífera y
+            eficiente.
+          </p>
+
+          <p class="client-p">
+            Todos los clientes para los que trabajamos, independientemente de su
+            tamaño, son únicos e igualmente importantes.
+          </p>
+
+          <p class="client-p">
+            Ser recomendados por un cliente es nuestro mayor orgullo. De esta
+            forma, intentamos cada día satisfacer y cumplir con los objetivos de
+            miles de clientes.
+          </p>
+        </div>
+        <img src="imagenes/clientes1.png" alt="" />
       </div>
-        <img src="imagenes/clientes1.png" alt="">
-    </div>
 
-    <div class="companies-container">
+      <div class="companies-container">
         <h3>Empresas que confían en nosotros</h3>
 
         <div class="companies-list">
-            <p>Estos son varios de los clientes a los que hemos ayudado con nuestra poderosa herramienta virtual.</p>
-            <img src="imagenes/Group 10.png" alt="">
+          <p>
+            Estos son varios de los clientes a los que hemos ayudado con nuestra
+            poderosa herramienta virtual.
+          </p>
+          <img src="imagenes/Group 10.png" alt="" />
         </div>
-    </div>
-    
-  </section>
+      </div>
+    </section>
 
-  <!-----------CONTACT------------------>
-  <div class="contact-container">
-    
-    <!--<button class="button is-large is-link is-rounded is-fullwidth js-modal-trigger"
+    <!-----------CONTACT------------------>
+    <div class="contact-container">
+      <!--<button class="button is-large is-link is-rounded is-fullwidth js-modal-trigger"
                         data-target="modal-js-example">Más información</button>-->
-    <h3 class="contact-h3">¿Necesitas más información?</h3>
+      <h3 class="contact-h3">¿Necesitas más información?</h3>
 
-    <button class="js-modal-trigger" data-target="modal-js-example"><a>¡Contactá con nosotros!</a></button>
-
-  </div>
-
-  <div id="modal-js-example" class="modal">
-    <div class="modal-background"></div>
-
-    <div class="modal-content is-clipped">
-
-        <iframe class="box" src="https://form.jotform.com/220643664794666"
-              width="640" height="34rem" frameborder="0" marginheight="0" marginwidth="0">Cargando…
-        </iframe>
-
+      <button class="js-modal-trigger" data-target="modal-js-example">
+        <a>¡Contactá con nosotros!</a>
+      </button>
     </div>
 
-    <button class="modal-close is-large" aria-label="close"></button>
-</div>
+    <div id="modal-js-example" class="modal">
+      <div class="modal-background"></div>
 
+      <div class="modal-content is-clipped">
+        <iframe
+          class="box"
+          src="https://form.jotform.com/220643664794666"
+          width="640"
+          height="34rem"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >Cargando…
+        </iframe>
+      </div>
 
-  
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
 
+    <!-----------FOOTER----------------->
+    <footer class="footer">
+      <div class="footer-logo">
+        <img class="footer-img" src="imagenes/onesearch.png" alt="" />
+      </div>
 
- <!-----------FOOTER----------------->
- <footer class="footer">
-  <div class="footer-logo">
-    <img class="footer-img" src="imagenes/onesearch.png" alt="">
-  </div>
+      <div class="footer-div">
+        <ul class="footer-div-item">
+          <li class="footer-items footer-items2">
+            <a href="index.html">¿Qué es One Search?</a>
+          </li>
+          <li class="footer-items footer-items2">
+            <a href="team.html">Nuestro Equipo</a>
+          </li>
 
-  <div class="footer-div">
-    <ul class="footer-div-item">
-      <li class="footer-items footer-items2"><a href="index.html">¿Qué es One Search?</a></li>
-        <li class="footer-items footer-items2"><a href="team.html">Nuestro Equipo</a></li>
-        
-        <li class="footer-items footer-items2"><a href="terminos.html">Términos y condiciones</a></li>
-    </ul>
+          <li class="footer-items footer-items2">
+            <a href="terminos.html">Términos y condiciones</a>
+          </li>
+        </ul>
 
-    <h5 class="footer-div-rights"> ©<div id="year"></div> Onesearch All Rights reserved</h5>
-  </div>
+        <h5 class="footer-div-rights">
+          ©
+          <div id="year"></div>
+          Onesearch All Rights reserved
+        </h5>
+      </div>
 
-  <div class="nav-bx">
-    <a href=""><h6 class="nav-bx-text">Hola! Soy tu asistente virtual</h6></a>
-    <a href="#"><img class='icon-whatsapp' src="imagenes/whatsappChat.png"></a>
-  </div>     
-  </footer>
+      <div class="nav-bx">
+        <a href=""
+          ><h6 class="nav-bx-text">Hola! Soy tu asistente virtual</h6></a
+        >
+        <a href="#"
+          ><img class="icon-whatsapp" src="imagenes/whatsappChat.png"
+        /></a>
+      </div>
+    </footer>
 
-
-<script src="navbar.js"></script>
-<script src="year.js"></script> 
-<script src="clientes.js"></script>
-
-</body>
+    <script src="navbar.js"></script>
+    <script src="year.js"></script>
+    <script src="clientes.js"></script>
+  </body>
 </html>

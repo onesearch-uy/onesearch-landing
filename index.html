@@ -1,129 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="imagenes/OjoOneSearch.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imagenes/OjoOneSearch.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!--Link a fuentes de Google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Home</title>
-</head>
-<body>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item"
+          ><img
+            class="navbar-item-img"
+            src="imagenes/onesearch.png"
+            width="150"
+            height="28"
+        /></a>
 
+        <a href="#" class="whats__btn"
+          ><img class="header_whatsapp" src="imagenes/whatsappChat.png" alt=""
+        /></a>
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item"><img class="navbar-item-img" src="imagenes/onesearch.png" width="150" height="28"></a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-      <a href="#" class="whats__btn"><img class="header_whatsapp" src="imagenes/whatsappChat.png" alt=""></a>
-      
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="index.html" >¿Quiénes somos?</a>
-          
+          <a class="navbar-item" href="index.html">¿Quiénes somos?</a>
+
           <a class="navbar-item" href="team.html">Nuestro equipo</a>
-    
+
           <a class="navbar-item" href="products.html">Productos</a>
 
           <a class="navbar-item" href="clients.html">Clientes</a>
 
-          <a class="navbar-item" href="credits.html">Créditos</a>
+          <!-- <a class="navbar-item" href="credits.html">Créditos</a> -->
         </div>
 
         <div class="div__img">
-          <img class="div__img__header" src="imagenes/onesearch.png" width="150" height="28">
+          <a href="index.html">
+            <img
+              class="div__img__header"
+              src="imagenes/onesearch.png"
+              width="150"
+              height="28"
+            />
+          </a>
         </div>
-        
+
         <div class="navbar-end">
           <div class="navbar-item">
-              <div class="buttons">
-
-                <a class="buttonn">Iniciar Sesión</a>
-                <a class="buttonn is-blue-btn">Registro</a>
-              </div>
+            <a class="buttonn" href="https://onesearch.com.uy" target="_blank"
+              >Plafaforma</a
+            >
+            <!-- <a class="buttonn is-blue-btn">Registro</a> -->
           </div>
         </div>
       </div>
-  </nav>
+    </nav>
 
-  <!-----------NAVBAR-END------------->
-    
+    <!-----------NAVBAR-END------------->
 
-  <!-----------INDEX-SECTION--------->
+    <!-----------INDEX-SECTION--------->
 
-<section class="container__land">
-    <!--<img class="bg-image" src="imagenes/Fondo2.png" alt="">-->>
-        <div class="container__landing">
-
-
+    <section class="container__land">
+      <!--<img class="bg-image" src="imagenes/Fondo2.png" alt="">-->>
+      <div class="container__landing">
         <div class="container__landing__section" data-aos="fade-right">
-          <p class="container__landing__section__p"><span>OneSearch UY</span> es un proveedor global de soluciones.</p>
-          <p class="container__landing__section__p">Automatizamos procesos en todas las áreas enfocados en la eficiencia y experiencia del usuario.</p>
+          <p class="container__landing__section__p">
+            <span>OneSearch UY</span> es un proveedor global de soluciones.
+          </p>
+          <p class="container__landing__section__p">
+            Automatizamos procesos en todas las áreas enfocados en la eficiencia
+            y experiencia del usuario.
+          </p>
         </div>
-
 
         <div class="buton" data-aos="fade-right">
-            <a class="button__btn">Ver más</a>
+          <a class="button__btn" href="https://onesearch.com.uy" target="_blank"
+            >Ir a Plafaforma</a
+          >
         </div>
-
-    </div>
-
-      <div class="container__landing__img fade-left" data-aos="fade-left">
-        <img class="container__landing__img__png" src="imagenes/landing.png" alt="">
       </div>
 
-      <img class="index-image-responsive" src="imagenes/landing.png" alt="">
+      <div class="container__landing__img fade-left" data-aos="fade-left">
+        <img
+          class="container__landing__img__png"
+          src="imagenes/landing.png"
+          alt=""
+        />
+      </div>
 
-  </section>
+      <img class="index-image-responsive" src="imagenes/landing.png" alt="" />
+    </section>
 
+    <!-----------FOOTER------------------>
+    <footer class="footer">
+      <div class="footer-logo">
+        <img class="footer-img" src="imagenes/onesearch.png" alt="" />
+      </div>
 
-  <!-----------FOOTER------------------>
-  <footer class="footer">
-    <div class="footer-logo">
-      <img class="footer-img" src="imagenes/onesearch.png" alt="">
-    </div>
+      <div class="footer-div">
+        <ul class="footer-div-item">
+          <li class="footer-items footer-items2">
+            <a href="index.html">¿Qué es One Search?</a>
+          </li>
+          <li class="footer-items footer-items2">
+            <a href="team.html">Nuestro Equipo</a>
+          </li>
 
-    <div class="footer-div">
-      <ul class="footer-div-item">
-        <li class="footer-items footer-items2"><a href="index.html">¿Qué es One Search?</a></li>
-        <li class="footer-items footer-items2"><a href="team.html">Nuestro Equipo</a></li>
-        
-        <li class="footer-items footer-items2"><a href="terminos.html">Términos y condiciones</a></li>
-      </ul>
+          <li class="footer-items footer-items2">
+            <a href="terminos.html">Términos y condiciones</a>
+          </li>
+        </ul>
 
-      
-      <h5 class="footer-div-rights"> ©<div id="year"></div> Onesearch All Rights reserved</h5>
+        <h5 class="footer-div-rights">
+          ©
+          <div id="year"></div>
+          Onesearch All Rights reserved
+        </h5>
+      </div>
 
-    </div>
-  
-    <div class="nav-bx" data-aos="fade-left">
-      <a href=""><h6 class="nav-bx-text">Hola! Soy tu asistente virtual</h6></a>
-      <a href="#"><img class='icon-whatsapp' src="imagenes/whatsappChat.png"></a>
-    </div>     
-  </footer>
+      <div class="nav-bx" data-aos="fade-left">
+        <a href=""
+          ><h6 class="nav-bx-text">Hola! Soy tu asistente virtual</h6></a
+        >
+        <a href="#"
+          ><img class="icon-whatsapp" src="imagenes/whatsappChat.png"
+        /></a>
+      </div>
+    </footer>
 
-<script src="year.js"></script>
-<script src="navbar.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-</body>
+    <script src="year.js"></script>
+    <script src="navbar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
-

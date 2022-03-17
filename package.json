@@ -18,9 +18,9 @@
   "author": "Fernando Gastón Da Ruda",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gastondaruda/proyecto-os/issues"
+    "url": "https://github.com/onesearch-uy/onesearch-landing/issues"
   },
-  "homepage": "https://github.com/gastondaruda/proyecto-os#readme",
+  "homepage": "https://github.com/onesearch-uy/onesearch-landing",
   "description": "",
   "dependencies": {
     "jquery": "^3.6.0"
